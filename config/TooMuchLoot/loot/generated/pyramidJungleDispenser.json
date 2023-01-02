@@ -1,0 +1,24 @@
+{
+  "category": "pyramidJungleDispenser",
+  "count_min": 2,
+  "count_max": 2,
+  "loot": [
+    {
+      "item": "minecraft:arrow",
+      "damage": 0,
+      "weight": 30,
+      "count_min": 2,
+      "count_max": 7
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.singleuse",
+      "damage": 0,
+      "nbt": {
+        "hide^b": 1
+      },
+      "weight": 25,
+      "count_min": 1,
+      "count_max": 1
+    }
+  ]
+}

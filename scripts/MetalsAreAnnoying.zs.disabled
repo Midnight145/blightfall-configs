@@ -1,0 +1,314 @@
+import minetweaker.item.IItemStack;
+
+//Metals. Ugh.
+//I'm going to try and make every possible block go to every possible result. Wish me luck.
+
+//In general, let's have the priority order be as follows:
+//Thaumcraft > Tinker's Construct > Thermal Expansion > Metallurgy.
+//The exception is for ores, which go the exact opposite direction. Why? Because I think the TiC ingots are prettiest, but
+//UBC does all the ores in the complete opposite order. Also, because Thaumcraft infurnal furnace bonus rewards
+//don't seem to get along with anything. :(
+
+//So here's a list of all the duplicate ores:
+
+//Copper
+//Tin
+//Iron (Nuggets, etc)
+//Bronze
+//Electrum
+//Platinum/Shiny
+//Steel
+//Mithril (AKA mana infuesed, because Thermal Expansion??)
+//Silver
+
+//Also other stuff we can consolidate:
+
+//Sulphur
+//Saltpeter (Nirte)
+
+//...Let's tackle these one at a time.
+
+
+
+                   //////////
+                   //COPPER//
+                   //////////
+
+
+
+//Real stuff
+val copperBlock = <ThermalFoundation:Storage>;
+val copperIngot = <ThermalFoundation:material:64>;
+val copperNugget = <Thaumcraft:ItemNugget:1>;
+val copperDust = <ThermalFoundation:material:32>;
+val copperOre = <Metallurgy:base.ore>;
+
+val copperBerry = <TConstruct:oreBerries:2>;
+
+val copperBlockDict = <ore:blockCopper>;
+val copperIngotDict = <ore:ingotCopper>;
+val copperNuggetDict = <ore:nuggetCopper>;
+val copperDustDict = <ore:dustCopper>;
+val copperOreDict = <ore:oreCopper>;
+
+val badCopperBlock1 = <Metallurgy:base.block>;
+val badCopperBlock2 = <TConstruct:MetalBlock:3>;
+val badCopperIngot1 = <Metallurgy:copper.ingot>;
+val badCopperIngot2 = <TConstruct:materials:9>;
+val badCopperNugget1 = <TConstruct:materials:20>;
+val badCopperNugget2 = <ThermalFoundation:material:96>;
+val badCopperDust = <Metallurgy:base.dust>;
+val badCopperOre1 = <ThermalFoundation:Ore>;
+val badCopperOre2 = <TConstruct:SearedBrick:3>;
+val badCopperOre3 = <TConstruct:GravelOre:2>;
+
+//Imposters:
+
+var copperImposters = [
+  badCopperBlock1, badCopperBlock2, 
+  badCopperIngot1, badCopperIngot2, 
+  badCopperNugget1, badCopperNugget2, 
+  badCopperDust, 
+  badCopperOre1, badCopperOre2, badCopperOre3
+] as IItemStack[];
+
+
+//Remove block imposters
+ recipes.remove(badCopperBlock1);
+ recipes.remove(badCopperBlock2);
+
+//Replace block casting
+ mods.tconstruct.Casting.removeBasinRecipe(badCopperBlock2);
+ mods.tconstruct.Casting.addBasinRecipe(copperBlock, <liquid:copper.molten>*1296, null, false, 20);
+
+//Remove block imposters from OreDictionary so you don't see them in recipes
+ copperBlockDict.remove(badCopperBlock1);
+ copperBlockDict.remove(badCopperBlock2);
+
+ mods.tconstruct.Smeltery.removeMelting(badCopperBlock1);
+ mods.tconstruct.Smeltery.removeMelting(badCopperBlock2);
+
+//The true block already has an oredicted entry, so no need to make a craft-to recipe.
+
+//INGOTS:
+//Remove ingot imposters:
+ recipes.remove(badCopperIngot1);
+ recipes.remove(badCopperIngot2);
+
+//Replace casting recipe
+ mods.tconstruct.Casting.removeTableRecipe(badCopperIngot2);
+ mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten>*144, <TConstruct:metalPattern> * 1, false, 20);
+
+//Remove ingot imposters from OreDictionary so you don't see them in recipes
+ copperIngotDict.remove(badCopperIngot1);
+ copperIngotDict.remove(badCopperIngot2);
+
+//Remove imposter ingot smelting so it's not confusing in NEI.
+ mods.tconstruct.Smeltery.removeMelting(badCopperIngot1);
+ mods.tconstruct.Smeltery.removeMelting(badCopperIngot2);
+
+//Remove imposter furnace recipes so it's not confusing in NEI.
+ furnace.remove(badCopperIngot1);
+ furnace.remove(badCopperIngot2);
+
+//Replace a bunch of vanilla smelting recipes
+ furnace.remove(<ThermalFoundation:material:64>);
+ furnace.addRecipe(copperIngot*2,<Thaumcraft:ItemNugget:17>); //Ore cluster
+ furnace.addRecipe(copperIngot,copperDust);
+ furnace.addRecipe(copperIngot,copperOre);
+ mods.thermalexpansion.Furnace.removeRecipe(<Thaumcraft:ItemNugget:17>);
+ mods.thermalexpansion.Furnace.removeRecipe(copperDust);
+ mods.thermalexpansion.Furnace.addRecipe(1600, <Thaumcraft:ItemNugget:17>, copperIngot);
+ mods.thermalexpansion.Furnace.addRecipe(1000, copperIngot, copperIngot);
+
+//Change metallurgy brick recipe:
+ recipes.remove(<Metallurgy:base.brick>);
+ recipes.addShaped(<Metallurgy:base.brick>, 
+ [[copperIngotDict, copperIngotDict], 
+  [copperIngotDict, copperIngotDict]]);
+ recipes.addShapeless(copperIngot * 4, 
+ [<Metallurgy:base.brick>]);
+
+//Remove and replace both copper ingot recipes with oredicted versions.
+ recipes.remove(copperIngot); 
+ recipes.addShaped(copperIngot, 
+ [[copperNuggetDict, copperNuggetDict, copperNuggetDict], 
+  [copperNuggetDict, copperNuggetDict, copperNuggetDict],
+  [copperNuggetDict, copperNuggetDict, copperNuggetDict]]);
+ recipes.addShapeless(copperIngot*9, 
+ [copperBlockDict]);
+
+//Remove ingot crusher recipes
+ mods.metallurgy.Crusher.removeRecipe(badCopperIngot1);
+ mods.metallurgy.Crusher.removeRecipe(badCopperIngot2);
+
+//Remove dust imposters from oredict
+ copperDustDict.remove(badCopperDust);
+
+//Remove dust from Smeltry
+  mods.tconstruct.Smeltery.removeMelting(badCopperDust);
+//Remove alloyer recipes that involve faulty dusts. Replace them. (Methods do not accept oredict values!)
+//Weird: If you "U" over an imposter dust, it will still show the recipe, but "R" over the result does not. Leave it I guess?
+ mods.metallurgy.Alloyer.removeRecipe(<ThermalFoundation:material:73>); //Bronze
+ mods.metallurgy.Alloyer.removeRecipe(<Metallurgy:brass.ingot>);        //Brass
+ mods.metallurgy.Alloyer.addRecipe(copperDust, <ThermalFoundation:material:33>, <TConstruct:materials:13>);
+ mods.metallurgy.Alloyer.addRecipe(copperDust, <Metallurgy:precious.dust>, <Metallurgy:brass.ingot>);
+
+//Remove nugget imposters from oredict
+ copperNuggetDict.remove(badCopperNugget1);
+ copperNuggetDict.remove(badCopperNugget2);
+
+//Remove recipes for nugget imposters:
+ recipes.remove(badCopperNugget1);
+ recipes.remove(badCopperNugget2); 
+
+
+//Cooking a berry should give you correct nugget
+ furnace.remove(badCopperNugget1);
+ furnace.addRecipe(copperNugget, copperBerry, 0.1);
+
+//Pulverizing a fluiduct should give you correct nugget
+ mods.thermalexpansion.Pulverizer.removeRecipe(<ThermalDynamics:ThermalDynamics_16>);
+ mods.thermalexpansion.Pulverizer.removeRecipe(<ThermalDynamics:ThermalDynamics_16:1>);
+ mods.thermalexpansion.Pulverizer.addRecipe(1600, <ThermalDynamics:ThermalDynamics_16>, copperNugget * 3, null, 0);
+ mods.thermalexpansion.Pulverizer.addRecipe(1000, <ThermalDynamics:ThermalDynamics_16:1>, copperNugget * 3, <Thaumcraft:ItemNugget:4>, 100);
+
+//Remove nuggets from smelting
+ mods.tconstruct.Smeltery.removeMelting(badCopperNugget1);
+ mods.tconstruct.Smeltery.removeMelting(badCopperNugget2);
+
+//Remove and replace both nugget recipe with oredicted versions.
+ recipes.remove(copperNugget); 
+ recipes.addShapeless(copperNugget*9, 
+ [copperIngotDict]);
+
+//Put warning labels on imposter blocks.
+for i, imposter in copperImposters 
+{
+ imposter.displayName = "Unused Imposter Metal";
+ imposter.addTooltip(format.red("WARNING: Probably useless."));
+ imposter.addTooltip(format.red("Please tell the modpack"));
+ imposter.addTooltip(format.red("author how you got this item!"));
+}
+
+<ThermalFoundation:material:96>.addTooltip(format.gray("Place in the crafting"));
+<ThermalFoundation:material:96>.addTooltip(format.gray("grid to get your nugget"));
+<ThermalFoundation:material:96>.addTooltip(format.gray("back. FYI: You don't"));
+<ThermalFoundation:material:96>.addTooltip(format.gray("need to smelt copper"));
+<ThermalFoundation:material:96>.addTooltip(format.gray("oreberries into nuggets!"));
+
+//Rescue Recipes until we can get CanVox on this.
+recipes.addShapeless(copperNugget, [<ThermalFoundation:material:96>]);
+
+
+
+                   ///////
+                   //TIN//
+                   ///////
+
+
+//Real stuff
+val tinBlock = <ThermalFoundation:Storage:1>;
+val tinIngot = <ThermalFoundation:material:65>;
+val tinNugget = <Thaumcraft:ItemNugget:2>;
+val tinDust = <ThermalFoundation:material:33>;
+val tinOre = <Metallurgy:base.ore:1>;
+
+val tinBerry = <TConstruct:oreBerries:3>;
+
+val tinBlockDict = <ore:blockTin>;
+val tinIngotDict = <ore:ingotTin>;
+val tinNuggetDict = <ore:nuggetTin>;
+val tinDustDict = <ore:dustTin>;
+val tinOreDict = <ore:oreTin>;
+
+val badtinBlock1 = <Metallurgy:base.block:1>;
+val badtinBlock2 = <TConstruct:MetalBlock:5>;
+val badtinIngot1 = <Metallurgy:tin.ingot>;
+val badtinIngot2 = <TConstruct:materials:9>;
+val badtinNugget1 = <TConstruct:materials:21>;
+val badtinNugget2 = <ThermalFoundation:material:97>;
+val badtinDust = <Metallurgy:base.dust:1>;
+val badtinOre1 = <TConstruct:SearedBrick:4>;
+val badtinOre2 = <ThermalFoundation:Ore:1>;
+val badtinOre3 = <TConstruct:GravelOre:3>;
+
+//Imposters:
+
+var tinImposters = [
+  badtinBlock1, badtinBlock2, 
+  badtinIngot1, badtinIngot2, 
+  badtinNugget1, badtinNugget2, 
+  badtinDust, 
+  badtinOre1, badtinOre2, badtinOre3
+] as IItemStack[];
+
+//Remove block imposters
+ recipes.remove(badtinBlock1);
+ recipes.remove(badtinBlock2);
+
+//Replace block casting
+ mods.tconstruct.Casting.removeBasinRecipe(badtinBlock2);
+ mods.tconstruct.Casting.addBasinRecipe(tinBlock, <liquid:tin.molten>*1296, null, false, 20);
+
+//Remove block imposters from OreDictionary so you don't see them in recipes
+ tinBlockDict.remove(badtinBlock1);
+ tinBlockDict.remove(badtinBlock2);
+
+ mods.tconstruct.Smeltery.removeMelting(badtinBlock1);
+ mods.tconstruct.Smeltery.removeMelting(badtinBlock2);
+
+//The true block already has an oredicted entry, so no need to make a craft-to recipe.
+
+//INGOTS:
+//Remove ingot imposters:
+ recipes.remove(badtinIngot1);
+ recipes.remove(badtinIngot2);
+
+//Replace casting recipe
+ mods.tconstruct.Casting.removeTableRecipe(badtinIngot2);
+ mods.tconstruct.Casting.addBasinRecipe(tinIngot, <liquid:tin.molten>*144, <TConstruct:metalPattern> * 1, false, 20);
+
+//Remove ingot imposters from OreDictionary so you don't see them in recipes
+ tinIngotDict.remove(badtinIngot1);
+ tinIngotDict.remove(badtinIngot2);
+
+//Remove imposter ingot smelting so it's not confusing in NEI.
+ mods.tconstruct.Smeltery.removeMelting(badtinIngot1);
+ mods.tconstruct.Smeltery.removeMelting(badtinIngot2);
+
+//Remove imposter furnace recipes so it's not confusing in NEI.
+ furnace.remove(badtinIngot1);
+
+//Replace a bunch of vanilla smelting recipes
+ furnace.remove(<ThermalFoundation:material:64>);
+ furnace.addRecipe(tinIngot*2,<Thaumcraft:ItemNugget:17>); //Ore cluster
+ furnace.addRecipe(tinIngot,tinDust);
+ furnace.addRecipe(tinIngot,tinOre);
+ mods.thermalexpansion.Furnace.removeRecipe(<Thaumcraft:ItemNugget:18>);
+ mods.thermalexpansion.Furnace.removeRecipe(tinDust);
+ mods.thermalexpansion.Furnace.addRecipe(1600, <Thaumcraft:ItemNugget:18>, tinIngot);
+ mods.thermalexpansion.Furnace.addRecipe(1000, tinIngot, tinIngot);
+
+
+
+
+
+
+//Put warning labels on imposter blocks.
+for i, imposter in tinImposters 
+{
+ imposter.displayName = "Unused Imposter Metal";
+ imposter.addTooltip(format.red("WARNING: Probably useless."));
+ imposter.addTooltip(format.red("Please tell the modpack"));
+ imposter.addTooltip(format.red("author how you got this item!"));
+}
+
+<ThermalFoundation:material:97>.addTooltip(format.gray("Place in the crafting"));
+<ThermalFoundation:material:97>.addTooltip(format.gray("grid to get your nugget"));
+<ThermalFoundation:material:97>.addTooltip(format.gray("back. FYI: You don't"));
+<ThermalFoundation:material:97>.addTooltip(format.gray("need to smelt tin"));
+<ThermalFoundation:material:97>.addTooltip(format.gray("oreberries into nuggets!"));
+
+//Rescue Recipes until we can get CanVox on this.
+recipes.addShapeless(tinNugget, [<ThermalFoundation:material:97>]);

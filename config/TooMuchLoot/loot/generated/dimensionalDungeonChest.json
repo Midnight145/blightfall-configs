@@ -1,0 +1,28 @@
+{
+  "category": "dimensionalDungeonChest",
+  "count_min": 0,
+  "count_max": 0,
+  "loot": [
+    {
+      "item": "MineFactoryReloaded:safarinet.jailer",
+      "damage": 0,
+      "weight": 15,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:rubberwood.sapling",
+      "damage": 0,
+      "weight": 70,
+      "count_min": 1,
+      "count_max": 8
+    },
+    {
+      "item": "MineFactoryReloaded:pinkslime",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    }
+  ]
+}

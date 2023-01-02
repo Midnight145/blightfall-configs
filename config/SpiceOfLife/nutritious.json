@@ -1,0 +1,17 @@
+{
+	"food": {
+		"items": [
+			"harvestcraft:snickersbarItem",
+			"Botania:manaCookie",
+			"minecraft:rotten_flesh"
+		]
+	},
+
+
+	"name": "Nutritious",
+
+
+	"enabled": true,
+
+	"blacklist": true
+}
