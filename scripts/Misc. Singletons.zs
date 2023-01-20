@@ -8,6 +8,10 @@ mods.tconstruct.Drying.addRecipe(<harvestcraft:ketchupItem>, <minecraft:slime_ba
 NEI.hide(<JABBA:moverDiamond>);
 recipes.remove(<JABBA:moverDiamond>);
 
+recipes.remove(<ThermalFoundation:Storage:6>);
+recipes.remove(<Metallurgy:fantasy.block:7>);
+recipes.addShaped(<Metallurgy:fantasy.block:7>, [[<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>]]);
+
 val woodPlank = <ore:plankWood>;
 val book = <minecraft:book:*>;
 recipes.addShaped(<minecraft:bookshelf>, [[woodPlank, woodPlank, woodPlank], [book, book, book], [woodPlank, woodPlank, woodPlank]]);
