@@ -11,12 +11,12 @@ anaglyph3d:false
 advancedOpengl:false
 maxFps:60
 fboEnable:true
-difficulty:1
+difficulty:2
 fancyGraphics:true
 ao:0
 clouds:false
 resourcePacks:["Blightfall.zip","BlightfallPaintings.zip"]
-lastServer:192.168.254.10:25567
+lastServer:
 lang:en_US
 chatVisibility:0
 chatColors:true
