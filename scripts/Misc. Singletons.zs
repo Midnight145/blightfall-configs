@@ -109,3 +109,7 @@ val shards = <ore:materialAspectShard>;
 for item in shards.items {
     shards.remove(item);
 }
+
+var lignite = <UndergroundBiomes:ligniteCoal>;
+recipes.removeShaped(<minecraft:coal:0>, [[lignite, lignite, lignite], [lignite, lignite, lignite], [lignite, lignite, lignite]]);
+recipes.addShapeless(<minecraft:coal:0>, [lignite, lignite, lignite, lignite, lignite, lignite, lignite, lignite]);
