@@ -114,4 +114,6 @@ var lignite = <UndergroundBiomes:ligniteCoal>;
 recipes.removeShaped(<minecraft:coal:0>, [[lignite, lignite, lignite], [lignite, lignite, lignite], [lignite, lignite, lignite]]);
 recipes.addShapeless(<minecraft:coal:0>, [lignite, lignite, lignite, lignite, lignite, lignite, lignite, lignite]);
 
-recipes.addShapeless(<ThermalFoundation:material:44> * 4, [<ore:dustTin>, <ore:dustTin>, <ore:dustSilver>, <ore:dustPlatinum>, <TConstruct:buckets:23>]);
+
+recipes.removeShaped(<minecraft:wooden_slab:0>, [[<Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>]]);
+recipes.removeShaped(<minecraft:wooden_slab:0>, [[<Thaumcraft:blockWoodenDevice:7>, <Thaumcraft:blockWoodenDevice:7>, <Thaumcraft:blockWoodenDevice:7>]]);
