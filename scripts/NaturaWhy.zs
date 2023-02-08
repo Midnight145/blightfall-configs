@@ -19,3 +19,7 @@ for plank in naturaPlanks.items {
     recipes.removeShaped(<minecraft:fence_gate>, [[<ore:stickWood>, plank, <ore:stickWood>], [<ore:stickWood>, plank, <ore:stickWood>]]);
     recipes.removeShaped(<minecraft:stick>, [[plank], [plank]]);
 }
+
+val seeds = <ore:listAllseed>;
+seeds.add(<Natura:barley.seed:0>);
+seeds.add(<Natura:barley.seed:1>);
