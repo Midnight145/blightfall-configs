@@ -4,9 +4,6 @@ furnace.addRecipe(<minecraft:coal:1>, <Natura:Rare Tree:*>);
 furnace.addRecipe(<minecraft:coal:1>, <Natura:tree:*>);
 furnace.addRecipe(<minecraft:coal:1>, <Natura:willow>);
 
-mods.thermalexpansion.Sawmill.removeRecipe(<Natura:Rare Tree:2>);
-mods.thermalexpansion.Sawmill.addRecipe(800, <Natura:Rare Tree:2>, <Natura:planks:8> * 6);
-
 val naturaPlanks = <Natura:planks:*>;
 for plank in naturaPlanks.items {
     recipes.removeShaped(<minecraft:wooden_slab:0>, [[plank, plank, plank]]);
