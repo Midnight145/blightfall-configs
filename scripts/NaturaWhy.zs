@@ -16,6 +16,15 @@ for plank in naturaPlanks.items {
     recipes.removeShaped(<minecraft:fence_gate>, [[<ore:stickWood>, plank, <ore:stickWood>], [<ore:stickWood>, plank, <ore:stickWood>]]);
     recipes.removeShaped(<minecraft:stick>, [[plank], [plank]]);
 }
+recipes.addShaped(<minecraft:wooden_slab:0> * 6, [[<minecraft:planks:0>, <minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:wooden_pressure_plate:0>, [[<minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:crafting_table>, [[<minecraft:planks:0>, <minecraft:planks:0>], [<minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:wooden_button>, [[<minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:bookshelf> * 3, [[<minecraft:planks:0>, <minecraft:planks:0>, <minecraft:planks:0>], [<minecraft:book>, <minecraft:book>, <minecraft:book>], [<minecraft:planks:0>, <minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:wooden_door> * 3, [[<minecraft:planks:0>, <minecraft:planks:0>], [<minecraft:planks:0>, <minecraft:planks:0>], [<minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:trapdoor> * 2, [[<minecraft:planks:0>, <minecraft:planks:0>, <minecraft:planks:0>], [<minecraft:planks:0>, <minecraft:planks:0>, <minecraft:planks:0>]]);
+recipes.addShaped(<minecraft:fence_gate>, [[<ore:stickWood>, <minecraft:planks:0>, <ore:stickWood>], [<ore:stickWood>, <minecraft:planks:0>, <ore:stickWood>]]);
+recipes.addShaped(<minecraft:stick> * 4, [[<minecraft:planks:0>], [<minecraft:planks:0>]]);
 
 val seeds = <ore:listAllseed>;
 seeds.add(<Natura:barley.seed:0>);
