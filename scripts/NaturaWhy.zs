@@ -20,3 +20,20 @@ for plank in naturaPlanks.items {
 val seeds = <ore:listAllseed>;
 seeds.add(<Natura:barley.seed:0>);
 seeds.add(<Natura:barley.seed:1>);
+
+val planks = <ore:plankWood>;
+planks.remove(<Natura:planks:4>); // bloodwood
+planks.remove(<Natura:planks:2>); // ghostwood
+planks.remove(<Natura:planks:11>); // darkwood
+planks.remove(<Natura:planks:12>); // fusewood
+
+val sticks = <ore:stickWood>;
+sticks.remove(<Natura:natura.stick:4>); // bloodwood
+sticks.remove(<Natura:natura.stick:2>); // ghostwood
+sticks.remove(<Natura:natura.stick:11>); // darkwood
+sticks.remove(<Natura:natura.stick:12>); // fusewood
+
+val logs = <ore:logWood>;
+logs.remove(<Natura:Dark Tree:0>); // darkwood
+logs.remove(<Natura:Dark Tree:1>); // fusewood
+logs.remove(<Natura:tree:2>); // ghostwood
