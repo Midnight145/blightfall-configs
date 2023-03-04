@@ -111,11 +111,8 @@ for item in shards.items {
 }
 
 var lignite = <UndergroundBiomes:ligniteCoal>;
-recipes.removeShaped(<minecraft:coal:0>, [[lignite, lignite, lignite], [lignite, lignite, lignite], [lignite, lignite, lignite]]);
 recipes.addShapeless(<minecraft:coal:0>, [lignite, lignite, lignite, lignite, lignite, lignite, lignite, lignite]);
-
-
-recipes.removeShaped(<minecraft:wooden_slab:0>, [[<Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>]]);
-recipes.removeShaped(<minecraft:wooden_slab:0>, [[<Thaumcraft:blockWoodenDevice:7>, <Thaumcraft:blockWoodenDevice:7>, <Thaumcraft:blockWoodenDevice:7>]]);
+recipes.removeShaped(<minecraft:coal:0>); // remove lignite * 9 recipe, minetweaker removes all recipes even if using specific recipe removal so just doing this instead
+recipes.addShaped(<minecraft:coal:0> * 9, [[<minecraft:coal_block:0>]]); // readd coal block recipe
 
 recipes.addShapeless(<ThermalFoundation:material:44> * 4, [<ore:dustTin>, <ore:dustTin>, <ore:dustSilver>, <ore:dustPlatinum>, <TConstruct:buckets:23>]);
