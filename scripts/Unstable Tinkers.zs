@@ -26,4 +26,4 @@ mods.tconstruct.Casting.addTableRecipe(<TConstruct:CrossbowBodyPart:314>, <liqui
 mods.tconstruct.Casting.addTableRecipe(<TConstruct:BowLimbPart:314>, <liquid:molten.unstableingots> * 216, <TConstruct:Cast:3>, false, 50);
 mods.tconstruct.Casting.addTableRecipe(<TConstruct:arrowhead:314>, <liquid:molten.unstableingots> * 144, <TConstruct:metalPattern:25>, false, 50);
 
-game.setLocalisation("fluid.molten.unstableIngots", "Molten Unstable Ingots");
+game.setLocalization("fluid.molten.unstableIngots", "Molten Unstable Ingots");
