@@ -173,6 +173,11 @@ mods.bloodmagic.Alchemy.addRecipe(<Thaumcraft:blockCustomPlant:2>, [<Thaumcraft:
 mods.bloodmagic.Alchemy.addRecipe(<Thaumcraft:blockCustomPlant:2>, [<Thaumcraft:blockMagicalLeaves:1>, <Thaumcraft:blockMagicalLeaves:1>, 
 <Thaumcraft:ItemResource:3>, <Thaumcraft:blockMagicalLog:1>, <minecraft:red_flower:8>], 2, 500);
 
+//Craft Silk-Touched Silverwood Leaves Into Normal Ones
+recipes.addShapeless(<Thaumcraft:blockMagicalLeaves:1>, [<Thaumcraft:blockMagicalLeaves:5>]);
+recipes.addShapeless(<Thaumcraft:blockMagicalLeaves:1>, [<Thaumcraft:blockMagicalLeaves:9>]);
+recipes.addShapeless(<Thaumcraft:blockMagicalLeaves:1>, [<Thaumcraft:blockMagicalLeaves:13>]);
+
 //Greatwood Addition
 mods.bloodmagic.Alchemy.addRecipe(<Thaumcraft:blockCustomPlant:0>, [<minecraft:sapling>, <Thaumcraft:blockCrystal:0>, 
 <Thaumcraft:blockCrystal:1>, <Thaumcraft:blockCrystal:2>, <Thaumcraft:blockCrystal:3>], 3, 2000);
