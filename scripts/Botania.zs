@@ -122,3 +122,6 @@ mods.botania.Lexicon.addPetalPage("botania.page.shimmerleaf1","botania.entry.shi
 game.setLocalization("en_US", "botania.page.shimmerleaf1", "&oWay easier than with blood magic. What'd you expect?&r");
 
 mods.thermalexpansion.Smelter.addRecipe(400, <minecraft:end_stone>, <minecraft:glass_bottle>, <Botania:manaResource:15>, <Thaumcraft:ItemCrystalEssence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}), 15);
+
+//Correct spelling of Soujourner's Sash (in English)
+game.setLocalization("en_US", "item.botania:travelBelt.name", "Sojourner's Sash");
