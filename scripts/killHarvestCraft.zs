@@ -1534,30 +1534,6 @@ berry.add(<Natura:berry:2>);
 berry.add(<Natura:berry:3>);
 
 
-val fishraw = <ore:listAllfishraw>;
-
-fishraw.remove(<harvestcraft:walleyerawItem>);
-fishraw.remove(<harvestcraft:tunarawItem>);
-fishraw.remove(<harvestcraft:troutrawItem>);
-fishraw.remove(<harvestcraft:tilapiarawItem>);
-fishraw.remove(<harvestcraft:snapperrawItem>);
-fishraw.remove(<harvestcraft:snailrawItem>);
-fishraw.remove(<harvestcraft:shrimprawItem>);
-fishraw.remove(<harvestcraft:scalloprawItem>);
-fishraw.remove(<harvestcraft:perchrawItem>);
-fishraw.remove(<harvestcraft:octopusrawItem>);
-fishraw.remove(<harvestcraft:mudfishrawItem>);
-fishraw.remove(<harvestcraft:herringrawItem>);
-fishraw.remove(<harvestcraft:grouperrawItem>);
-fishraw.remove(<harvestcraft:eelrawItem>);
-fishraw.remove(<harvestcraft:crayfishrawItem>);
-fishraw.remove(<harvestcraft:charrrawItem>);
-fishraw.remove(<harvestcraft:catfishrawItem>);
-fishraw.remove(<harvestcraft:carprawItem>);
-fishraw.remove(<harvestcraft:bassrawItem>);
-fishraw.remove(<harvestcraft:anchovyrawItem>);
-fishraw.remove(<harvestcraft:firmtofuItem>);
-fishraw.add(<minecraft:fish:1>);
 
 val veggie = <ore:listAllveggie>;
 
