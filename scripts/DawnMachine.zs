@@ -9,8 +9,49 @@ mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuste
     <thaumicenergistics:material>, <thaumicenergistics:material>,
     <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
     <Botania:pool>,
-    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>
-], "machina 16, aer 16, ignis 16, ordo 16, arbor 16, auram 16, cognitio 16, herba 16, sano 16, vacuos 16,", <blightbuster:tile.blightbuster_cyberTotem>, 6);
+    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+    <ThaumicTinkerer:kamiResource:1>, <ThaumicTinkerer:kamiResource:1>
+
+], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:0>, 10);
+
+mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
+[
+    <Thaumcraft:blockJar>,
+    <ThermalFoundation:material:139>,
+    <ThermalFoundation:material:138>,
+    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+    <thaumicenergistics:material>, <thaumicenergistics:material>,
+    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+    <Botania:pool>,
+    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+    <Botania:manaResource:5>, <Botania:manaResource:5>
+], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:1>, 10);
+
+mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
+[
+    <Thaumcraft:blockJar>,
+    <ThermalFoundation:material:139>,
+    <ThermalFoundation:material:138>,
+    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+    <thaumicenergistics:material>, <thaumicenergistics:material>,
+    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+    <Botania:pool>,
+    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+    <AWWayofTime:bloodMagicBaseItems:28>, <AWWayofTime:bloodMagicBaseItems:29>
+], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:2>, 10);
+
+mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
+[
+    <Thaumcraft:blockJar>,
+    <ThermalFoundation:material:139>,
+    <ThermalFoundation:material:138>,
+    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+    <thaumicenergistics:material>, <thaumicenergistics:material>,
+    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+    <Botania:pool>,
+    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+    <ThermalExpansion:Cell:4>, <ThermalExpansion:Tank:4>
+], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:3>, 10);
 
 game.setLocalization("en_US", "tc.research_name.DAWNMACHINE", "The Dawn Machine");
 game.setLocalization("en_US", "tc.research_text.DAWNMACHINE", "The end of Taint");
@@ -33,7 +74,10 @@ game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_9","The
 game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_10","This setup is hard to move, but there is at least one way you know will work: Archimedes' Ships. The whole Dawn Machine setup (including warded jars, essentia tubing, and energy cells, but NOT fluxducts) can be placed on a flying ship and carried around. Try to always park facing the same direction and you made the ship to begin with, as it helps to avoid the Dawn Machine needing to be rebuilt. Even though Archimedes' Ships may work, they can be unstable at times. Perhaps there are other ways to move it...<LINE>To keep it from consuming essentia when not in use, a redstone current may be applied to the center block to deactivate it.");
 
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_1");
-mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem>);
+mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:0>);
+mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:1>);
+mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:2>);
+mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:3>);
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_2");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_3");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_4");
