@@ -116,3 +116,8 @@ recipes.removeShaped(<minecraft:coal:0>); // remove lignite * 9 recipe, minetwea
 recipes.addShaped(<minecraft:coal:0> * 9, [[<minecraft:coal_block:0>]]); // readd coal block recipe
 
 recipes.addShapeless(<ThermalFoundation:material:44> * 4, [<ore:dustTin>, <ore:dustTin>, <ore:dustSilver>, <ore:dustPlatinum>, <TConstruct:buckets:23>]);
+
+// add full stone tool rod crafting recipes
+recipes.addShaped(<TConstruct:toolRod:1> * 2, [[<ore:cobblestone>], [<ore:cobblestone>]]);
+recipes.removeShaped(<ForgeMicroblock:stoneRod>);
+recipes.addShaped(<TConstruct:toolRod:1> * 4, [[<ore:stone>], [<ore:stone>]]);
