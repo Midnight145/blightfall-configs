@@ -121,3 +121,9 @@ recipes.addShapeless(<ThermalFoundation:material:44> * 4, [<ore:dustTin>, <ore:d
 recipes.addShaped(<TConstruct:toolRod:1> * 2, [[<ore:cobblestone>], [<ore:cobblestone>]]);
 recipes.removeShaped(<ForgeMicroblock:stoneRod>);
 recipes.addShaped(<TConstruct:toolRod:1> * 4, [[<ore:stone>], [<ore:stone>]]);
+
+// oredictionary card
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:55> * 1, [<appliedenergistics2:item.ItemMultiMaterial:28>, <ExtraUtilities:nodeUpgrade:1>]);
+
+// hyper acceleration card
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:56> * 1, [<appliedenergistics2:item.ItemMultiMaterial:30>, <minecraft:emerald>]);
