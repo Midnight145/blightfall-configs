@@ -127,3 +127,8 @@ recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:55> * 1, [<appl
 
 // hyper acceleration card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:56> * 1, [<appliedenergistics2:item.ItemMultiMaterial:30>, <minecraft:emerald>]);
+
+val oreMarble = <ore:blockMarble>;
+oreMarble.add(<UndergroundBiomes:metamorphicStone:2>);
+
+recipes.addShaped(<chisel:chisel.marble> * 4, [[<ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>]]);
