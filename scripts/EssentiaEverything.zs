@@ -34,6 +34,8 @@ mods.thaumcraft.Aspects.set(<AWWayofTime:bloodMagicBaseAlchemyItems:5>, "mortuus
 
 //Metals seem to have three metallum plus one something else. (Gold has two)
 mods.thaumcraft.Aspects.set(<Metallurgy:manganese.ingot>, "metallum 3, terra 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:hepatizon.ingot>, "metallum 2, lucrum 3");
+mods.thaumcraft.Aspects.set(<Metallurgy:damascus.steel.ingot>, "metallum 3, instrumentum 2, lucrum 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:angmallen.ingot>, "metallum 3, lucrum 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:eximite.ingot>, "metallum 3, alienis 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:meutoite.ingot>, "alienis 2, terra 1, metallum 1");
@@ -55,6 +57,7 @@ mods.thaumcraft.Aspects.set(<Metallurgy:adamantine.ingot>, "metallum 3, tutamen 
 mods.thaumcraft.Aspects.set(<Metallurgy:atlarus.ingot>, "metallum 3, tutamen 1, auram 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:tartarite.ingot>, "metallum 3, tutamen 2, auram 2, praecantatio 2");
 mods.thaumcraft.Aspects.set(<Metallurgy:ignatius.ingot>, "metallum 2, ignis 2");
+mods.thaumcraft.Aspects.set(<Metallurgy:shadow.iron.ingot>, "metallum 2, perditio 2");
 mods.thaumcraft.Aspects.set(<Metallurgy:lemurite.ingot>, "metallum 2, infernus 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:midasium.ingot>, "metallum 3, lucrum 2");
 mods.thaumcraft.Aspects.set(<Metallurgy:vyroxeres.ingot>, "metallum 3, venenum 1");
@@ -66,6 +69,42 @@ mods.thaumcraft.Aspects.set(<Metallurgy:shadow.steel.ingot>, "metallum 3, perdit
 mods.thaumcraft.Aspects.set(<Metallurgy:inolashite.ingot>, "metallum 3, venenum 2, vinculum 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:amordrine.ingot>, "metallum 3, sano 2, praecantatio 2");
 mods.thaumcraft.Aspects.set(<Metallurgy:sanguinite.ingot>, "metallum 3, infernus 2, venenum 1, superbia 2");
+
+//It seems 3 turns into 20, 2 turns into 13, and 1 turns into 6
+mods.thaumcraft.Aspects.set(<Metallurgy:base.block:2>, "metallum 20, terra 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.block:4>, "metallum 13, lucrum 20");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.block:5>, "metallum 20, instrumentum 13, lucrum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.block:6>, "metallum 20, lucrum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.block:0>, "metallum 20, alienis 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.block:1>, "alienis 13, terra 6, metallum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.block:2>, "metallum 20, alienis 6, instrumentum 6, terra 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:0>, "metallum 20, herba 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:1>, "metallum 20, terra 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:2>, "metallum 20, praecantatio 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:3>, "metallum 20, tenebrae 6, terra 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:4>, "metallum 20, tutamen 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:5>, "metallum 20, lucrum 6, auram 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:6>, "metallum 20, praecantatio 6, aer 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:8>, "metallum 20, spiritus 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:9>, "metallum 20, motus 6, volatus 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:10>, "metallum 20, tutamen 6, aer 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:11>, "metallum 20, vitreus 6, tutamen 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:12>, "metallum 20, vitreus 6, praecantatio 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:13>, "metallum 20, tutamen 13, terra 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:14>, "metallum 20, tutamen 6, auram 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.block:15>, "metallum 20, tutamen 13, auram 13, praecantatio 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:1>, "metallum 13, perditio 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:2>, "metallum 13, infernus 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:3>, "metallum 20, lucrum 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:4>, "metallum 20, venenum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:5>, "metallum 20, gelum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:6>, "metallum 13, vinculum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:7>, "metallum 20, sano 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:8>, "metallum 20, ignis 13, perditio 6, superbia 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:9>, "metallum 20, perditio 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:10>, "metallum 20, venenum 13, vinculum 6");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:11>, "metallum 20, sano 13, praecantatio 13");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.block:12>, "metallum 20, infernus 13, venenum 6, superbia 13");
 
 mods.thaumcraft.Aspects.set(<Metallurgy:zinc.ingot>, "metallum 2, perditio 1");
 mods.thaumcraft.Aspects.set(<Metallurgy:brass.ingot>, "metallum 3, machina 1, perditio 1");
