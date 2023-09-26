@@ -10,7 +10,7 @@ recipes.remove(<JABBA:moverDiamond>);
 
 recipes.remove(<ThermalFoundation:Storage:6>);
 recipes.remove(<Metallurgy:fantasy.block:7>);
-recipes.addShaped(<Metallurgy:fantasy.block:7>, [[<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>]]);
+recipes.addShaped(<ThermalFoundation:Storage:6>, [[<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>]]);
 
 val woodPlank = <ore:plankWood>;
 val book = <minecraft:book:*>;
