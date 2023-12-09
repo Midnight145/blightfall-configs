@@ -158,3 +158,8 @@ mods.thaumcraft.Aspects.set(<harvestcraft:doughItem>, "aqua 1, messis 1, fames 1
 mods.thaumcraft.Aspects.set(<harvestcraft:toastItem>, "fames 2, messis 3, ignis 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:grilledcheeseItem>, "fames 3, messis 2, ignis 1, gula 1, sano 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:taffyItem>, "aqua 1");
+
+mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:17>, "vitreus 4, lucrum 4");
+mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:18>, "lucrum 2");
+mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:16>, "vitreus 5");
+mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:20>, "ignis 1, sensus 1, ordo 1");
