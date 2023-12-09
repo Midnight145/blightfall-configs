@@ -157,7 +157,4 @@ mods.thaumcraft.Aspects.set(<harvestcraft:cheeseItem>, "aqua 1, sano 1, fames 1"
 mods.thaumcraft.Aspects.set(<harvestcraft:doughItem>, "aqua 1, messis 1, fames 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:toastItem>, "fames 2, messis 3, ignis 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:grilledcheeseItem>, "fames 3, messis 2, ignis 1, gula 1, sano 1");
-
-
-
-
+mods.thaumcraft.Aspects.set(<harvestcraft:taffyItem>, "aqua 1");
