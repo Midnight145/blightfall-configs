@@ -40,19 +40,6 @@ mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuste
     <AWWayofTime:bloodMagicBaseItems:28>, <AWWayofTime:bloodMagicBaseItems:29>
 ], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:2>, 10);
 
-mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
-[
-    <Thaumcraft:blockJar>,
-    <ThermalFoundation:material:139>,
-    <ThermalFoundation:material:138>,
-    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
-    <thaumicenergistics:material>, <thaumicenergistics:material>,
-    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
-    <Botania:pool>,
-    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
-    <ThermalExpansion:Cell:4>, <ThermalExpansion:Tank:4>
-], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:3>, 10);
-
 game.setLocalization("en_US", "tc.research_name.DAWNMACHINE", "The Dawn Machine");
 game.setLocalization("en_US", "tc.research_text.DAWNMACHINE", "The end of Taint");
 
