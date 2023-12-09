@@ -68,10 +68,7 @@ game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_6", "If
 game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_7", "If given cognitio essentia, the Dawn Machine will be smart enough to skip over any previously cured land; if the spot it attempts to clean is already clean, it will immediately pick a new spot to clean instead.<LINE>If given machina essentia, the Dawn Machine will work three times as quickly, activating five times per second!<LINE>");
 
 game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_8","The amount of essentia this machine consumes is astounding. There is a way to lessen it, however. Providing RF to the Dawn Machine, through the plug directly under the cyber totem, halves the amount of essentia this machine requires. Likewise, you can place a spark on the Dawn Machine to provide it with mana, which has the same effect. There may also be another way using more...sinister kinds of magic to make the conversion even more efficient.<LINE>");
-game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_9","The Dawn Machine, fully supplied with essentia, will clean the entire continent quickly and efficiently. However, it may prove difficult to keep up with its essentia demands. Now that you have the research to do so, your final task will be to come up with ways to provide the needed essentia...<LINE>");
-//game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_9", "A half jar of each essentia, augmented with RF, should in most cases be enough to completely terraform a 128x128 block area back to a pristine, natural state in under an hour, during which time you are completely free to be elsewhere. Now that you have the research to do so, your final task will be to come up with ways to provide the needed essentia...<LINE>");
-
-game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_10","This setup is hard to move, but there is at least one way you know will work: Archimedes' Ships. The whole Dawn Machine setup (including warded jars, essentia tubing, and energy cells, but NOT fluxducts) can be placed on a flying ship and carried around. Try to always park facing the same direction and you made the ship to begin with, as it helps to avoid the Dawn Machine needing to be rebuilt. Even though Archimedes' Ships may work, they can be unstable at times. Perhaps there are other ways to move it...<LINE>To keep it from consuming essentia when not in use, a redstone current may be applied to the center block to deactivate it.");
+game.setLocalization("en_US", "cavestokingdoms.research_page.DAWNMACHINE_9","The Dawn Machine, fully supplied with essentia, will clean the entire continent quickly and efficiently. However, it may prove difficult to keep up with its essentia demands. Now that you have the research to do so, your final task will be to come up with ways to provide the needed essentia...<LINE>To keep it from consuming essentia when not in use, a redstone current may be applied to the center block to deactivate it.");
 
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_1");
 mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:0>);
@@ -86,7 +83,6 @@ mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.D
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_7");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_8");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_9");
-mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_10");
 
 
 mods.thaumcraft.Research.addResearch("DAWNOFFERING", "ALCHEMY", "machina 16, motus 4, alienis 4", -4, -8, 4, <blightbuster:tile.blightbuster_offering>);
