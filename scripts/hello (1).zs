@@ -206,7 +206,8 @@ mods.thaumcraft.Research.addInfusionPage("SILVERWOODINFUSION", <Thaumcraft:block
 //Axe the dagger, altar, and knife recipes.
 
 
-//Remove Block breaker
+//Remove Block Breaker & Terrain Smasher
+recipes.remove(<MineFactoryReloaded:machine.0:7>);
 recipes.remove(<ThermalExpansion:Device:3>);
 
 //Remove metal from Milk
