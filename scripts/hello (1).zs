@@ -208,6 +208,7 @@ mods.thaumcraft.Research.addInfusionPage("SILVERWOODINFUSION", <Thaumcraft:block
 
 //Remove Block Breaker & Terrain Smasher
 recipes.remove(<MineFactoryReloaded:machine.0:7>);
+NEI.hide(<MineFactoryReloaded:machine.0:7>);
 recipes.remove(<ThermalExpansion:Device:3>);
 
 //Remove metal from Milk
