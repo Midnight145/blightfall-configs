@@ -1,44 +1,132 @@
 mods.thaumcraft.Research.addResearch("DAWNMACHINE", "ALCHEMY", "machina 32, aer 4, ignis 4, ordo 4, arbor 4, auram 4, cognitio 4, fabrico 4, herba 4, potentia 4, sano 4, vacuos 4,", -2, -8, 4, <blightbuster:tile.blightbuster_cyberTotem>);
 
-mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
-[
-    <Thaumcraft:blockJar>,
-    <ThermalFoundation:material:139>,
-    <ThermalFoundation:material:138>,
-    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
-    <thaumicenergistics:material>, <thaumicenergistics:material>,
-    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
-    <Botania:pool>,
-    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
-    <ThaumicTinkerer:kamiResource:1>, <ThaumicTinkerer:kamiResource:1>
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <ThaumicTinkerer:kamiResource:0>, <ThaumicTinkerer:kamiResource:0>
 
-], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:0>, 10);
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:0>, 10
+);
 
-mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
-[
-    <Thaumcraft:blockJar>,
-    <ThermalFoundation:material:139>,
-    <ThermalFoundation:material:138>,
-    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
-    <thaumicenergistics:material>, <thaumicenergistics:material>,
-    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
-    <Botania:pool>,
-    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
-    <Botania:manaResource:5>, <Botania:manaResource:5>
-], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:1>, 10);
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <Botania:manaResource:14>, <Botania:manaResource:14>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:0>, 10
+);
 
-mods.thaumcraft.Infusion.addRecipe("DAWNMACHINE", <blightbuster:tile.blightbuster_dawnTotem>, 
-[
-    <Thaumcraft:blockJar>,
-    <ThermalFoundation:material:139>,
-    <ThermalFoundation:material:138>,
-    <blightbuster:purityFocus>, <blightbuster:purityFocus>,
-    <thaumicenergistics:material>, <thaumicenergistics:material>,
-    <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
-    <Botania:pool>,
-    <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
-    <AWWayofTime:bloodMagicBaseItems:28>, <AWWayofTime:bloodMagicBaseItems:29>
-], "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", <blightbuster:tile.blightbuster_cyberTotem:2>, 10);
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <AWWayofTime:bloodMagicBaseItems:28>, <AWWayofTime:bloodMagicBaseItems:29>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:0>, 10
+);
+
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <BigReactors:BRMetalBlock:4>, <appliedenergistics2:item.ItemMultiMaterial:38>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:0>, 10
+);
+
+// These recipes are duplicated so I can show all four in the book while still showing all four in NEI
+
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <Botania:manaResource:14>, <Botania:manaResource:14>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:1>, 10);
+
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <AWWayofTime:bloodMagicBaseItems:28>, <AWWayofTime:bloodMagicBaseItems:29>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:2>, 10
+);
+
+mods.thaumcraft.Infusion.addRecipe(
+    "DAWNMACHINE", 
+    <blightbuster:tile.blightbuster_dawnTotem>, 
+    [
+        <Thaumcraft:blockJar>,
+        <ThermalFoundation:material:139>,
+        <ThermalFoundation:material:138>,
+        <blightbuster:purityFocus>, <blightbuster:purityFocus>,
+        <thaumicenergistics:material>, <thaumicenergistics:material:1>,
+        <Thaumcraft:blockTube:3>, <Thaumcraft:blockTube:3>,
+        <Botania:pool>,
+        <appliedenergistics2:item.ItemMultiMaterial:23>, <appliedenergistics2:item.ItemMultiMaterial:23>, 
+        <BigReactors:BRMetalBlock:4>, <appliedenergistics2:item.ItemMultiMaterial:38>
+    ], 
+    "machina 64, aer 64, ignis 64, ordo 64, arbor 64, auram 64, cognitio 64, herba 64, sano 64, vacuos 64,", 
+    <blightbuster:tile.blightbuster_cyberTotem:3>, 10
+);
 
 game.setLocalization("en_US", "tc.research_name.DAWNMACHINE", "The Dawn Machine");
 game.setLocalization("en_US", "tc.research_text.DAWNMACHINE", "The end of Taint");
@@ -61,6 +149,7 @@ mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.D
 mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:0>);
 mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:1>);
 mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:2>);
+mods.thaumcraft.Research.addInfusionPage("DAWNMACHINE", <blightbuster:tile.blightbuster_cyberTotem:3>);
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_2");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_3");
 mods.thaumcraft.Research.addPage("DAWNMACHINE", "cavestokingdoms.research_page.DAWNMACHINE_4");
