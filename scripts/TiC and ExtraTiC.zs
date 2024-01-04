@@ -393,3 +393,9 @@ mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.helmetNickel>, <liq
 mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.legsNickel>, <liquid:nickel.molten> * 1008, 400, <ThermalFoundation:Storage:4>);
 mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.bootsNickel>, <liquid:nickel.molten> * 576, 400, <ThermalFoundation:Storage:4>);
 mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.plateNickel>, <liquid:nickel.molten> * 1152, 400, <ThermalFoundation:Storage:4>);
+
+// For some reason, natura chunks don't get registered as repair materials. This fixes that.
+mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:134>, "Bloodwood", "1");
+mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:135>, "Darkwood", "1");
+mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:136>, "Fusewood", "1");
+mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:137>, "Ghostwood", "1");
