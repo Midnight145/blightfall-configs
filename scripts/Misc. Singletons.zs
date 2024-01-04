@@ -132,3 +132,4 @@ val oreMarble = <ore:blockMarble>;
 oreMarble.add(<UndergroundBiomes:metamorphicStone:2>);
 
 recipes.addShaped(<chisel:chisel.marble> * 4, [[<ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>]]);
+recipes.removeShaped(<ThaumicTinkerer:wardSlab:0>);
