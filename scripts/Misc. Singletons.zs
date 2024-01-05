@@ -133,3 +133,27 @@ oreMarble.add(<UndergroundBiomes:metamorphicStone:2>);
 
 recipes.addShaped(<chisel:chisel.marble> * 4, [[<ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>]]);
 recipes.removeShaped(<ThaumicTinkerer:wardSlab:0>);
+
+// Infusion uses fuzzy matching, but for some reason still only accepts vanilla fish. To avoid showing all fish in the recipe,
+// let's just change the recipe to only use vanilla fish.
+
+mods.thaumcraft.Infusion.removeRecipe(<Thaumcraft:BootsTraveller>);
+
+val fish = <ore:vanillaFishRaw>;
+fish.add(<minecraft:fish:*>);
+
+mods.thaumcraft.Infusion.addRecipe(
+    "BOOTSTRAVELLER", 
+    <minecraft:leather_boots>, 
+    [
+        <Thaumcraft:ItemShard:0>,
+        <Thaumcraft:ItemShard:0>,
+        <minecraft:feather>,
+        <minecraft:fish:32767>,
+        <Thaumcraft:ItemResource:7>,
+        <Thaumcraft:ItemResource:7>
+    ],
+    "volatus 24, iter 24",
+    <Thaumcraft:BootsTraveller>,
+    1
+);
