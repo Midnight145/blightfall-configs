@@ -399,3 +399,8 @@ mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:134>, "Bloodwood", "1")
 mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:135>, "Darkwood", "1");
 mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:136>, "Fusewood", "1");
 mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:137>, "Ghostwood", "1");
+
+// These casting recipes didn't get added for some reason. This fixes that.
+mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:0>, <liquid:redstone> * 1000, <minecraft:bucket>, true, 20);
+mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:1>, <liquid:glowstone> * 1000, <minecraft:bucket>, true, 20);
+mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:3>, <liquid:pyrotheum> * 1000, <minecraft:bucket>, true, 20);
