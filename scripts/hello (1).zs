@@ -64,6 +64,8 @@ recipes.addShaped(<minecraft:diamond_chestplate>, [[cobalt, null, cobalt], [coba
 recipes.addShaped(<minecraft:diamond_leggings>, [[cobalt, cobalt, cobalt], [cobalt, null, cobalt], [cobalt, null, cobalt]]);
 recipes.addShaped(<minecraft:diamond_boots>, [[null, null, null], [cobalt, null, cobalt], [cobalt, null, cobalt]]);
 
+
+
 <minecraft:diamond_helmet>.displayName = "Cobalt Helmet";
 <minecraft:diamond_chestplate>.displayName = "Cobalt Chestplate";
 <minecraft:diamond_leggings>.displayName = "Cobalt Leggings";
@@ -208,7 +210,6 @@ mods.thaumcraft.Research.addInfusionPage("SILVERWOODINFUSION", <Thaumcraft:block
 
 //Remove Block Breaker & Terrain Smasher
 recipes.remove(<MineFactoryReloaded:machine.0:7>);
-NEI.hide(<MineFactoryReloaded:machine.0:7>);
 recipes.remove(<ThermalExpansion:Device:3>);
 
 //Remove metal from Milk
@@ -386,9 +387,6 @@ mods.thaumcraft.Research.addPage("FLYINGSHIP", "cavestokingdoms.research_page.FL
 
 
 //Remove ugly stuff from NEI:
-
-NEI.hide(<AWWayofTime:blockSchemSaver>);
-
 recipes.remove(<ExtraUtilities:decorativeBlock1:14>);
 
 recipes.addShapeless(<ExtraUtilities:decorativeBlock1:14>, 
