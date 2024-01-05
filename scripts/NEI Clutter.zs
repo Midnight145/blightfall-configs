@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 
+//CustomNPCs
+
 NEI.hide(<customnpcs:npcBloodBlock>);
 NEI.hide(<customnpcs:npcWaypoint>);
 NEI.hide(<customnpcs:npcBorder>);
@@ -299,3 +301,89 @@ NEI.hide(<customnpcs:npcSoulstoneEmpty>);
 NEI.hide(<customnpcs:npcFrostReversedDagger>);
 
 <ore:ingotMithril>.remove(<customnpcs:npcMithrilIngot>);
+
+// Botania
+
+NEI.hide(<Botania:livingwood0SlabFull>);
+NEI.hide(<Botania:livingwood1SlabFull>);
+NEI.hide(<Botania:livingrock0SlabFull>);
+NEI.hide(<Botania:livingrock1SlabFull>);
+NEI.hide(<Botania:dreamwood0SlabFull>);
+NEI.hide(<Botania:dreamwood1SlabFull>);
+NEI.hide(<Botania:endStoneBrick0SlabFull>);
+NEI.hide(<Botania:endStoneBrick2SlabFull>);
+NEI.hide(<Botania:biomeStoneA0SlabFull>);
+NEI.hide(<Botania:biomeStoneA1SlabFull>);
+NEI.hide(<Botania:biomeStoneA2SlabFull>);
+NEI.hide(<Botania:biomeStoneA3SlabFull>);
+NEI.hide(<Botania:biomeStoneA4SlabFull>);
+NEI.hide(<Botania:biomeStoneA5SlabFull>);
+NEI.hide(<Botania:biomeStoneA6SlabFull>);
+NEI.hide(<Botania:biomeStoneA7SlabFull>);
+NEI.hide(<Botania:biomeStoneA8SlabFull>);
+NEI.hide(<Botania:biomeStoneA9SlabFull>);
+NEI.hide(<Botania:biomeStoneA10SlabFull>);
+NEI.hide(<Botania:biomeStoneA11SlabFull>);
+NEI.hide(<Botania:biomeStoneA12SlabFull>);
+NEI.hide(<Botania:biomeStoneA13SlabFull>);
+NEI.hide(<Botania:biomeStoneA14SlabFull>);
+NEI.hide(<Botania:biomeStoneA15SlabFull>);
+NEI.hide(<Botania:biomeStoneB0SlabFull>);
+NEI.hide(<Botania:biomeStoneB1SlabFull>);
+NEI.hide(<Botania:biomeStoneB2SlabFull>);
+NEI.hide(<Botania:biomeStoneB3SlabFull>);
+NEI.hide(<Botania:biomeStoneB4SlabFull>);
+NEI.hide(<Botania:biomeStoneB5SlabFull>);
+NEI.hide(<Botania:biomeStoneB6SlabFull>);
+NEI.hide(<Botania:biomeStoneB7SlabFull>);
+NEI.hide(<Botania:stone0SlabFull>);
+NEI.hide(<Botania:stone1SlabFull>);
+NEI.hide(<Botania:stone2SlabFull>);
+NEI.hide(<Botania:stone3SlabFull>);
+NEI.hide(<Botania:stone8SlabFull>);
+NEI.hide(<Botania:stone9SlabFull>);
+NEI.hide(<Botania:stone10SlabFull>);
+NEI.hide(<Botania:stone11SlabFull>);
+NEI.hide(<Botania:prismarine0SlabFull>);
+NEI.hide(<Botania:prismarine1SlabFull>);
+NEI.hide(<Botania:prismarine2SlabFull>);
+NEI.hide(<Botania:customBrick0SlabFull>);
+NEI.hide(<Botania:customBrick1SlabFull>);
+NEI.hide(<Botania:customBrick2SlabFull>);
+NEI.hide(<Botania:customBrick3SlabFull>);
+NEI.hide(<Botania:quartzSlabSunnyFull>);
+NEI.hide(<Botania:quartzSlabBlazeFull>);
+NEI.hide(<Botania:quartzSlabRedFull>);
+NEI.hide(<Botania:quartzSlabElfFull>);
+NEI.hide(<Botania:quartzSlabManaFull>);
+NEI.hide(<Botania:quartzSlabLavenderFull>);
+NEI.hide(<Botania:reedBlock0SlabFull>);
+NEI.hide(<Botania:dirtPath0SlabFull>);
+NEI.hide(<Botania:thatch0SlabFull>);
+NEI.hide(<Botania:bifrost>);
+NEI.hide(<Botania:fakeAir>);
+
+// Thaumic Tinkerer
+
+NEI.hide(<ThaumicTinkerer:gaseousLight>);
+NEI.hide(<ThaumicTinkerer:gaseousShadow>);
+NEI.hide(<ThaumicTinkerer:nitorGas>);
+NEI.hide(<ThaumicTinkerer:wardSlab>);
+NEI.hide(<ThaumicTinkerer:wardSlabFull>);
+
+// Thaumcraft
+
+NEI.hide(<Thaumcraft:blockWarded>);
+NEI.hide(<Thaumcraft:blockManaPod>);
+
+// Miscellaneous
+
+NEI.hide(<AWWayofTime:itemBloodMagicBook>);
+NEI.hide(<AWWayofTime:blockSchemSaver>);
+NEI.hide(<appliedenergistics2:tile.BlockPaint>);
+NEI.hide(<BiblioCraft:BiblioClipboard>);
+NEI.hide(<BiblioCraft:item.TesterItem>);
+NEI.hide(<chisel:smashingrock>);
+NEI.hide(<ExtraTiC:gear>);
+NEI.hide(<ExtraUtilities:pureLove>);
+NEI.hide(<blightbuster:worldTaintersuper>);
