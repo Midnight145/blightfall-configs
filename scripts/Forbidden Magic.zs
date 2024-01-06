@@ -76,5 +76,3 @@ mods.tconstruct.Casting.addTableRecipe(<ThaumicTinkerer:kamiResource:7>, <liquid
 
 //Vulcanite on shard makes nether shard
 mods.tconstruct.Casting.addTableRecipe(<ThaumicTinkerer:kamiResource:6>, <liquid:vulcanite.molten>*144, <Thaumcraft:ItemShard:6>, true, 20);
-
-
