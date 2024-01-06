@@ -22,6 +22,9 @@ val copperBlock = <ThermalFoundation:Storage:0>;
  [[copperIngotDict, copperIngotDict], 
   [copperIngotDict, copperIngotDict]]);
 
+// Add recipe to unpack Thermal copper block
+recipes.addShapeless(<ThermalFoundation:material:64>*9,[<ThermalFoundation:Storage:0>]); 
+
 // Change smeltery casting to Thermal copper
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:9>);
 mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
