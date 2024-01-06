@@ -1,3 +1,5 @@
+print("SCRIPT: Botania TC Aspects");
+
 //Taken from Phoenix Team and then edited because I'm evil and like to nerf things.
 
 mods.thaumcraft.Aspects.set(<Botania:flower:*>, "herba 1, victus 1, sensus 1, praecantatio 1"); //You can get infinite mana from floral fertilizer, but it's grindy.

@@ -1,3 +1,5 @@
+print("SCRIPT: Unstable Tinkers");
+
 mods.tconstruct.Casting.addTableRecipe(<TConstruct:toughRod:314>, <liquid:molten.unstableingots> * 432, <TConstruct:metalPattern:14>, false, 50);
 mods.tconstruct.Casting.addTableRecipe(<TConstruct:toolRod:314>, <liquid:molten.unstableingots> * 72, <TConstruct:metalPattern:1>, false, 50);
 mods.tconstruct.Casting.addTableRecipe(<TConstruct:pickaxeHead:314>, <liquid:molten.unstableingots> * 144, <TConstruct:metalPattern:2>, false, 50);

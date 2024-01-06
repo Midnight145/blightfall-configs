@@ -1,3 +1,5 @@
+print("SCRIPT: Blood Magic Progression");
+
 // Remove Old Progression
 
 recipes.removeShaped(<AWWayofTime:blockCrystal>);
@@ -37,7 +39,6 @@ mods.thaumcraft.Infusion.addRecipe("DAWNTOOL", <AWWayofTime:duskScribeTool>, [<A
 // Research Pages
 
 mods.thaumcraft.Research.addPage("TIERSIX", "blightbuster.research_page.TIERSIX");
-
 game.setLocalization("en_US", "blightbuster.research_page.TIERSIX", "Despite their lust for power, most Blood Mages hit a ceiling with a Tier 5 altar. The raw energy of anything beyond is simply far too much for most materials to handle, and the use of Beacons at that point is the only thing that can barely keep things under control.<BR>Somehow, in opposition to the natural order, you have broken this ceiling. Inspired by the crystalline structure of Beacons, you have devised a crystal cluster infused with the essences of life and spirit to bind the raw life energy to the altar. They are quite expensive to make, but having made the decision to go down this path, they are worth the effort.");
 
 mods.thaumcraft.Research.addInfusionPage("TIERSIX", <AWWayofTime:bloodMagicBaseItems:28>);

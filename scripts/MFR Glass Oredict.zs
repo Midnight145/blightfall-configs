@@ -1,3 +1,5 @@
+print("SCRIPT: MFR Glass Oredicts");
+
 val mfrglass = <MineFactoryReloaded:stainedglass.block:*>;
 for block in mfrglass.items {
     <ore:blockGlass>.remove(block);

@@ -1,3 +1,5 @@
+print("SCRIPT: Essentia Everything");
+
 mods.thaumcraft.Aspects.set(<AWWayofTime:blankSlate>,                   "terra 2, victus 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:reinforcedSlate>,              "terra 2, victus 2, tutamen 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:imbuedSlate>,                  "terra 2, victus 4, praecantatio 4");

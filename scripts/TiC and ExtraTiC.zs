@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 
+print("SCRIPT: TiC and ExtraTiC");
+
 mods.tconstruct.ToolStats.setBowDrawspeed("Prometheum", 40);
 mods.tconstruct.ToolStats.setBowFlightSpeed("Prometheum",4.6);
 mods.tconstruct.ToolStats.setArrowMass("Prometheum", 2.9);

@@ -1,3 +1,5 @@
+print("SCRIPT: Dawn Machine");
+
 mods.thaumcraft.Research.addResearch("DAWNMACHINE", "ALCHEMY", "machina 32, aer 4, ignis 4, ordo 4, arbor 4, auram 4, cognitio 4, fabrico 4, herba 4, potentia 4, sano 4, vacuos 4,", -2, -8, 4, <blightbuster:tile.blightbuster_cyberTotem>);
 
 mods.thaumcraft.Infusion.addRecipe(

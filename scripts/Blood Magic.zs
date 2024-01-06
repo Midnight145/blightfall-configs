@@ -1,3 +1,5 @@
+print("SCRIPT: Blood Magic");
+
 recipes.remove(<AWWayofTime:Altar>);
 recipes.addShaped(<AWWayofTime:Altar>, 
                 [[<ore:stone>, null, <ore:stone>], 

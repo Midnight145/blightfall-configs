@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 
+print("SCRIPT: Chicken Chunks");
+
 recipes.remove(<ChickenChunks:chickenChunkLoader>);
 recipes.remove(<ChickenChunks:chickenChunkLoader:1>);
 

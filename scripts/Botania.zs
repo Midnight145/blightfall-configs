@@ -3,6 +3,8 @@ import mods.nei.NEI;
 import mods.botania.Lexicon;
 import minetweaker.item.IItemStack;
 
+print("SCRIPT: Botania");
+
 //Hide and kill old Floral Fertilizer
 NEI.hide(<Botania:fertilizer>);
 recipes.remove(<Botania:fertilizer>);
