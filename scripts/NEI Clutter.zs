@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 
+print("SCRIPT: NEI Clutter");
+
 //CustomNPCs
 
 NEI.hide(<customnpcs:npcBloodBlock>);

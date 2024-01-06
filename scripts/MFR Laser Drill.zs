@@ -1,5 +1,7 @@
 import mods.mfr.MiningLaser;
 
+print("SCRIPT: MFR Laser Drill");
+
 MiningLaser.removeOre(<ThermalFoundation:Ore>);
 MiningLaser.removeOre(<ThermalFoundation:Ore:6>);
 MiningLaser.removeOre(<NetherOres:tile.netherores.ore.1:3>);

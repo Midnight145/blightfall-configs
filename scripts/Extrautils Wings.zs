@@ -1,3 +1,4 @@
+print("SCRIPT: ExtraUtils Wings");
 
 recipes.addShaped(<TabulaRasa:RasaItem0:21>, [[null, <minecraft:gold_ingot>, null], [<minecraft:gold_ingot>, <minecraft:nether_star>, <minecraft:gold_ingot>], [<ore:ingotUnstable>, <minecraft:gold_ingot>, <ore:ingotUnstable>]]);
 

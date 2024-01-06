@@ -1,3 +1,5 @@
+print("SCRIPT: Guns from CustomNPCs");
+
 recipes.addShaped(<customnpcs:npcWoodenGun>, [[<ore:plankWood>, <ore:plankWood>, <minecraft:lever>], [null, <minecraft:stone_button>, <ore:plankWood>]]);
 recipes.addShaped(<customnpcs:npcStoneGun>, [[<ore:cobblestone>, <ore:cobblestone>, <minecraft:lever>], [null, <minecraft:stone_button>, <ore:plankWood>]]);
 recipes.addShaped(<customnpcs:npcGoldGun>, [[<ore:ingotGold>, <ore:ingotGold>, <minecraft:lever>], [null, <minecraft:stone_button>, <ore:plankWood>]]);

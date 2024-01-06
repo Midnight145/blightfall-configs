@@ -1,5 +1,7 @@
 import mods.nei.NEI;
 
+print("SCRIPT: Kill Harvest Craft");
+
 NEI.hide(<harvestcraft:anchovyrawItem>);
 NEI.hide(<harvestcraft:applejellysandwichItem>);
 NEI.hide(<harvestcraft:apricotglazedporkItem>);

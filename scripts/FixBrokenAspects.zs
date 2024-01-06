@@ -1,3 +1,5 @@
+print("SCRIPT: Fix Broken Aspects");
+
 mods.thaumcraft.Aspects.set(<minecraft:redstone_torch>, "potentia 1, machina 1");
 mods.thaumcraft.Aspects.set(<minecraft:sticky_piston>, "limus 1, machina 1, motus 1");
 mods.thaumcraft.Aspects.set(<minecraft:stone_pressure_plate>, "terra 3, machina 1, sensus 1");

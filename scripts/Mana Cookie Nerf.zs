@@ -1,3 +1,5 @@
+print("SCRIPT: Mana Cookie Nerfs");
+
 val fames = <Thaumcraft:ItemManaBean>.withTag({Aspects: [{amount: 1, key: "fames"}]}).onlyWithTag({Aspects: [{amount: 1, key: "fames"}]});
 val corpus = <Thaumcraft:ItemManaBean>.withTag({Aspects: [{amount: 1, key: "corpus"}]}).onlyWithTag({Aspects: [{amount: 1, key: "corpus"}]});
 val gula = <Thaumcraft:ItemManaBean>.withTag({Aspects: [{amount: 1, key: "gula"}]}).onlyWithTag({Aspects: [{amount: 1, key: "gula"}]});

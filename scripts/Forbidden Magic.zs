@@ -1,6 +1,6 @@
+print("SCRIPT: Forbidden Magic");
+
 game.setLocalization("en_US", "forbidden.research_page.NETHERSHARDS.3", "Because the nether is not accessible from this planet, you'll need to find a way to make these shards without access to the nether. Alien grimoires probably have the answers you seek...");
-
-
 
 //Add in botania rune recipes.
 recipes.addShaped(<ForbiddenMagic:GluttonyShard> * 4, 

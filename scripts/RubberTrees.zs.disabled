@@ -1,0 +1,25 @@
+print("SCRIPT: Rubber Trees");
+
+mods.thaumcraft.Research.addResearch("RUBBERINFUSION", "ARTIFICE", "herba 15, arbor 10, victus 10, motus 10, instrumentum 10, lucrum 10", -9, 5, 6, <MineFactoryReloaded:rubberwood.sapling>);
+mods.thaumcraft.Research.addPrereq("RUBBERINFUSION", "LIVINGMOSS", false);
+
+game.setLocalization("en_US", "tc.research_name.RUBBERINFUSION", "Rubber Sapling Infusion");
+game.setLocalization("en_US", "tc.research_text.RUBBERINFUSION", "Upgrading your rubber production");
+
+mods.thaumcraft.Research.addPage("RUBBERINFUSION", "cavestokingdoms.research_page.RUBBERINFUSION");
+game.setLocalization("en_US", "cavestokingdoms.research_page.RUBBERINFUSION", "By magically mushing together rubber saplings with an array of growth-inducing apparatuses and plants, you managed to increase their potential substantially. You believe this process could also be repeated to obtain even greater rubber saplings.<LINE>As a little bonus of your deep research into rubber saplings, you also found an easy way to produce them from the related jungle saplings.");
+
+// Jungle -> Normal (0) -> Mega (2) -> Sacred (1) -> Worldship (3)
+
+mods.thaumcraft.Infusion.addRecipe("RUBBERINFUSION", <Thaumcraft:blockCustomPlant:0>, [<Botania:overgrowthSeed>, <MineFactoryReloaded:rubberwood.sapling:0>, <MineFactoryReloaded:rubberwood.sapling:0>, <ForbiddenMagic:NetherShard:6>, <Thaumcraft:blockMetalDevice:8>, <TConstruct:materials:6>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <AWWayofTime:bucketLife>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <TConstruct:materials:6>, <Thaumcraft:blockMetalDevice:8>, <ForbiddenMagic:NetherShard:6>, <MineFactoryReloaded:rubberwood.sapling:0>, <MineFactoryReloaded:rubberwood.sapling:0>], "herba 64, arbor 64, victus 64, limus 64, instrumentum 64, lucrum 64", <MineFactoryReloaded:rubberwood.sapling:2>, 6);
+
+mods.thaumcraft.Infusion.addRecipe("RUBBERINFUSION", <Natura:florasapling:0>, [<Botania:overgrowthSeed>, <MineFactoryReloaded:rubberwood.sapling:2>, <MineFactoryReloaded:rubberwood.sapling:2>, <ForbiddenMagic:NetherShard:6>, <Thaumcraft:blockMetalDevice:8>, <TConstruct:materials:6>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <AWWayofTime:bucketLife>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <TConstruct:materials:6>, <Thaumcraft:blockMetalDevice:8>, <ForbiddenMagic:NetherShard:6>, <MineFactoryReloaded:rubberwood.sapling:2>, <MineFactoryReloaded:rubberwood.sapling:2>], "herba 256, arbor 256, victus 256, limus 256, instrumentum 256, lucrum 256", <MineFactoryReloaded:rubberwood.sapling:1>, 6);
+
+mods.thaumcraft.Infusion.addRecipe("RUBBERINFUSION", <Natura:florasapling:0>, [<Botania:overgrowthSeed>, <MineFactoryReloaded:rubberwood.sapling:1>, <MineFactoryReloaded:rubberwood.sapling:1>, <ForbiddenMagic:NetherShard:6>, <Thaumcraft:blockMetalDevice:8>, <TConstruct:materials:6>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <AWWayofTime:bucketLife>, <MineFactoryReloaded:rubberwood.log>, <MineFactoryReloaded:rubberwood.log>, <TConstruct:materials:6>, <Thaumcraft:blockMetalDevice:8>, <ForbiddenMagic:NetherShard:6>, <MineFactoryReloaded:rubberwood.sapling:1>, <MineFactoryReloaded:rubberwood.sapling:1>], "herba 4096, arbor 4096, victus 4096, limus 4096, instrumentum 4096, lucrum 4096, praecantatio 4096", <MineFactoryReloaded:rubberwood.sapling:3>, 8);
+
+mods.thaumcraft.Infusion.addRecipe("RUBBERINFUSION", <minecraft:sapling:3>, [<minecraft:vine>, <minecraft:slime_ball>, <minecraft:brown_mushroom>, <minecraft:slime_ball>], "herba 16, arbor 8, victus 8, limus 16, motus 8", <MineFactoryReloaded:rubberwood.sapling:0>, 3);
+
+mods.thaumcraft.Research.addInfusionPage("RUBBERINFUSION", <MineFactoryReloaded:rubberwood.sapling:2>);
+mods.thaumcraft.Research.addInfusionPage("RUBBERINFUSION", <MineFactoryReloaded:rubberwood.sapling:1>);
+mods.thaumcraft.Research.addInfusionPage("RUBBERINFUSION", <MineFactoryReloaded:rubberwood.sapling:3>);
+mods.thaumcraft.Research.addInfusionPage("RUBBERINFUSION", <MineFactoryReloaded:rubberwood.sapling:0>);

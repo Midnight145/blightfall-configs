@@ -1,3 +1,5 @@
+print("SCRIPT: CustomNPCs Tooltips");
+
 <customnpcs:npcStoneReversedDagger>.addTooltip("Because holding it back-");
 <customnpcs:npcStoneReversedDagger>.addTooltip("wards makes it cooler.");
 
