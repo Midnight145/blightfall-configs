@@ -1,7 +1,5 @@
 print("SCRIPT: Nethermind");
 
-mods.thaumcraft.Infusion.removeRecipe(<Automagy:netherHeart>);
-
 mods.thaumcraft.Infusion.addRecipe(
 	"NETHERMIND",
 	<minecraft:ghast_tear>,
@@ -15,3 +13,4 @@ mods.thaumcraft.Infusion.addRecipe(
 	<Automagy:netherHeart>,
 	6
 );
+mods.thaumcraft.Research.addInfusionPage("NETHERMIND", <Automagy:netherHeart>);
