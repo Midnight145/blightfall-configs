@@ -271,12 +271,6 @@ recipes.addShapeless(<Thaumcraft:ItemResource:13> * 4, [<ore:dyeBlack>, <MineFac
 recipes.addShapeless(<Thaumcraft:ItemResource:13> * 4, [<ore:dyeBlack>, <TConstruct:strangeFood>, <minecraft:paper>, <minecraft:paper>,<minecraft:paper>,<minecraft:paper>]);
 recipes.addShapeless(<Thaumcraft:ItemResource:13> * 4, [<ore:dyeBlack>, <Metallurgy:tar>, <minecraft:paper>, <minecraft:paper>,<minecraft:paper>,<minecraft:paper>]);
 
-//Chest Recipe. Lol.
-recipes.addShaped(<minecraft:chest> * 1, 
-                [[<ore:logWood>, <ore:logWood>, <ore:logWood>], 
-                 [<ore:logWood>, null, <ore:logWood>], 
-                 [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
-
 //Fix some harvestcraft recipes
 //Glowshroom hiiden from NEI
 mods.tconstruct.Drying.addRecipe(<harvestcraft:muttonrawItem>, <TConstruct:jerky:3>, 6000);
