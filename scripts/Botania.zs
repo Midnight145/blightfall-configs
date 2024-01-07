@@ -127,3 +127,7 @@ mods.thermalexpansion.Smelter.addRecipe(400, <minecraft:end_stone>, <minecraft:g
 
 //Correct spelling of Soujourner's Sash (in English)
 game.setLocalization("en_US", "item.botania:travelBelt.name", "Sojourner's Sash");
+
+mods.botania.ManaInfusion.removeRecipe(<minecraft:nether_wart>);
+mods.botania.ManaInfusion.addAlchemy(<minecraft:nether_wart>, <minecraft:blaze_powder>, 4000);
+mods.botania.ManaInfusion.addAlchemy(<minecraft:ghast_tear>, <minecraft:blaze_rod>, 20000);
