@@ -143,9 +143,6 @@ mods.thaumcraft.Aspects.set(<TConstruct:Smeltery:6>, "terra 3, ignis 2"); //Sear
 
 mods.thaumcraft.Aspects.set(<TConstruct:decoration.stonetorch>, "lux 1");
 
-mods.thaumcraft.Aspects.set(<harvestcraft:heavycreamItem>, "fames 1, sano 1");
-mods.thaumcraft.Aspects.set(<harvestcraft:butterItem>, "gula 2");
-
 mods.thaumcraft.Aspects.set(<minecraft:milk_bucket>, "sano 2, aqua 2, fames 2");
 
 mods.thaumcraft.Aspects.set(<ThermalFoundation:Storage:12>, "metallum 20, alienis 13, lucrum 13, potentia 7"); //Enderium
@@ -154,12 +151,6 @@ mods.thaumcraft.Aspects.set(<ThermalFoundation:Storage:11>, "metallum 20, machin
 mods.thaumcraft.Aspects.set(<ThermalFoundation:Storage:8>, "metallum 20, machina 7, ordo 7"); //Invar
 mods.thaumcraft.Aspects.set(<ThermalFoundation:Storage:4>, "metallum 7, ordo 14, machina 7"); //Nickel
 mods.thaumcraft.Aspects.set(<RedstoneArsenal:Storage>, "metallum 20, machina 14, lucrum 7"); //Fluxed Electrum
-
-mods.thaumcraft.Aspects.set(<harvestcraft:cheeseItem>, "aqua 1, sano 1, fames 1");
-mods.thaumcraft.Aspects.set(<harvestcraft:doughItem>, "aqua 1, messis 1, fames 1");
-mods.thaumcraft.Aspects.set(<harvestcraft:toastItem>, "fames 2, messis 3, ignis 1");
-mods.thaumcraft.Aspects.set(<harvestcraft:grilledcheeseItem>, "fames 3, messis 2, ignis 1, gula 1, sano 1");
-mods.thaumcraft.Aspects.set(<harvestcraft:taffyItem>, "aqua 1");
 
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:17>, "vitreus 4, lucrum 4");
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:18>, "lucrum 2");
