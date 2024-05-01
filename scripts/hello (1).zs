@@ -233,7 +233,7 @@ recipes.addShapeless(<minecraft:string> * 2, [<TabulaRasa:RasaItem0:17>]);
 <TabulaRasa:RasaItem0:26>.addTooltip("Craft together with a "+format.aqua("Translation"));
 <TabulaRasa:RasaItem0:26>.addTooltip(format.aqua("Device")+format.gray(" to translate!"));
 
-recipes.addShapeless(<blightbuster:researchnote>, [<TabulaRasa:RasaItem0:22>, <TabulaRasa:RasaItem0:18>]);
+recipes.addShapeless(<blighttweaks:researchNote>, [<TabulaRasa:RasaItem0:22>, <TabulaRasa:RasaItem0:18>]);
 recipes.addShapeless(<cavestokingdoms:basicManual:6>, [<TabulaRasa:RasaItem0:23>, <TabulaRasa:RasaItem0:18>]);
 recipes.addShapeless(<cavestokingdoms:basicManual:7>, [<TabulaRasa:RasaItem0:24>, <TabulaRasa:RasaItem0:18>]);
 recipes.addShapeless(<cavestokingdoms:basicManual:8>, [<TabulaRasa:RasaItem0:25>, <TabulaRasa:RasaItem0:18>]);

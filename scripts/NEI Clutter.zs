@@ -389,3 +389,5 @@ NEI.hide(<chisel:smashingrock>);
 NEI.hide(<ExtraTiC:gear>);
 NEI.hide(<ExtraUtilities:pureLove>);
 NEI.hide(<blightbuster:worldTaintersuper>);
+NEI.hide(<blightbuster:worldTainter>);
+NEI.hide(<blighttweaks:worldOreKiller>);

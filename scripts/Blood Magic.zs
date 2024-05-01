@@ -34,8 +34,8 @@ mods.bloodmagic.BloodOrb.addShaped(<AWWayofTime:runeOfSelfSacrifice>,
                  [<minecraft:stone>, <AWWayofTime:reinforcedSlate>,<minecraft:stone>]]);
 				 
 				 
-mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:0>, <blightbuster:boundRing:0>);
-mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:1>, <blightbuster:boundRing:1>);
-mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:2>, <blightbuster:boundRing:2>);
-mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:3>, <blightbuster:boundRing:3>);
-mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:4>, <blightbuster:boundRing:4>);
+mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:0>, <blighttweaks:boundRing:0>);
+mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:1>, <blighttweaks:boundRing:1>);
+mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:2>, <blighttweaks:boundRing:2>);
+mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:3>, <blighttweaks:boundRing:3>);
+mods.bloodmagic.Binding.addRecipe(<ExtraUtilities:angelRing:4>, <blighttweaks:boundRing:4>);
