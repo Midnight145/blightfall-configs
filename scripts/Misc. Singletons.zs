@@ -132,3 +132,33 @@ mods.thaumcraft.Infusion.addRecipe(
     <Thaumcraft:BootsTraveller>,
     1
 );
+
+val stones = [
+    <UndergroundBiomes:igneousStone:0>,
+    <UndergroundBiomes:igneousStone:1>,
+    <UndergroundBiomes:igneousStone:2>,
+    <UndergroundBiomes:igneousStone:3>,
+    <UndergroundBiomes:igneousStone:4>,
+    <UndergroundBiomes:igneousStone:5>,
+    <UndergroundBiomes:igneousStone:6>,
+    <UndergroundBiomes:igneousStone:7>,
+    <UndergroundBiomes:sedimentaryStone:0>,
+    <UndergroundBiomes:sedimentaryStone:1>,
+    <UndergroundBiomes:sedimentaryStone:2>,
+    <UndergroundBiomes:sedimentaryStone:3>,
+    <UndergroundBiomes:sedimentaryStone:4>,
+    <UndergroundBiomes:sedimentaryStone:5>,
+    <UndergroundBiomes:sedimentaryStone:6>,
+    <UndergroundBiomes:sedimentaryStone:7>,
+    <UndergroundBiomes:metamorphicStone:0>,
+    <UndergroundBiomes:metamorphicStone:1>,
+    <UndergroundBiomes:metamorphicStone:2>,
+    <UndergroundBiomes:metamorphicStone:3>,
+    <UndergroundBiomes:metamorphicStone:4>,
+    <UndergroundBiomes:metamorphicStone:5>,
+    <UndergroundBiomes:metamorphicStone:6>,
+    <UndergroundBiomes:metamorphicStone:7>
+] as IItemStack[];
+for stone in stones {
+    mods.botania.ManaInfusion.addConjuration(stone * 2, stone, 100);
+}
