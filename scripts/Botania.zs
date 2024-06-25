@@ -2,12 +2,15 @@
 import mods.nei.NEI;
 import mods.botania.Lexicon;
 import minetweaker.item.IItemStack;
-
-print("SCRIPT: Botania");
+print("Loading Botania Tweaks");
+print("Removing Botania Fertilizers");
 
 //Hide and kill old Floral Fertilizer
 NEI.hide(<Botania:fertilizer>);
 recipes.remove(<Botania:fertilizer>);
+
+print("Removed Botania Fertilizers");
+print("Modifying Botania Lexicon");
 
 //Flowers are really different in Blightfall. :/
 Lexicon.removePage("botania.entry.flowers", 0);
@@ -23,6 +26,7 @@ Lexicon.removePage("botania.entry.flowers", 9);
 Lexicon.addTextPage("botania.page.blightfallFlower9","botania.entry.flowers",9);
 game.setLocalization("en_US", "botania.page.blightfallFlower9", "There's also a taller variants of the typical &1Mystical Flowers&0. These can only be gathered with &1Shears&0, but can be used to obtain twice the amount of petals a normal flower would yield. They're a bit too big for dye, though.<br>They can be made by fertilizing a &1Mystical Flower&0 with &1Bone Meal&0.");
 
+print("botania.entry.flowers modified");
 //Update Lexicon to show it.
 Lexicon.removePage("botania.entry.lexicon", 2);
 mods.botania.Lexicon.addCraftingPage("botania.page.blightfallLexicon","botania.entry.lexicon",2,
@@ -30,18 +34,16 @@ mods.botania.Lexicon.addCraftingPage("botania.page.blightfallLexicon","botania.e
 
 					     [[[<Botania:lexicon>, <minecraft:book>, null]]]);
 game.setLocalization("en_US", "botania.page.blightfallLexicon", "Copying the Lexicon.");
-
+print("Lexicon entry modified");
 //Edit Pure Daisy to mention anti-taint effects and that it can be found in the world.
 Lexicon.addTextPage("botania.page.BlightfallPureDaisy5","botania.entry.pureDaisy",5);
 game.setLocalization("en_US", "botania.page.BlightfallPureDaisy5", "These flowers also seem to have a &1cleansing&0 effect on the taint. This makes it easy to spot them &1in the wild&0; just look for small patches of purified land.");
-
+print("Pure Daisy entry modified");
 //Edit Daybloom to remove creepy poetry and to mention that it appears in the world.
 Lexicon.removePage("botania.entry.daybloom", 0);
 Lexicon.addTextPage("botania.page.blightfallDaybloom0","botania.entry.daybloom",0);
 game.setLocalization("en_US", "botania.page.blightfallDaybloom0", "The &1Daybloom&0 is the most basic and rudimentary &4Generating Flower&0. Simply put, it performs a modified photosynthesis process, in order to transform sunlight into &4Mana&0.<br>The process is rather slow, about ten or a dozen of these should get the job done, for now.<br>You can sometimes find these scattered in the world.");
-Lexicon.removePage("botania.entry.daybloom", 5);
-Lexicon.removePage("botania.entry.daybloom", 4);
-
+print("Daybloom entry modified");
 //Kill Orechid Ingam, Wrap, Spellbinding Cloth
 mods.botania.Lexicon.removeEntry("botania.entry.orechidIgnem");
 mods.botania.Apothecary.removeRecipe("orechidIgnem");
@@ -49,7 +51,7 @@ mods.botania.Lexicon.removeEntry("botania.entry.wrap");
 mods.botania.Lexicon.removeEntry("botania.entry.spellCloth");
 NEI.hide(<Botania:spellCloth>);
 recipes.remove(<Botania:spellCloth>);
-
+print("Misc. entries removed");
 //Edit Elf Message.
 Lexicon.removePage("botania.entry.elfMessage", 1);
 Lexicon.addLorePage("botania.page.blightfallElfMessage1","botania.entry.elfMessage",1);
@@ -57,26 +59,26 @@ game.setLocalization("en_US", "botania.page.blightfallElfMessage1", "&oGreetings
 Lexicon.removePage("botania.entry.elfMessage", 3);
 Lexicon.addLorePage("botania.page.blightfallElfMessage3","botania.entry.elfMessage",3);
 game.setLocalization("en_US", "botania.page.blightfallElfMessage3", "&oThe link you have managed to establish is rather weak, no living beings will be able to go through. We're perfectly fine with that; we see no need to risk our lands becoming infected with your taint. There's another positive side; the link strikes the fabric of time of both our worlds in a way where it doesn't keep them in sync. That's the reason why you received your book back so quickly.");
-
+print("Elf entry modified");
 //Better forbidden magic hints.
 Lexicon.removePage("forbidden.lexicon.tainthistle", 0);
 Lexicon.addTextPage("botania.page.blightfallTainthistle","forbidden.lexicon.tainthistle",0);
 game.setLocalization("en_US", "botania.page.blightfallTainthistle", "The disgusting &1Tainthistle&0 derives sustenance from the tainted runoff of magical experiments. It'll suck up any such substance it can find and try to turn it into mana. <br>Because it is born of thaumaturgic energies, it can be created only by thaumaturges. Research via a &1Thaumonomicon&0 search should its recipe.");
-
+print("Tainthistle entry modified");
 Lexicon.removePage("forbidden.lexicon.euclidaisy", 0);
 Lexicon.addTextPage("botania.page.blightfallEuclidaisy","forbidden.lexicon.euclidaisy",0);
 game.setLocalization("en_US", "botania.page.blightfallEuclidaisy", "The eerie, pink &1Euclidaisy&0 is an oddity. It uses large amounts of mana to conjure some sort of ethereal substance. <br>Thaumaturges seem to covet this ethereal substance. Likely, it is they who invented it. Research via a &1Thaumonomicon&0 should reveal its recipe.");
-
+print("Euclidaisy entry modified");
 Lexicon.removePage("forbidden.lexicon.whisperweed", 0);
 Lexicon.addTextPage("botania.page.blightfallWhisperweed","forbidden.lexicon.whisperweed",0);
 game.setLocalization("en_US", "botania.page.blightfallWhisperweed", "The &1Whisperweed&0 is an unpleasant plant that whispers thaumaturgic secrets into the ears of anyone who'll listen.<br>Because the secrets are thaumaturgic in nature, it's obvious this plant is their doing. Research via a &1Thaumonomicon&0 should reveal its recipe.");
-
+print("Whisperweed entry modified");
 
 //Make Lexicon gated.
 recipes.remove(<Botania:lexicon>);
 recipes.addShapeless(<Botania:lexicon>, [<TabulaRasa:RasaItem0:19>, <TabulaRasa:RasaItem0:18>]);
 recipes.addShapeless(<Botania:lexicon>*2, [<Botania:lexicon>, <minecraft:book>]);
-
+print("Lexicon gated");
 mods.thaumcraft.Research.addResearch("THAUMOMORPHICESSENCE", "FORBIDDEN", "praecantatio 15, herba 15, permutatio 15, sensus 5", -5, 4, 4, <TabulaRasa:RasaItem0:20>);
 game.setLocalization("en_US", "tc.research_name.THAUMOMORPHICESSENCE", "Thaumomorphic Botanist Essence");
 game.setLocalization("en_US", "tc.research_text.THAUMOMORPHICESSENCE", "Making flowers more Mystical.");
@@ -84,7 +86,7 @@ game.setLocalization("en_US", "cavestokingdoms.research_page.THAUMOMORPHICESSENC
 mods.thaumcraft.Infusion.addRecipe("THAUMOMORPHICESSENCE", <minecraft:dye:15>, [<Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Botania:manaResource:1>], "permutatio 40, herba 16, praecantatio 16, sensus 40, lux 8", <TabulaRasa:RasaItem0:20>, 6);
 mods.thaumcraft.Research.addPage("THAUMOMORPHICESSENCE", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE");
 mods.thaumcraft.Research.addInfusionPage("THAUMOMORPHICESSENCE", <TabulaRasa:RasaItem0:20>);
-
+print("Thaumomorphic Botanist Essence added");
 val nonmagicFlower = <ore:nonmagicFlower>;
 nonmagicFlower.add(<minecraft:yellow_flower>);
 nonmagicFlower.add(<minecraft:red_flower>);
@@ -124,7 +126,7 @@ mods.botania.Lexicon.addPetalPage("botania.page.shimmerleaf1","botania.entry.shi
 game.setLocalization("en_US", "botania.page.shimmerleaf1", "&oWay easier than with blood magic. What'd you expect?&r");
 
 mods.thermalexpansion.Smelter.addRecipe(400, <minecraft:end_stone>, <minecraft:glass_bottle>, <Botania:manaResource:15>, <Thaumcraft:ItemCrystalEssence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}), 15);
-
+print("Added shimmerleaf, bloom entries");
 //Correct spelling of Soujourner's Sash (in English)
 game.setLocalization("en_US", "item.botania:travelBelt.name", "Sojourner's Sash");
 

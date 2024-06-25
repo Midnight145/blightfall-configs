@@ -3,8 +3,7 @@ print("SCRIPT: Botania TC Aspects");
 //Taken from Phoenix Team and then edited because I'm evil and like to nerf things.
 
 mods.thaumcraft.Aspects.set(<Botania:flower:*>, "herba 1, victus 1, sensus 1, praecantatio 1"); //You can get infinite mana from floral fertilizer, but it's grindy.
-mods.thaumcraft.Aspects.set(<Botania:petal:*>, "herba 1, sensus 1"); //Removed magic.
-mods.thaumcraft.Aspects.set(<Botania:manaPetal:*>, "herba 1, praecantatio 1, sensus 1"); //Magic left intact.
+mods.thaumcraft.Aspects.set(<Botania:petal:*>, "herba 1, praecantatio 1, sensus 1");
 mods.thaumcraft.Aspects.set(<Botania:dye:*>, "herba 1");
 mods.thaumcraft.Aspects.set(<Botania:fertilizer>, "herba 3, sensus 1");
 //mods.thaumcraft.Aspects.set(<Botania:twigWand>, "arbor 6, herba 2, praecantatio 6, sensus 5"); //Let this be autocalced.
