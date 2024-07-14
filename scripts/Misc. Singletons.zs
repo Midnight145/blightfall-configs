@@ -104,7 +104,8 @@ recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:56> * 1, [<appl
 val oreMarble = <ore:blockMarble>;
 oreMarble.add(<UndergroundBiomes:metamorphicStone:2>);
 
-recipes.addShaped(<chisel:chisel.marble> * 4, [[<ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>]]);
+recipes.addShaped(<chisel:chisel.marble> * 9, [[<ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>], [<ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>]]);
+recipes.addShaped(<chisel:chisel.limestone> * 9, [[<UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>], [<UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>], [<UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>, <UndergroundBiomes:sedimentaryStone:0>]]);
 
 // remove warded slab
 recipes.removeShaped(<ThaumicTinkerer:wardSlab:0>);
