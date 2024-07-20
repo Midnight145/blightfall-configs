@@ -1,4 +1,5 @@
 import mods.nei.NEI;
+import minetweaker.item.IItemStack;
 
 print("SCRIPT: Miscellanous Singletons");
 
