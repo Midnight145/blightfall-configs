@@ -104,8 +104,8 @@ for i, dye in dyes
     recipes.addShapeless(mFlower, [<ore:nonmagicFlower>, dye, <TabulaRasa:RasaItem0:20>]);
 }
 
-mods.botania.Apothecary.addRecipe(<Thaumcraft:blockCustomPlant:2>.withTag({display: {Name: "Botanist Shimmerleaf"}}), [<ore:petalWhite>, <ore:manaPetalWhite>, <ore:petalLightBlue>, <ore:manaPetalLightBlue>, <ore:petalGreen>]);
-mods.botania.Apothecary.addRecipe(<Thaumcraft:blockCustomPlant:4>.withTag({display: {Name: "Botanist Ethereal Bloom"}}), [<ore:manaPetalWhite>, <ore:manaPetalWhite>, <ore:manaPetalLightBlue>, <ore:manaPetalLightBlue>, <ore:manaPetalGreen>, <ore:petalLime>, <ore:petalCyan>, <ore:petalCyan>, <ore:petalBlue>, <ore:petalBlue>, <ore:runeEarthB>, <ore:runeSpringB>]);
+mods.botania.Apothecary.addRecipe(<Thaumcraft:blockCustomPlant:2>.withTag({display: {Name: "Botanist Shimmerleaf"}}), [<ore:petalWhite>, <ore:petalWhite>, <ore:petalLightBlue>, <ore:petalLightBlue>, <ore:petalGreen>]);
+mods.botania.Apothecary.addRecipe(<Thaumcraft:blockCustomPlant:4>.withTag({display: {Name: "Botanist Ethereal Bloom"}}), [<ore:petalWhite>, <ore:petalWhite>, <ore:petalLightBlue>, <ore:petalLightBlue>, <ore:petalGreen>, <ore:petalLime>, <ore:petalCyan>, <ore:petalCyan>, <ore:petalBlue>, <ore:petalBlue>, <ore:runeEarthB>, <ore:runeSpringB>]);
 
 mods.botania.Lexicon.addEntry("botania.entry.etherealBloom","botania.category.functionalFlowers",<Thaumcraft:blockCustomPlant:4>);
 game.setLocalization("en_US", "botania.entry.etherealBloom", "Ethereal Blooms");
@@ -119,10 +119,10 @@ game.setLocalization("en_US", "botania.page.etherealBloom0", "The thaumaturges m
 mods.botania.Lexicon.addTextPage("botania.page.shimmerleaf0","botania.entry.shimmerleaf",0);
 game.setLocalization("en_US", "botania.page.shimmerleaf0", "The thaumaturges might believe that they own the concept of ethereal blooms, but they're wrong. The bloom is a flower, and all things flowery belong to the botanist. Obviously, there is a way to make them in a petal apothecary.");
 
-mods.botania.Lexicon.addPetalPage("botania.page.etherealBloom1","botania.entry.etherealBloom",1,[<Thaumcraft:blockCustomPlant:4>.withTag({display: {Name: "Botanist Ethereal Bloom"}})],[[<ore:manaPetalWhite>, <ore:manaPetalWhite>, <ore:manaPetalLightBlue>, <ore:manaPetalLightBlue>, <ore:manaPetalGreen>, <ore:petalLime>, <ore:petalCyan>, <ore:petalCyan>, <ore:petalBlue>, <ore:petalBlue>, <ore:runeEarthB>, <ore:runeSpringB>]]);
+mods.botania.Lexicon.addPetalPage("botania.page.etherealBloom1","botania.entry.etherealBloom",1,[<Thaumcraft:blockCustomPlant:4>.withTag({display: {Name: "Botanist Ethereal Bloom"}})],[[<ore:petalWhite>, <ore:petalWhite>, <ore:petalLightBlue>, <ore:petalLightBlue>, <ore:petalGreen>, <ore:petalLime>, <ore:petalCyan>, <ore:petalCyan>, <ore:petalBlue>, <ore:petalBlue>, <ore:runeEarthB>, <ore:runeSpringB>]]);
 game.setLocalization("en_US", "botania.page.etherealBloom1", "&oRequires a surprising amount of iron.&r");
 
-mods.botania.Lexicon.addPetalPage("botania.page.shimmerleaf1","botania.entry.shimmerleaf",1,[<Thaumcraft:blockCustomPlant:2>.withTag({display: {Name: "Botanist Shimmerleaf"}})],[[<ore:petalWhite>, <ore:manaPetalWhite>, <ore:petalLightBlue>, <ore:manaPetalLightBlue>, <ore:petalGreen>]]);
+mods.botania.Lexicon.addPetalPage("botania.page.shimmerleaf1","botania.entry.shimmerleaf",1,[<Thaumcraft:blockCustomPlant:2>.withTag({display: {Name: "Botanist Shimmerleaf"}})],[[<ore:petalWhite>, <ore:petalWhite>, <ore:petalLightBlue>, <ore:petalLightBlue>, <ore:petalGreen>]]);
 game.setLocalization("en_US", "botania.page.shimmerleaf1", "&oWay easier than with blood magic. What'd you expect?&r");
 
 mods.thermalexpansion.Smelter.addRecipe(400, <minecraft:end_stone>, <minecraft:glass_bottle>, <Botania:manaResource:15>, <Thaumcraft:ItemCrystalEssence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}), 15);
