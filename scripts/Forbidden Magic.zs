@@ -72,7 +72,7 @@ game.setLocalization("en_US", "botania.page.runeAltar24", "Any shard color works
 //Ender on shard makes end shard
 
 //OutputStack, InputFluid, CastStack, ConsumeCast, TickDelay
-mods.tconstruct.Casting.addTableRecipe(<ThaumicTinkerer:kamiResource:7>, <liquid:enderium.molten>*144, <Thaumcraft:ItemShard:6>, true, 20);
+mods.tconstruct.Casting.addTableRecipe(<ThaumicTinkerer:kamiResource:7>, <liquid:enderium.molten>*576, <Thaumcraft:ItemShard:6>, true, 20);
 
 //Vulcanite on shard makes nether shard
 mods.tconstruct.Casting.addTableRecipe(<ThaumicTinkerer:kamiResource:6>, <liquid:vulcanite.molten>*144, <Thaumcraft:ItemShard:6>, true, 20);
