@@ -406,3 +406,6 @@ mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:137>, "Ghostwood", "1")
 mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:0>, <liquid:redstone> * 1000, <minecraft:bucket>, true, 20);
 mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:1>, <liquid:glowstone> * 1000, <minecraft:bucket>, true, 20);
 mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:3>, <liquid:pyrotheum> * 1000, <minecraft:bucket>, true, 20);
+
+// modify steel level to supra diamond
+mods.tconstruct.ToolStats.setStats("Steel", "Steel", 5, 320, 700, 3, 1.3, 2, 0, "", 0);

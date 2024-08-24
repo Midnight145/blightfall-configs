@@ -255,7 +255,7 @@ recipes.remove(<Natura:natura.stewbowl>);
 <Natura:florasapling:7>.addTooltip("Requires a soft metal axe to chop.");
 <Natura:florasapling:7>.addTooltip("Fusewood can mine anything iron can");
 <Natura:florasapling:5>.addTooltip("Requires a hard metal axe to chop.");
-<Natura:florasapling:5>.addTooltip("Bloodwood can mine anything steel can.");
+<Natura:florasapling:5>.addTooltip("Bloodwood can mine almost anything steel can.");
 
 //Make chunkloaders easier.
 
