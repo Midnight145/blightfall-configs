@@ -37,7 +37,8 @@ mods.thaumcraft.Aspects.set(<Botania:rune:14>, "terra 2, praecantatio 7, sensus 
 mods.thaumcraft.Aspects.set(<Botania:rune:15>, "terra 2, praecantatio 7, sensus 2, humanus 1, cognitio 1, lucrum 1, metallum 1, superbia 5");
 mods.thaumcraft.Aspects.set(<Botania:rainbowRod>, "metallum 8, praecantatio 10, sensus 8, iter 9, auram 5, alienis 8, vitreus 4");
 mods.thaumcraft.Aspects.set(<Botania:livingrock:*>, "terra 2, praecantatio 5, sensus 2");
-mods.thaumcraft.Aspects.set(<Botania:livingwood:*>, "arbor 3, praecantatio 5, sensus 2");
+mods.thaumcraft.Aspects.set(<Botania:livingwood:*>, "arbor 3, praecantatio 3, sensus 2"); // planks used to give 5 which was a bit much
+mods.thaumcraft.Aspects.set(<Botania:livingwood:0>, "arbor 3, praecantatio 12, sensus 2"); // nerfed so a full block gives 12 and planks give 3
 mods.thaumcraft.Aspects.set(<Botania:alfheimPortal>, "arbor 5, praecantatio 10, sensus 6, metallum 4, terra 10, lucrum 4, vitreus 4, iter 4, alienis 4");
 mods.thaumcraft.Aspects.set(<Botania:altar>, "perditio 2, terra 2, herba 1, praecantatio 1, sensus 1");
 mods.thaumcraft.Aspects.set(<Botania:runeAltar>, "praecantatio 10, fabrico 4, cognitio 4, ordo 10, aer 5, vitreus 4, alienis 4, iter 4 terra 4"); //Nerfed Magic.

@@ -126,3 +126,4 @@ mods.thaumcraft.Aspects.set(<harvestcraft:zucchinifriesItem>, "messis 1, sano 1"
 mods.thaumcraft.Aspects.set(<harvestcraft:pizzaItem>, "corpus 2, sano 1, messis 2, fames 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:chickenpotpieItem>, "corpus 2, messis 3, fames 1");
 mods.thaumcraft.Aspects.set(<harvestcraft:glazedcarrotsItem>, "messis 1, gula 1, fames 1");
+mods.thaumcraft.Aspects.set(<harvestcraft:marshmellowsItem>, "aqua 3");

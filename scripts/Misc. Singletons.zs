@@ -161,3 +161,6 @@ val stones = [
 for stone in stones {
     mods.botania.ManaInfusion.addConjuration(stone * 2, stone, 100);
 }
+
+// Pulverize Phosphorus
+mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1> * 2);
