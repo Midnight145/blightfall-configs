@@ -1,0 +1,31 @@
+{
+    "ores": [
+        "oreMithril",
+        "100",
+        "orePrometheum",
+        "200",
+        "oreDeepIron",
+        "150",
+        "oreInfuscolium",
+        "150",
+        "oreOureclase",
+        "200",
+        "oreAstralSilver",
+        "100",
+        "oreCarmot",
+        "100",
+        "oreRubracium",
+        "150",
+        "oreOrichalcum",
+        "75",
+        "oreAdamantine",
+        "50",
+        "oreAtlarus",
+        "50"
+    ],
+    "radius": 8,
+    "cost": 1000000,
+    "focusModId": "ThermalFoundation",
+    "focusName": "Storage",
+    "focusMeta": 6
+}

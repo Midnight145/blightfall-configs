@@ -1,0 +1,21 @@
+{
+    "ores": [
+        "oreInfusedAir",
+        "200",
+        "oreInfusedFire",
+        "200",
+        "oreInfusedWater",
+        "200",
+        "oreInfusedEarth",
+        "200",
+        "oreInfusedOrder",
+        "200",
+        "oreInfusedEntropy",
+        "200"
+    ],
+    "radius": 6,
+    "cost": 1000000,
+    "focusModId": "Thaumcraft",
+    "focusName": "blockCrystal",
+    "focusMeta": 6
+}

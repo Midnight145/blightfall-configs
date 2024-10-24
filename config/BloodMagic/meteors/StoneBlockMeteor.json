@@ -1,0 +1,17 @@
+{
+    "ores": [
+        "oreCoal",
+        "150",
+        "oreIron",
+        "50",
+        "orePrometheum",
+        "50",
+        "oreDeepIron",
+        "25"
+    ],
+    "radius": 16,
+    "cost": 500000,
+    "focusModId": "minecraft",
+    "focusName": "stone",
+    "focusMeta": 32767
+}

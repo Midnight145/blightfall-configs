@@ -1,0 +1,31 @@
+{
+    "ores": [
+        "oreCobalt",
+        "100",
+        "oreArdite",
+        "50",
+        "oreIgnatius",
+        "100",
+        "oreLemurite",
+        "200",
+        "oreMidasium",
+        "300",
+        "oreVyroxeres",
+        "50",
+        "oreCeruclase",
+        "100",
+        "oreAlduorite",
+        "100",
+        "oreKalendrite",
+        "50",
+        "oreVulcanite",
+        "75",
+        "oreSanguinite",
+        "75"
+    ],
+    "radius": 8,
+    "cost": 1000000,
+    "focusModId": "TConstruct",
+    "focusName": "MetalBlock",
+    "focusMeta": 0
+}

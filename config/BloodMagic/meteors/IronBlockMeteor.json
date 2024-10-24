@@ -1,0 +1,31 @@
+{
+    "ores": [
+        "oreDiamond",
+        "100",
+        "oreEmerald",
+        "75",
+        "oreCinnabar",
+        "200",
+        "oreAmber",
+        "200",
+        "oreInfuscolium",
+        "150",
+        "oreRubracium",
+        "150",
+        "orePlatinum",
+        "50",
+        "oreYellorite",
+        "25",
+        "oreYellorium",
+        "25",
+        "oreManganese",
+        "100",
+        "oreZinc",
+        "100"
+    ],
+    "radius": 7,
+    "cost": 1000000,
+    "focusModId": "minecraft",
+    "focusName": "iron_block",
+    "focusMeta": 32767
+}

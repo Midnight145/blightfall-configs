@@ -1,0 +1,27 @@
+{
+    "ores": [
+        "oreCoal",
+        "400",
+        "orePhosphorite",
+        "100",
+        "oreSulfur",
+        "100",
+        "oreSaltpeter",
+        "100",
+        "oreMagnesium",
+        "100",
+        "oreBitumen",
+        "50",
+        "orePotash",
+        "100",
+        "orePrometheum",
+        "200",
+        "oreDeepIron",
+        "50"
+    ],
+    "radius": 10,
+    "cost": 1000000,
+    "focusModId": "minecraft",
+    "focusName": "coal_block",
+    "focusMeta": 32767
+}
