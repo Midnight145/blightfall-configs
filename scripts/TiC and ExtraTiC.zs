@@ -396,6 +396,46 @@ mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.legsNickel>, <liqui
 mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.bootsNickel>, <liquid:nickel.molten> * 576, 400, <ThermalFoundation:Storage:4>);
 mods.tconstruct.Smeltery.addMelting(<ThermalFoundation:armor.plateNickel>, <liquid:nickel.molten> * 1152, 400, <ThermalFoundation:Storage:4>);
 
+// Metallurgy Nuggets
+
+// Ender
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:ender.nugget:0>, <liquid:eximite.molten> * 144, 550, <Metallurgy:ender.block:0>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:ender.nugget:1>, <liquid:meutoite.molten> * 144, 550, <Metallurgy:ender.block:1>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:ender.nugget:2>, <liquid:desichalkos.molten> * 144, 550, <Metallurgy:ender.block:2>);
+
+// Nether
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:0>, <liquid:ignatius.molten> * 144, 550, <Metallurgy:nether.block:0>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:1>, <liquid:shadow.iron.molten> * 144, 550, <Metallurgy:nether.block:1>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:2>, <liquid:lemurite.molten> * 144, 550, <Metallurgy:nether.block:2>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:3>, <liquid:midasium.molten> * 144, 550, <Metallurgy:nether.block:3>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:4>, <liquid:vyroxeres.molten> * 144, 550, <Metallurgy:nether.block:4>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:5>, <liquid:ceruclase.molten> * 144, 550, <Metallurgy:nether.block:5>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:6>, <liquid:alduorite.molten> * 144, 550, <Metallurgy:nether.block:6>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:7>, <liquid:kalendrite.molten> * 144, 550, <Metallurgy:nether.block:7>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:8>, <liquid:vulcanite.molten> * 144, 550, <Metallurgy:nether.block:8>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:9>, <liquid:sanguinite.molten> * 144, 550, <Metallurgy:nether.block:9>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:10>, <liquid:shadow.steel.molten> * 144, 550, <Metallurgy:nether.block:10>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:11>, <liquid:inolashite.molten> * 144, 550, <Metallurgy:nether.block:11>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:nether.nugget:12>, <liquid:amordrine.molten> * 144, 550, <Metallurgy:nether.block:12>);
+
+// Fantasy
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:0>, <liquid:prometheum.molten> * 144, 550, <Metallurgy:fantasy.block:0>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:1>, <liquid:deep.iron.molten> * 144, 550, <Metallurgy:fantasy.block:1>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:2>, <liquid:infuscolium.molten> * 144, 550, <Metallurgy:fantasy.block:2>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:3>, <liquid:black.steel.molten> * 144, 550, <Metallurgy:fantasy.block:3>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:4>, <liquid:oureclase.molten> * 144, 550, <Metallurgy:fantasy.block:4>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:5>, <liquid:astral.silver.molten> * 144, 550, <Metallurgy:fantasy.block:5>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:6>, <liquid:carmot.molten> * 144, 550, <Metallurgy:fantasy.block:6>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:7>, <liquid:mithril.molten> * 144, 550, <Metallurgy:fantasy.block:7>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:8>, <liquid:rubracium.molten> * 144, 550, <Metallurgy:fantasy.block:8>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:9>, <liquid:quicksilver.molten> * 144, 550, <Metallurgy:fantasy.block:9>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:10>, <liquid:haderoth.molten> * 144, 550, <Metallurgy:fantasy.block:10>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:11>, <liquid:orichalcum.molten> * 144, 550, <Metallurgy:fantasy.block:11>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:12>, <liquid:celenegil.molten> * 144, 550, <Metallurgy:fantasy.block:12>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:13>, <liquid:adamantine.molten> * 144, 550, <Metallurgy:fantasy.block:13>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:14>, <liquid:atlarus.molten> * 144, 550, <Metallurgy:fantasy.block:14>);
+mods.tconstruct.Smeltery.addMelting(<Metallurgy:fantasy.nugget:15>, <liquid:tartarite.molten> * 144, 550, <Metallurgy:fantasy.block:15>);
+
 // For some reason, natura chunks don't get registered as repair materials. This fixes that.
 mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:134>, "Bloodwood", "1");
 mods.tconstruct.Tweaks.addRepairMaterial(<ExtraTiC:chunk:135>, "Darkwood", "1");
