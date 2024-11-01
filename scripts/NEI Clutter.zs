@@ -380,7 +380,6 @@ NEI.hide(<Thaumcraft:blockManaPod>);
 
 // Miscellaneous
 
-NEI.hide(<AWWayofTime:itemBloodMagicBook>);
 NEI.hide(<AWWayofTime:blockSchemSaver>);
 NEI.hide(<appliedenergistics2:tile.BlockPaint>);
 NEI.hide(<BiblioCraft:BiblioClipboard>);
