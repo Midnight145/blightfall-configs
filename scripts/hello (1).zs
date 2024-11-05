@@ -215,11 +215,11 @@ recipes.addShapeless(<minecraft:string> * 2, [<TabulaRasa:RasaItem0:17>]);
 
 <TabulaRasa:RasaItem0:19>.addTooltip("Craft together with a "+format.aqua("Translation"));
 <TabulaRasa:RasaItem0:19>.addTooltip(format.aqua("Device")+format.gray(" to translate! Too valuable"));
-<TabulaRasa:RasaItem0:19>.addTooltip("to break into languge samples.");
+<TabulaRasa:RasaItem0:19>.addTooltip("to break into language samples.");
 
 <TabulaRasa:RasaItem0:22>.addTooltip("Craft together with a "+format.aqua("Translation"));
 <TabulaRasa:RasaItem0:22>.addTooltip(format.aqua("Device")+format.gray(" to translate! Too valuable"));
-<TabulaRasa:RasaItem0:22>.addTooltip("to break into languge samples.");
+<TabulaRasa:RasaItem0:22>.addTooltip("to break into language samples.");
 
 <TabulaRasa:RasaItem0:23>.addTooltip("Craft together with a "+format.aqua("Translation"));
 <TabulaRasa:RasaItem0:23>.addTooltip(format.aqua("Device")+format.gray(" to translate!"));
