@@ -164,6 +164,3 @@ for stone in stones {
 
 // Pulverize Phosphorus
 mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1> * 2);
-
-// Smeltery Quartz
-game.setLocalization("en_US", "gui.smeltery.quartz", "Quartz: ");

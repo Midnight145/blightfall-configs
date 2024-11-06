@@ -4,13 +4,6 @@ print("SCRIPT: EFR Fixes");
 furnace.remove(<etfuturum:smooth_quartz>);
 recipes.addShapeless(<etfuturum:smooth_quartz> * 1, [<minecraft:quartz_block>]);
 
-// Boat seat localization for thaumometer
-game.setLocalization("entity.etfuturum.new_boat_seat.name", "Boat");
-
-// Armor stand localization
-game.setLocalization("entity.etfuturum.wooden_armorstand.name", "Armor Stand");
-game.setLocalization("<etfuturum:wooden_armorstand>", "Armor Stand");
-
 // Add thaumcraft aspects
 // (Chest) boats
 mods.thaumcraft.Aspects.setEntity("etfuturum.new_boat", "aqua 4, iter 4, arbor 3");
