@@ -18,21 +18,10 @@ mods.thaumcraft.Aspects.add(<etfuturum:jungle_chest_boat>, "vacuos 4, arbor 3");
 mods.thaumcraft.Aspects.add(<etfuturum:oak_chest_boat>, "vacuos 4, arbor 3");
 
 // Beds
-mods.thaumcraft.Aspects.set(<etfuturum:pink_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:light_gray_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:purple_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:green_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:gray_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:orange_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:blue_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:brown_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:white_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:black_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:lime_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:magenta_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:cyan_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:yellow_bed>, "pannus 6, desidia 4, fabrico 3");
-mods.thaumcraft.Aspects.set(<etfuturum:light_blue_bed>, "pannus 6, desidia 4, fabrico 3");
+
+for bed in <ore:bedWood>.items {
+    mods.thaumcraft.Aspects.set(bed, "pannus 6, desidia 4, fabrico 3");
+}
 
 // Other
 mods.thaumcraft.Aspects.add(<etfuturum:observer>, "invidia 2"); // Match comparator

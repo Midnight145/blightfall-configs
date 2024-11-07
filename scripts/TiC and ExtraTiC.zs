@@ -449,3 +449,7 @@ mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:bucket:3>, <liquid:pyr
 
 // modify steel level to supra diamond
 mods.tconstruct.ToolStats.setStats("Steel", "Steel", 5, 320, 700, 3, 1.3, 2, 0, "", 0);
+
+// Create gem cast with nether quartz
+mods.tconstruct.Casting.addTableRecipe(<TConstruct:metalPattern:26>, <liquid:aluminumbrass.molten> * 144, <minecraft:quartz>, false, 20);
+mods.tconstruct.Casting.addTableRecipe(<TConstruct:metalPattern:26>, <liquid:gold.molten> * 288, <minecraft:quartz>, false, 20);
