@@ -36,6 +36,6 @@
     "radius": 5,
     "cost": 1000000,
     "focusModId": "minecraft",
-    "focusName": "iron_block",
+    "focusName": "diamond",
     "focusMeta": 32767
 }
