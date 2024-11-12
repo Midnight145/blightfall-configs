@@ -1,4 +1,0 @@
-rain_min=0.0
-rain_max=1.0
-rain_soundMultiplier=1.0
-rain_random=true
