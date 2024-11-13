@@ -45,3 +45,4 @@ mods.thaumcraft.Aspects.add(<etfuturum:banner:*>, "sensus 2");
 
 // Chain Recycling
 mods.tconstruct.Smeltery.addMelting(<etfuturum:chain>, <liquid:iron.molten> * 176, 600, <minecraft:iron_block>);
+mods.thermalexpansion.Pulverizer.addRecipe(3000, <etfuturum:chain>, <ThermalFoundation:material:0>, <Thaumcraft:ItemNugget:0> * 2, 100);
