@@ -51,7 +51,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(3000, <etfuturum:chain>, <ThermalFoun
 mods.thaumcraft.Research.addResearch("BLACKSTONE", "ARTIFICE", "terra 4, tenebrae 3", 5, -4, 0, <etfuturum:blackstone:0>);
 mods.thaumcraft.Research.setSecondary("BLACKSTONE", true);
 game.setLocalization("en_US", "tc.research_name.BLACKSTONE", "Blackstone");
-game.setLocalization("en_US", "tc.research_text.BLACKSTONE", "[BF] Making things pretty");
+game.setLocalization("en_US", "tc.research_text.BLACKSTONE", "Making things pretty");
 
 mods.thaumcraft.Arcane.addShaped("BLACKSTONE", <etfuturum:blackstone:0> * 4, "perditio 5", [[null, <MineFactoryReloaded:stone:2>,null],[<MineFactoryReloaded:stone:2>, <Thaumcraft:ItemShard:5>, <MineFactoryReloaded:stone:2>],[null, <MineFactoryReloaded:stone:2>, null]]);
 mods.thaumcraft.Crucible.addRecipe("BLACKSTONE", <etfuturum:gilded_blackstone>, <etfuturum:blackstone:*>, "lucrum 1");
@@ -73,7 +73,7 @@ mods.thaumcraft.Research.addPrereq("BLACKSTONE", "ARCANESTONE", false);
 // Elytra
 mods.thaumcraft.Research.addResearch("ELYTRA", "ARTIFICE", "volatus 4, motus 4, alienis 3, tutamen 0, praecantatio 0", 2, 6, 5, <etfuturum:elytra>);
 game.setLocalization("en_US", "tc.research_name.ELYTRA", "Elytra");
-game.setLocalization("en_US", "tc.research_text.ELYTRA", "[BF] Stick a feather in your cap");
+game.setLocalization("en_US", "tc.research_text.ELYTRA", "Stick a feather in your cap");
 game.setLocalization("en_US", "tc.research_page.ELYTRA.1", 'While the thaumostatic harness certainly does its job in allowing you to fly, it lacks a certain... grace to its movements. Dragons and bats are able to cut through the air with ease, but you lack the wings that they have. That is, until today. By adding feathers, leather, and air shards to a belt and infusing it with essentia to aid in mobility and emulate the great Ender Dragon, you have created a piece of equipment that you have dubbed "Elytra".');
 game.setLocalization("en_US", "tc.research_page.ELYTRA.2", "While equipped on your body or wings slot, you are able to deploy the wings behind you by jumping in midair. Unlike the mighty dragon or even the lowly bat, you are unable to flap your wings to gain velocity while flying. However, these wings allow gliding over long distances and performing deft acrobatic maneuvers with your momentum while in flight.");
 game.setLocalization("en_US", "tc.research_page.ELYTRA.3", "While you may be unable to flap your wings to gain speed, it is possible to launch yourself a great distance through the use of firework rockets. Despite defying all reason, firework rockets containing explosive charges seem to not damage the user. Caution must be taken to land gently, or a hasty thaumaturge will meet his end due to the kinetic forces exerted upon his body.");
