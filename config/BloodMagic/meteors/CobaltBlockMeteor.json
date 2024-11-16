@@ -3,6 +3,7 @@
         "OREDICT:oreCobalt:100",
         "OREDICT:oreArdite:50",
         "OREDICT:oreIgnatius:100",
+        "OREDICT:oreShadowIron:50",
         "OREDICT:oreLemurite:200",
         "OREDICT:oreMidasium:300",
         "OREDICT:oreVyroxeres:50",
@@ -10,7 +11,9 @@
         "OREDICT:oreAlduorite:100",
         "OREDICT:oreKalendrite:50",
         "OREDICT:oreVulcanite:75",
-        "OREDICT:oreSanguinite:75"
+        "OREDICT:oreSanguinite:75",
+        "OREDICT:oreNetherRuby:1",
+        "OREDICT:oreNetherSapphire:1"
     ],
     "filler": [
     	"OREDICT:netherrack:100"

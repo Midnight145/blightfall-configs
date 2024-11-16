@@ -4,6 +4,7 @@
         "OREDICT:oreIron:50",
         "OREDICT:orePrometheum:50",
         "OREDICT:oreDeepIron:25"
+        "OREDICT:oreSalt:100"
     ],
     "radius": 16,
     "cost": 500000,
