@@ -1,31 +1,24 @@
 {
     "ores": [
-        "oreCobalt",
-        "100",
-        "oreArdite",
-        "50",
-        "oreIgnatius",
-        "100",
-        "oreLemurite",
-        "200",
-        "oreMidasium",
-        "300",
-        "oreVyroxeres",
-        "50",
-        "oreCeruclase",
-        "100",
-        "oreAlduorite",
-        "100",
-        "oreKalendrite",
-        "50",
-        "oreVulcanite",
-        "75",
-        "oreSanguinite",
-        "75"
+        "OREDICT:oreCobalt:100",
+        "OREDICT:oreArdite:50",
+        "OREDICT:oreIgnatius:100",
+        "OREDICT:oreLemurite:200",
+        "OREDICT:oreMidasium:300",
+        "OREDICT:oreVyroxeres:50",
+        "OREDICT:oreCeruclase:100",
+        "OREDICT:oreAlduorite:100",
+        "OREDICT:oreKalendrite:50",
+        "OREDICT:oreVulcanite:75",
+        "OREDICT:oreSanguinite:75"
+    ],
+    "filler": [
+    	"OREDICT:netherrack:100"
     ],
     "radius": 8,
     "cost": 1000000,
     "focusModId": "TConstruct",
     "focusName": "MetalBlock",
-    "focusMeta": 0
+    "focusMeta": 0,
+    "fillerChance": 65
 }
