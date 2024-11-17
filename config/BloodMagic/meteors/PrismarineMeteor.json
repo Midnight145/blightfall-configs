@@ -1,0 +1,13 @@
+{
+    "ores": [
+        "Botania:prismarine:0:100",
+        "Botania:prismarine:1:25",
+        "Botania:prismarine:2:25",
+        "Botania:seaLamp:0:50"
+    ],
+    "radius": 6,
+    "cost": 500000,
+    "focusModId": "minecraft",
+    "focusName": "stained_glass",
+    "focusMeta": 3
+}

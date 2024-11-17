@@ -11,7 +11,7 @@
         "OREDICT:oreRedstone:100",
         "OREDICT:oreAluminum:140",
         "OREDICT:oreInfusedAir:20",
-        "OREDICT:oreInfusedEarth::20",
+        "OREDICT:oreInfusedEarth:20",
         "OREDICT:oreInfusedEntropy:20",
         "OREDICT:oreInfusedOrder:20",
         "OREDICT:oreInfusedWater:20",

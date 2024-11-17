@@ -1,0 +1,10 @@
+{
+    "ores": [
+        "Botania:bifrostPerm:0:100"
+    ],
+    "radius": 16,
+    "cost": 500000,
+    "focusModId": "Botania",
+    "focusName": "manaResource",
+    "focusMeta": 5
+}
