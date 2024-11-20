@@ -85,3 +85,21 @@ mods.thaumcraft.Research.addPage("ELYTRA", "tc.research_page.ELYTRA.2");
 mods.thaumcraft.Research.addPage("ELYTRA", "tc.research_page.ELYTRA.3");
 mods.thaumcraft.Research.addPage("ELYTRA", "tc.research_page.ELYTRA.4");
 mods.thaumcraft.Research.addPrereq("ELYTRA", "HOVERHARNESS", false);
+
+// Chorus Flowers
+mods.thaumcraft.Research.addResearch("CHORUSFLOWER", "ARTIFICE", "sensus 3, herba 3, alienis 3, victus 3, iter 0", 3, 6, 5, <etfuturum:chorus_flower>);
+game.setLocalization("en_US", "tc.research_name.CHORUSFLOWER", "Chorus Flowers");
+game.setLocalization("en_US", "tc.research_text.CHORUSFLOWER", "Houdini's favorite snack");
+game.setLocalization("en_US", "tc.research_page.CHORUSFLOWER.1", 'Your use of alienis to create wings has caused you to wonder about its effects on other forms of life. Taking some sugar cane and infusing it with the essence of the end has left you with quite a strange specimen. This "chorus flower" only seems to grow on end stone, and it will slowly grow upwards, occasionally splitting into multiple thin branches. Much like the sugar cane it is made from, breaking the base will fell the whole chorus plant, but any chorus flowers will be lost. They must be harvested by hand or dislodged by a well-aimed arrow. Flowers that have reached their maximum height will darken.');
+game.setLocalization("en_US", "tc.research_page.CHORUSFLOWER.2", 'When broken, the body of a chorus plant will often drop alien-looking "chorus fruits". These fruits give off a kind of energy that you have only seen left behind after an enderman teleports. Smelting them in a furnace hardens their soft flesh, removing any nutritional value, but this rigidity allows for them to be shaped into eye-catching purple bricks. Additionally, attaching a popped chorus fruit to the end of a blaze rod appears to cause it to continuously emit light, just like a torch.');
+mods.thaumcraft.Infusion.addRecipe("CHORUSFLOWER", <minecraft:reeds>, [<minecraft:ender_pearl>,  <minecraft:end_stone>], "sensus 8, herba 8, alienis 8, victus 8, iter 8", <etfuturum:chorus_flower>, 2);
+mods.thaumcraft.Research.addPage("CHORUSFLOWER", "tc.research_page.CHORUSFLOWER.1");
+mods.thaumcraft.Research.addInfusionPage("CHORUSFLOWER", <etfuturum:chorus_flower>);
+mods.thaumcraft.Research.addPage("CHORUSFLOWER", "tc.research_page.CHORUSFLOWER.2");
+mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:purpur_block>);
+mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:purpur_slab>);
+mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:purpur_pillar>);
+mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:purpur_stairs>);
+mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:end_rod>);
+mods.thaumcraft.Research.addPrereq("CHORUSFLOWER", "ELYTRA", false);
+
