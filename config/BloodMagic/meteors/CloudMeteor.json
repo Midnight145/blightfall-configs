@@ -1,0 +1,13 @@
+{
+    "ores": [
+        "Natura:Cloud:0:100",
+        "Natura:Cloud:1:25",
+        "Natura:Cloud:2:12",
+        "Natura:Cloud:3:12"
+    ],
+    "radius": 16,
+    "cost": 500000,
+    "focusModId": "chisel",
+    "focusName": "chisel.cloudinabottle",
+    "focusMeta": 0
+}

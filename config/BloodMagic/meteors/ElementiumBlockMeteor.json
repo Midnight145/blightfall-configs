@@ -1,0 +1,12 @@
+{
+    "ores": [
+        "Botania:dreamwood:0:100",
+        "Botania:elfGlass:0:50",
+        "Botania:quartzTypeElf:0:200"
+    ],
+    "radius": 6,
+    "cost": 10000000,
+    "focusModId": "Botania",
+    "focusName": "storage",
+    "focusMeta": 2
+}

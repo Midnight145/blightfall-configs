@@ -1,0 +1,11 @@
+{
+    "ores": [
+        "Botania:livingrock:0:100",
+        "Botania:livingwood:0:100"
+    ],
+    "radius": 5,
+    "cost": 7500000,
+    "focusModId": "Botania",
+    "focusName": "storage",
+    "focusMeta": 0
+}
