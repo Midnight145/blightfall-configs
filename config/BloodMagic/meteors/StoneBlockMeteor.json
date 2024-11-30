@@ -4,7 +4,7 @@
         "OREDICT:oreIron:50",
         "OREDICT:orePrometheum:50",
         "OREDICT:oreDeepIron:25",
-        "harvestcraft:salt:0:100"
+        "ubcores:igneous_salt:7:100"
     ],
     "radius": 16,
     "cost": 500000,
