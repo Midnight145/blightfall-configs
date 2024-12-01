@@ -67,6 +67,7 @@ val saltOreFix = <ore:oreSalt>;
 saltOreFix.add(<ubcores:igneous_salt:*>);
 saltOreFix.add(<ubcores:metamorphic_salt:*>);
 saltOreFix.add(<ubcores:sedimentary_salt:*>);
+saltOreFix.add(<harvestcraft:salt:*>);
 
 // Pam's Harvestcraft damper accepts oreSalt for some reason
 recipes.removeShapeless(<harvestcraft:damperItem>);

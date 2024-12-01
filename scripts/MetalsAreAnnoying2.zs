@@ -117,3 +117,134 @@ game.setLocalization("de_DE", "item.thermalfoundation.material.dustMithril.name"
 game.setLocalization("de_DE", "item.thermalfoundation.material.nuggetMithril.name", "Mithrilklumpen");
 game.setLocalization("de_DE", "tile.thermalfoundation.storage.mithril.name", "Mithrilblock");
 game.setLocalization("de_DE", "item.thermalfoundation.material.gearMithril.name", "Mithrilzahnrad");
+
+/*  Thaumcraft nugget duplication  */
+
+//Metallurgy Fantasy Metals
+
+game.setLocalization("en_US", "tc.research_name.TRANSFANTASY", "Fantasy Metals");
+game.setLocalization("en_US", "tc.research_text.TRANSFANTASY", "Where magic meets metals");
+game.setLocalization("en_US", "tc.research_page.TRANSFANTASY.1", "You have found various fantastical metals on this planet, but they are simply too difficult to find in large quantities. You have taken it upon yourself to apply the principles of metal transmutation to multiply your stores of these fantasy metals. You might be able to fetch a high price for them if only you knew the right person...");
+mods.thaumcraft.Research.addResearch("TRANSFANTASY", "ALCHEMY", "metallum 6, permutatio 4, praecantatio 4, perfodio 2, desidia 0", 5, 5, 5, <Metallurgy:fantasy.nugget>);
+mods.thaumcraft.Research.addPrereq("TRANSFANTASY", "TRANSIRON", true);
+mods.thaumcraft.Research.setConcealed("TRANSFANTASY", true);
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget> * 3, <ore:nuggetPrometheum>, "metallum 2, herba 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:1> * 3, <ore:nuggetDeepIron>, "metallum 2, terra 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:2> * 3, <ore:nuggetInfuscolium>, "metallum 2, praecantatio 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:4> * 3, <ore:nuggetOureclase>, "metallum 2, tutamen 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:5> * 3, <ore:nuggetAstralSilver>, "metallum 2, auram 1, lucrum 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:6> * 3, <ore:nuggetCarmot>, "metallum 2, praecantatio 1, aer 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <ThermalFoundation:material:102> * 3, <ore:nuggetMithril>, "metallum 2, volatus 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:8> * 3, <ore:nuggetRubracium>, "metallum 2, spiritus 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:11> * 3, <ore:nuggetOrichalcum>, "metallum 2, vitreus 1, tutamen 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:13> * 3, <ore:nuggetAdamantine>, "metallum 2, tutamen 1, terra 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSFANTASY", <Metallurgy:fantasy.nugget:14> * 3, <ore:nuggetAtlarus>, "metallum 2, tutamen 1, auram 1");
+mods.thaumcraft.Research.addPage("TRANSFANTASY", "tc.research_page.TRANSFANTASY.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:1>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:2>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:4>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:5>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:6>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <ThermalFoundation:material:102>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:8>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:11>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:13>);
+mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:14>);
+
+//Nether Metals
+
+game.setLocalization("en_US", "tc.research_name.TRANSNETHER", "Nether Metals");
+game.setLocalization("en_US", "tc.research_text.TRANSNETHER", "Metals forged in the fires of hell");
+game.setLocalization("en_US", "tc.research_page.TRANSNETHER.1", "There are various hellish metals found beneath the volcanic islands just off the coast of the continent. Many of them have useful qualities as weapons, such as weakening or poisoning your opponents. The only problem with the weapon casts developed by Dr. Diyo is that they often take large amounts of metal for the more powerful weapons. To remedy this, you have deepened your research of transmuting the fantasy metals of this planet and are now also able to duplicate these infernal metals.");
+mods.thaumcraft.Research.addResearch("TRANSNETHER", "ALCHEMY", "metallum 4, permutatio 2, infernus 2", 4, 5, 5, <Metallurgy:nether.nugget>);
+mods.thaumcraft.Research.setSecondary("TRANSNETHER", true);
+mods.thaumcraft.Research.addPrereq("TRANSNETHER", "TRANSFANTASY", false);
+mods.thaumcraft.Research.setConcealed("TRANSNETHER", true);
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget> * 3, <ore:nuggetIgnatius>, "metallum 2, ignis 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:1> * 3, <ore:nuggetShadowIron>, "metallum 2, permutatio 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:2> * 3, <ore:nuggetLemurite>, "metallum 2, infernus 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:3> * 3, <ore:nuggetMidasium>, "metallum 2, lucrum 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:4> * 3, <ore:nuggetVyroxeres>, "metallum 2, venenum 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:5> * 3, <ore:nuggetCeruclase>, "metallum 2, gelum 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:6> * 3, <ore:nuggetAlduorite>, "metallum 2, vinculum 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:7> * 3, <ore:nuggetKalendrite>, "metallum 2, sano 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:8> * 3, <ore:nuggetVulcanite>, "metallum 2, ignis 1, perditio 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <Metallurgy:nether.nugget:9> * 3, <ore:nuggetSanguinite>, "metallum 2, ignis 1, superbia 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <TConstruct:materials:28> * 3, <ore:nuggetCobalt>, "metallum 2, motus 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSNETHER", <TConstruct:materials:29> * 3, <ore:nuggetArdite>, "metallum 2, ignis 1, terra 1");
+mods.thaumcraft.Research.addPage("TRANSNETHER", "tc.research_page.TRANSNETHER.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:1>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:2>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:3>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:4>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:5>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:6>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:7>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:8>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugget:9>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <TConstruct:materials:28>);
+mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <TConstruct:materials:29>);
+
+//Ender metals
+
+game.setLocalization("en_US", "tc.research_name.TRANSENDER", "Ender Metals");
+game.setLocalization("en_US", "tc.research_text.TRANSENDER", "Not that kind of void metal");
+game.setLocalization("en_US", "tc.research_page.TRANSENDER.1", "Your exploration of eerie locales on this alien planet has uncovered some metals that resonate with energy from the end. You have managed to replicate these metals in a manner similar to the other fantasy metals that you have found. These metals are also quite dense; they make for strong and durable tools when alloyed together.");
+mods.thaumcraft.Research.addResearch("TRANSENDER", "ALCHEMY", "metallum 4, permutatio 2, alienis 2", 6, 5, 5, <Metallurgy:ender.nugget>);
+mods.thaumcraft.Research.setSecondary("TRANSENDER", true);
+mods.thaumcraft.Research.addPrereq("TRANSENDER", "TRANSFANTASY", false);
+mods.thaumcraft.Research.setConcealed("TRANSENDER", true);
+mods.thaumcraft.Crucible.addRecipe("TRANSENDER", <Metallurgy:ender.nugget> * 3, <ore:nuggetEximite>, "metallum 2, alienis 1");
+mods.thaumcraft.Crucible.addRecipe("TRANSENDER", <Metallurgy:ender.nugget:1> * 3, <ore:nuggetMeutoite>, "metallum 2, alienis 1");
+mods.thaumcraft.Research.addPage("TRANSENDER", "tc.research_page.TRANSENDER.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget>);
+mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget:1>);
+
+//Tech metals and manganese
+
+game.setLocalization("en_US", "tc.research_name.TRANSNICKEL", "Nickel Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSNICKEL", "Transformation of metals into nickel");
+game.setLocalization("en_US", "tc.research_page.TRANSNICKEL.1", "You have discovered a way to multiply nickel by steeping nickel nuggets in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSNICKEL", "ALCHEMY", "metallum 2, machina 1", 2, 6, 0, <ThermalFoundation:material:100>);
+mods.thaumcraft.Research.setSecondary("TRANSNICKEL", true);
+mods.thaumcraft.Research.setConcealed("TRANSNICKEL", true);
+mods.thaumcraft.Research.addPrereq("TRANSNICKEL", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSNICKEL", <ThermalFoundation:material:100> * 3, <ore:nuggetNickel>, "metallum 2, machina 1");
+mods.thaumcraft.Research.addPage("TRANSNICKEL", "tc.research_page.TRANSNICKEL.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSNICKEL", <ThermalFoundation:material:100>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSPLATINUM", "Platinum Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSPLATINUM", "Transformation of metals into platinum");
+game.setLocalization("en_US", "tc.research_page.TRANSPLATINUM.1", "You have discovered a way to multiply platinum by steeping platinum nuggets in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSPLATINUM", "ALCHEMY", "metallum 2, lucrum 1, permutatio 1", 2, 4, 0, <ThermalFoundation:material:101>);
+mods.thaumcraft.Research.setSecondary("TRANSPLATINUM", true);
+mods.thaumcraft.Research.setConcealed("TRANSPLATINUM", true);
+mods.thaumcraft.Research.addPrereq("TRANSPLATINUM", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSPLATINUM", <ThermalFoundation:material:101> * 3, <ore:nuggetPlatinum>, "metallum 2, lucrum 1, permutatio 1");
+mods.thaumcraft.Research.addPage("TRANSPLATINUM", "tc.research_page.TRANSPLATINUM.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSPLATINUM", <ThermalFoundation:material:101>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSALUMINUM", "Aluminum Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSALUMINUM", "Transformation of metals into aluminum");
+game.setLocalization("en_US", "tc.research_page.TRANSALUMINUM.1", "You have discovered a way to multiply aluminum by steeping aluminum nuggets in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSALUMINUM", "ALCHEMY", "metallum 2, machina 1", 3, 6, 0, <TConstruct:materials:22>);
+mods.thaumcraft.Research.setSecondary("TRANSALUMINUM", true);
+mods.thaumcraft.Research.setConcealed("TRANSALUMINUM", true);
+mods.thaumcraft.Research.addPrereq("TRANSALUMINUM", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSALUMINUM", <TConstruct:materials:22> * 3, <ore:nuggetAluminum>, "metallum 2, machina 1");
+mods.thaumcraft.Research.addPage("TRANSALUMINUM", "tc.research_page.TRANSALUMINUM.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSALUMINUM", <TConstruct:materials:22>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSMANGANESE", "Manganese Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSMANGANESE", "Transformation of metals into manganese");
+game.setLocalization("en_US", "tc.research_page.TRANSMANGANESE.1", "You have discovered a way to multiply manganese by steeping manganese nuggets in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSMANGANESE", "ALCHEMY", "metallum 2, terra 1", 3, 4, 0, <Metallurgy:base.nugget:2>);
+mods.thaumcraft.Research.setSecondary("TRANSMANGANESE", true);
+mods.thaumcraft.Research.setConcealed("TRANSMANGANESE", true);
+mods.thaumcraft.Research.addPrereq("TRANSMANGANESE", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSMANGANESE", <Metallurgy:base.nugget:2> * 3, <ore:nuggetManganese>, "metallum 2, terra 1");
+mods.thaumcraft.Research.addPage("TRANSMANGANESE", "tc.research_page.TRANSMANGANESE.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSMANGANESE", <Metallurgy:base.nugget:2>);
+

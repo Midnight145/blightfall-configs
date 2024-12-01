@@ -103,3 +103,15 @@ mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:purpur_stair
 mods.thaumcraft.Research.addCraftingPage("CHORUSFLOWER", <etfuturum:end_rod>);
 mods.thaumcraft.Research.addPrereq("CHORUSFLOWER", "ELYTRA", false);
 
+// Trapdoors
+recipes.remove(<betterstorage:locker>);
+recipes.addShapedMirrored(<betterstorage:locker>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:trapdoorWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+recipes.remove(<Thaumcraft:blockMetalDevice:5>);
+recipes.addShaped(<Thaumcraft:blockMetalDevice:5>, [[<ore:barsIron>], [<ore:trapdoorWood>]]);
+mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:blockChestHungry>);
+mods.thaumcraft.Arcane.addShaped("HUNGRYCHEST", <Thaumcraft:blockChestHungry>, "aer 5, ordo 3, perditio 3", [[<ore:plankWood>, <ore:trapdoorWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+mods.thaumcraft.Arcane.removeRecipe(<Automagy:blockEagerChest>);
+mods.thaumcraft.Arcane.addShaped("EAGERCHEST", <Automagy:blockEagerChest>, "ordo 5, perditio 5", [[<ore:plankWood>, <ore:trapdoorWood>, <ore:plankWood>], [<Thaumcraft:blockWoodenDevice:6>, <Automagy:edible>, <Thaumcraft:blockWoodenDevice:6>], [<Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>]]);
+mods.thaumcraft.Arcane.removeRecipe(<Automagy:blockGreedyChest>);
+mods.thaumcraft.Arcane.addShaped("GREEDYCHEST", <Automagy:blockGreedyChest>, "aer 7, ordo 2, perditio 2", [[<Thaumcraft:blockWoodenDevice:6>, <ore:trapdoorWood>, <Thaumcraft:blockWoodenDevice:6>], [<Thaumcraft:blockWoodenDevice:6>, <Automagy:avaricePearl>, <Thaumcraft:blockWoodenDevice:6>], [<Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>]]);
+mods.thaumcraft.Arcane.removeRecipe(<Automagy:blockTenaciousChest>); mods.thaumcraft.Arcane.addShaped("TENACIOUSCHEST", <Automagy:blockTenaciousChest>, "aer 5, terra 2, aqua 2", [[<ore:plankWood>, <ore:trapdoorWood>, <ore:plankWood>], [<ore:plankWood>, <ore:slimeball>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
