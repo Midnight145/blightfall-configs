@@ -164,3 +164,6 @@ for stone in stones {
 
 // Pulverize Phosphorus
 mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1> * 2);
+
+// Tainted Blood Shard Aspects
+mods.thaumcraft.Aspects.set(<ForbiddenMagic:FMResource:3>, "spiritus 1, vitium 2, praecantatio 1");
