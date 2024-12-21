@@ -248,3 +248,46 @@ mods.thaumcraft.Crucible.addRecipe("TRANSMANGANESE", <Metallurgy:base.nugget:2> 
 mods.thaumcraft.Research.addPage("TRANSMANGANESE", "tc.research_page.TRANSMANGANESE.1");
 mods.thaumcraft.Research.addCruciblePage("TRANSMANGANESE", <Metallurgy:base.nugget:2>);
 
+game.setLocalization("en_US", "tc.research_name.TRANSZINC", "Zinc Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSZINC", "Transformation of metals into zinc");
+game.setLocalization("en_US", "tc.research_page.TRANSZINC.1", "You have discovered a way to multiply zinc by steeping zinc nuggets in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSZINC", "ALCHEMY", "metallum 2, perditio 1", 3, 3, 0, <Metallurgy:precious.nugget>);
+mods.thaumcraft.Research.setSecondary("TRANSZINC", true);
+mods.thaumcraft.Research.setConcealed("TRANSZINC", true);
+mods.thaumcraft.Research.addPrereq("TRANSZINC", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSZINC", <Metallurgy:precious.nugget> * 3, <ore:nuggetZinc>, "metallum 2, perditio 1");
+mods.thaumcraft.Research.addPage("TRANSZINC", "tc.research_page.TRANSZINC.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSZINC", <Metallurgy:precious.nugget>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSQUICKSILVER", "Quicksilver Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSQUICKSILVER", "Transformation of metals into quicksilver");
+game.setLocalization("en_US", "tc.research_page.TRANSQUICKSILVER.1", "You have discovered a way to multiply quicksilver by steeping quicksilver drops in §5metallum§0 harvested from other metals.");
+mods.thaumcraft.Research.addResearch("TRANSQUICKSILVER", "ALCHEMY", "metallum 2, permutatio 1", 3, 7, 0, <Thaumcraft:ItemNugget:5>);
+mods.thaumcraft.Research.setSecondary("TRANSQUICKSILVER", true);
+mods.thaumcraft.Research.setConcealed("TRANSQUICKSILVER", true);
+mods.thaumcraft.Research.addPrereq("TRANSQUICKSILVER", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSQUICKSILVER", <Thaumcraft:ItemNugget:5> * 3, <Thaumcraft:ItemNugget:5>, "metallum 2, permutatio 1");
+mods.thaumcraft.Research.addPage("TRANSQUICKSILVER", "tc.research_page.TRANSQUICKSILVER.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSQUICKSILVER", <Thaumcraft:ItemNugget:5>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSSTEEL", "Steel Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSSTEEL", "Transformation of iron into steel");
+game.setLocalization("en_US", "tc.research_page.TRANSSTEEL.1", "You have discovered a way to alchemically strengthen iron into steel by steeping iron nuggets in metallum, ordo, and ignis.");
+mods.thaumcraft.Research.addResearch("TRANSSTEEL", "ALCHEMY", "metallum 4, permutatio 2, ignis 2, ordo 2", 3, 5, 5, <TConstruct:materials:33>);
+mods.thaumcraft.Research.setSecondary("TRANSSTEEL", true);
+mods.thaumcraft.Research.setConcealed("TRANSSTEEL", true);
+mods.thaumcraft.Research.addPrereq("TRANSSTEEL", "TRANSIRON", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSSTEEL", <TConstruct:materials:33> * 2, <ore:nuggetIron>, "metallum 1, ordo 1, ignis 1");
+mods.thaumcraft.Research.addPage("TRANSSTEEL", "tc.research_page.TRANSSTEEL.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSSTEEL", <TConstruct:materials:33>);
+
+game.setLocalization("en_US", "tc.research_name.TRANSDIAMOND", "Diamond Transmutation");
+game.setLocalization("en_US", "tc.research_text.TRANSDIAMOND", "Transformation of valuables into diamond");
+game.setLocalization("en_US", "tc.research_page.TRANSDIAMOND.1", "You have discovered a way to multiply diamonds by steeping diamond nuggets in lucrum harvested from other substances.");
+mods.thaumcraft.Research.addResearch("TRANSDIAMOND", "FORBIDDEN", "vitreus 4, lucrum 4", 2, -6, 0, <Translocator:diamondNugget>);
+mods.thaumcraft.Research.setSecondary("TRANSDIAMOND", true);
+mods.thaumcraft.Research.addPrereq("TRANSDIAMOND", "TRANSEMERALD", false);
+mods.thaumcraft.Crucible.addRecipe("TRANSDIAMOND", <Translocator:diamondNugget> * 4, <ore:nuggetDiamond>, "vitreus 2, lucrum 2");
+mods.thaumcraft.Research.addPage("TRANSDIAMOND", "tc.research_page.TRANSDIAMOND.1");
+mods.thaumcraft.Research.addCruciblePage("TRANSDIAMOND", <Translocator:diamondNugget>);
+
