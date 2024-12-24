@@ -1,7 +1,10 @@
 {
     "ores": [
-        "appliedenergistics2:tile.BlockSkyStone:0:50",
-        "appliedenergistics2:tile.BlockFluix:0:2"
+        "appliedenergistics2:tile.BlockFluix:0:2",
+        "UndergroundBiomes:sedimentary_netherquartz:4:5",
+        "ubcores:sedimentary_appliedenergistics2.OreQuartz:4:4",
+        "ubcores:sedimentary_appliedenergistics2.OreQuartzCharged:4:1",
+        "appliedenergistics2:tile.BlockSkyStone:0:80"
     ],
     "radius": 5,
     "cost": 1250000,
