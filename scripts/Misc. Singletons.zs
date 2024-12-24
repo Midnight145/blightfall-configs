@@ -167,3 +167,9 @@ mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Me
 
 // Tainted Blood Shard Aspects
 mods.thaumcraft.Aspects.set(<ForbiddenMagic:FMResource:3>, "spiritus 1, vitium 2, praecantatio 1");
+
+// Cobalt and Ardite QED recipes
+mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:coal>, <ore:oreCobalt>]]);
+mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:oreCobalt>, <ore:coal>]]);
+mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:coal>, <ore:oreArdite>]]);
+mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:oreArdite>, <ore:coal>]]);
