@@ -82,10 +82,20 @@ print("Lexicon gated");
 mods.thaumcraft.Research.addResearch("THAUMOMORPHICESSENCE", "FORBIDDEN", "praecantatio 15, herba 15, permutatio 15, sensus 5", -5, 4, 4, <TabulaRasa:RasaItem0:20>);
 game.setLocalization("en_US", "tc.research_name.THAUMOMORPHICESSENCE", "Thaumomorphic Botanist Essence");
 game.setLocalization("en_US", "tc.research_text.THAUMOMORPHICESSENCE", "Making flowers more Mystical.");
-game.setLocalization("en_US", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE", "Those mystical flowers must have come from somewhere. Obviously, a wizard did it. And if a wizard could do it, a different wizard should be able to do it again.\nThaumomorphic botanist essence, in addition to being hard to pronounce, allows a thaumoturge to create mystical flowers from dandelions and poppies. See NEI for crafting details.");
+game.setLocalization("en_US", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.1", "Those mystical flowers must have come from somewhere. Obviously, a wizard did it. And if a wizard could do it, a different wizard should be able to do it again.<LINE>Thaumomorphic botanist essence, in addition to being hard to pronounce, allows a thaumoturge to create mystical flowers from dandelions and poppies. Adding any dye is required to decide the color of the resulting mystical flower.");
+game.setLocalization("en_US", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.2", "Without an easily accessible source of mana, the mana pearl required will take great effort to procure. Your arcane worktable is absolutely not the correct tool for this job, so it will take a large amount of vis and some salis mundus to keep this craft stable enough to merge the mana and ender magics.");
+game.setLocalization("en_US", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.3", "Mana is a form of mystical energy with strange sensory properties. You are able to create a fluid in your crucible that matches this description perfectly, but bottling it causes it to not be stable enough to add to a mana pool. Despite its tempting appearance, ingestion is ill-advised.<LINE>While you have devised a way to create it yourself, there may also be some bottles of mana that were left behind by this planet's previous inhabitants. Some may rarely be found in their structures or bartered for with creatures who deal in rare and precious items.");
 mods.thaumcraft.Infusion.addRecipe("THAUMOMORPHICESSENCE", <minecraft:dye:15>, [<Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Thaumcraft:ItemResource:14>, <Botania:manaResource:1>], "permutatio 40, herba 16, praecantatio 16, sensus 40, lux 8", <TabulaRasa:RasaItem0:20>, 6);
-mods.thaumcraft.Research.addPage("THAUMOMORPHICESSENCE", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE");
+mods.thaumcraft.Arcane.addShaped("THAUMOMORPHICESSENCE", <Botania:manaResource:1>, "aer 50, ignis 50, aqua 50, terra 50, ordo 50, perditio 50", [[<Thaumcraft:ItemResource:14>, <Botania:manaBottle>, <Thaumcraft:ItemResource:14>],
+[<Botania:manaBottle>, <ore:pearlEnder>, <Botania:manaBottle>],
+[<Thaumcraft:ItemResource:14>, <Botania:manaBottle>, <Thaumcraft:ItemResource:14>]]);
+mods.thaumcraft.Crucible.addRecipe("THAUMOMORPHICESSENCE", <Botania:manaBottle>, <minecraft:glass_bottle>, "praecantatio 16, sensus 8, potentia 8");
+mods.thaumcraft.Research.addPage("THAUMOMORPHICESSENCE", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.1");
 mods.thaumcraft.Research.addInfusionPage("THAUMOMORPHICESSENCE", <TabulaRasa:RasaItem0:20>);
+mods.thaumcraft.Research.addPage("THAUMOMORPHICESSENCE", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.2");
+mods.thaumcraft.Research.addArcanePage("THAUMOMORPHICESSENCE", <Botania:manaResource:1>);
+mods.thaumcraft.Research.addPage("THAUMOMORPHICESSENCE", "cavestokingdoms.research_page.THAUMOMORPHICESSENCE.3");
+mods.thaumcraft.Research.addCruciblePage("THAUMOMORPHICESSENCE", <Botania:manaBottle>);
 print("Thaumomorphic Botanist Essence added");
 val nonmagicFlower = <ore:nonmagicFlower>;
 nonmagicFlower.add(<minecraft:yellow_flower>);
