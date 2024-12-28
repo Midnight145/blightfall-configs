@@ -11,10 +11,6 @@ mods.tconstruct.Drying.addRecipe(<harvestcraft:ketchupItem>, <minecraft:slime_ba
 NEI.hide(<JABBA:moverDiamond>);
 recipes.remove(<JABBA:moverDiamond>);
 
-recipes.remove(<ThermalFoundation:Storage:6>);
-recipes.remove(<Metallurgy:fantasy.block:7>);
-recipes.addShaped(<ThermalFoundation:Storage:6>, [[<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>]]);
-
 val woodPlank = <ore:plankWood>;
 val book = <minecraft:book:*>;
 recipes.addShaped(<minecraft:bookshelf>, [[woodPlank, woodPlank, woodPlank], [book, book, book], [woodPlank, woodPlank, woodPlank]]);
@@ -52,9 +48,15 @@ mods.thermalexpansion.Smelter.addRecipe(800, <Metallurgy:angmallen.ingot> * 2, <
 recipes.remove(<Natura:barleyFood:4>);
 recipes.addShaped(<ThermalFoundation:material:16>, [[<Natura:Cloud:3>, <Natura:Cloud:3>], [<Natura:Cloud:3>, <Natura:Cloud:3>]]);
 
-// Conversion between sulfurs
+// Conversion between sulfurs and saltpeters
 recipes.addShapeless(<ThermalFoundation:material:16>, [<Metallurgy:utility.item:0>]);
 recipes.addShapeless(<Metallurgy:utility.item:0>, [<ThermalFoundation:material:16>]);
+recipes.addShapeless(<ThermalFoundation:material:17>, [<Metallurgy:utility.item:2>]);
+recipes.addShapeless(<Metallurgy:utility.item:2>, [<ThermalFoundation:material:17>]);
+recipes.remove(<Metallurgy:utility.block:0>);
+recipes.addShapeless(<Metallurgy:utility.block:0>, [<ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>]);
+recipes.remove(<Metallurgy:utility.block:2>);
+recipes.addShapeless(<Metallurgy:utility.block:2>, [<ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
 
 // Forge Lexicon crashes the game, no clue why
 NEI.hide(<ThermalFoundation:lexicon>);
