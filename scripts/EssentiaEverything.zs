@@ -1,10 +1,35 @@
 print("SCRIPT: Essentia Everything");
 
+// Blood Magic
 mods.thaumcraft.Aspects.set(<AWWayofTime:blankSlate>,                   "terra 2, victus 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:reinforcedSlate>,              "terra 2, victus 2, tutamen 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:imbuedSlate>,                  "terra 2, victus 4, praecantatio 4");
 mods.thaumcraft.Aspects.set(<AWWayofTime:demonicSlate>,                 "terra 2, victus 8, praecantatio 4, infernus 4, ignis 4");
 mods.thaumcraft.Aspects.set(<AWWayofTime:bloodMagicBaseItems:27>,       "terra 3, victus 15, praecantatio 10, alienis 8, aer 8, spiritus 8");
+
+mods.thaumcraft.Aspects.set(<AWWayofTime:waterSigil>, "aqua 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:lavaSigil>, "ignis 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:voidSigil>, "vacuos 8, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:airSigil>, "volatus 8, aer 4, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfTheFastMiner>, "perfodio 8, terra 4, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfElementalAffinity>, "tutamen 8, ignis 4, aqua 4, aer 4, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfHaste>, "motus 8, praecantatio 3");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfHolding>, "vacuos 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:divinationSigil>, "sensus 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:growthSigil>, "herba 8, victus 4, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfWind>, "tempestas 8, tutamen 4, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfTheBridge>, "iter 8, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfMagnetism>, "metallum 8, lucrum 4, iter 4, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemBloodLightSigil>, "lux 8, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfSupression>, "vacuos 12, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfEnderSeverance>, "alienis 8, vinculum 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:seerSigil>, "sensus 12, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemHarvestSigil>, "meto 10, praecantatio 10");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemCompressionSigil>, "fabrico 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<blighttweaks:soulSigil>, "tutamen 16, praecantatio 12");
+
+mods.thaumcraft.Aspects.set(<AWWayofTime:weakBloodShard>, "spiritus 2, praecantatio 1, vitreus 1");
+mods.thaumcraft.Aspects.set(<ForbiddenMagic:FMResource:3>, "spiritus 1, vitium 2, praecantatio 1");
 
 mods.thaumcraft.Aspects.set(<AWWayofTime:simpleCatalyst>,               "potentia 3");
 mods.thaumcraft.Aspects.set(<AWWayofTime:bloodMagicBaseAlchemyItems:3>, "potentia 6");
