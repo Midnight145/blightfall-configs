@@ -179,7 +179,7 @@ NEI.hide(<Metallurgy:base.nugget:4>);
 furnace.remove(steelIngotDict);
 furnace.addRecipe(steelIngot, steelDustDict, 0.3);
 
-// Metallurgy steel to Tinkers' steel
+// Metallurgy blocks to Tinkers' steel
 recipes.remove(<Metallurgy:base.block:7>);
 recipes.addShapeless(<Metallurgy:base.block:7>, [steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict]);
 recipes.remove(<Metallurgy:base.brick:7>);
@@ -270,6 +270,12 @@ game.setLocalization("en_US", "item.thermalfoundation.material.dustMithril.name"
 game.setLocalization("en_US", "item.thermalfoundation.material.nuggetMithril.name", "Mithril Nugget");
 game.setLocalization("en_US", "tile.thermalfoundation.storage.mithril.name", "Mithril Block");
 game.setLocalization("en_US", "item.thermalfoundation.material.gearMithril.name", "Mithril Gear");
+game.setLocalization("en_US", "ore.manainfused.name", "Mithril Ore");
+game.setLocalization("en_US", "item.tconstruct.bucket.Mithril.name", "Molten Mithril Bucket");
+game.setLocalization("en_US", "item.iguana.tcon.clayBucket.Mithril.name", "Molten Mithril Clay Bucket");
+game.setLocalization("en_US", "tile.fluid.molten.mithril.name", "Molten Mithril");
+game.setLocalization("en_US", "LiquidMetal.Mithril.name", "Molten Mithril");
+game.setLocalization("en_US", "fluid.mithril.molten", "Molten Mithril");
 
 // German Translation
 game.setLocalization("de_DE", "tile.thermalfoundation.ore.mithril.name", "Mithrilerz");
@@ -331,6 +337,14 @@ game.setLocalization("en_US", "item.thermalfoundation.tool.platinumShears.name",
 game.setLocalization("en_US", "item.thermalfoundation.tool.platinumFishingRod.name", "Platinum Fishing Rod");
 game.setLocalization("en_US", "item.thermalfoundation.tool.platinumSickle.name", "Platinum Sickle");
 game.setLocalization("en_US", "item.thermalfoundation.tool.platinumBow.name", "Platinum Reinforced Bow");
+game.setLocalization("en_US", "ore.shiny.name", "Platinum Ore");
+game.setLocalization("en_US", "item.tconstruct.bucket.Shiny.name", "Molten Platinum Bucket");
+game.setLocalization("en_US", "item.iguana.tcon.clayBucket.Shiny.name", "Molten Platinum Clay Bucket");
+game.setLocalization("en_US", "tile.fluid.molten.shiny.name", "Molten Platinum");
+game.setLocalization("en_US", "LiquidMetal.Shiny.name", "Molten Platinum");
+game.setLocalization("en_US", "fluid.platinum.molten", "Molten Platinum");
+game.setLocalization("en_US", "toolpart.material.platinum", "Platinum");
+game.setLocalization("en_US", "material.thermalfoundation.platinum", "Platinum");
 
 
                    //////////
@@ -357,7 +371,9 @@ game.setLocalization("en_US", "item.thermalfoundation.tool.nickelShears.name", "
 game.setLocalization("en_US", "item.thermalfoundation.tool.nickelFishingRod.name", "Nickel Fishing Rod");
 game.setLocalization("en_US", "item.thermalfoundation.tool.nickelSickle.name", "Nickel Sickle");
 game.setLocalization("en_US", "item.thermalfoundation.tool.nickelBow.name", "Nickel Reinforced Bow");
-
+game.setLocalization("en_US", "ore.ferrous.name", "Nickel Ore");
+game.setLocalization("en_US", "tile.netherores.ore.nickel.name", "Nether Nickel Ore");
+game.setLocalization("en_US", "material.thermalfoundation.nickel", "Nickel");
 
 
                    ////////////
