@@ -172,3 +172,19 @@ mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:coal>, 
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:oreCobalt>, <ore:coal>]]);
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:coal>, <ore:oreArdite>]]);
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:oreArdite>, <ore:coal>]]);
+
+// Remove useless ichorium nuggets
+recipes.remove(<ThaumicTinkerer:kamiResource:3>);
+NEI.hide(<ThaumicTinkerer:kamiResource:3>);
+
+// Remove useless Thaumic Energistics gearboxen
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TETHAUMGBOX");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.TETHAUMGBOX");
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.Pseudo.COREUSE");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.Pseudo.COREUSE");
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TEIRONGEARBOX");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.TEIRONGEARBOX");
+mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:thaumicenergistics.block.gear.box>);
+mods.thaumcraft.Crucible.removeRecipe(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
+NEI.hide(<thaumicenergistics:thaumicenergistics.block.gear.box>);
+NEI.hide(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
