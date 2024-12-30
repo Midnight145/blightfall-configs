@@ -1,4 +1,3 @@
-import mods.nei.NEI;
 import minetweaker.item.IItemStack;
 
 print("SCRIPT: Miscellanous Singletons");
@@ -8,7 +7,6 @@ print("SCRIPT: Miscellanous Singletons");
 mods.tconstruct.Drying.addRecipe(<harvestcraft:ketchupItem>, <minecraft:slime_ball>, 2000);
 
 //Kill JABBA Diamond dolly.
-NEI.hide(<JABBA:moverDiamond>);
 recipes.remove(<JABBA:moverDiamond>);
 
 val woodPlank = <ore:plankWood>;
@@ -59,7 +57,6 @@ recipes.remove(<Metallurgy:utility.block:2>);
 recipes.addShapeless(<Metallurgy:utility.block:2>, [<ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
 
 // Forge Lexicon crashes the game, no clue why
-NEI.hide(<ThermalFoundation:lexicon>);
 recipes.remove(<ThermalFoundation:lexicon>);
 
 val magicSapling = <ore:magicSapling>;
@@ -175,7 +172,6 @@ mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:oreArdi
 
 // Remove useless ichorium nuggets
 recipes.remove(<ThaumicTinkerer:kamiResource:3>);
-NEI.hide(<ThaumicTinkerer:kamiResource:3>);
 
 // Remove useless Thaumic Energistics gearboxen
 mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TETHAUMGBOX");
@@ -186,5 +182,3 @@ mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TEIRONGEARBOX");
 mods.thaumcraft.Research.removeResearch("thaumicenergistics.TEIRONGEARBOX");
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:thaumicenergistics.block.gear.box>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
-NEI.hide(<thaumicenergistics:thaumicenergistics.block.gear.box>);
-NEI.hide(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);

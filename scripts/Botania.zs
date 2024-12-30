@@ -1,12 +1,10 @@
 //Minetweaker recipes and changes
-import mods.nei.NEI;
 import mods.botania.Lexicon;
 import minetweaker.item.IItemStack;
 print("Loading Botania Tweaks");
 print("Removing Botania Fertilizers");
 
 //Hide and kill old Floral Fertilizer
-NEI.hide(<Botania:fertilizer>);
 recipes.remove(<Botania:fertilizer>);
 
 print("Removed Botania Fertilizers");
@@ -49,7 +47,6 @@ mods.botania.Lexicon.removeEntry("botania.entry.orechidIgnem");
 mods.botania.Apothecary.removeRecipe("orechidIgnem");
 mods.botania.Lexicon.removeEntry("botania.entry.wrap");
 mods.botania.Lexicon.removeEntry("botania.entry.spellCloth");
-NEI.hide(<Botania:spellCloth>);
 recipes.remove(<Botania:spellCloth>);
 print("Misc. entries removed");
 //Edit Elf Message.

@@ -1,4 +1,3 @@
-import mods.nei.NEI;
 import minetweaker.item.IItemStack;
 
 print("SCRIPT: Fucking Metals");
@@ -23,12 +22,6 @@ recipes.remove(<TConstruct:materials:9>);
 recipes.removeShaped(<Thaumcraft:ItemNugget:1> * 9);
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:1>);
 mods.thaumcraft.Crucible.addRecipe("TRANSCOPPER", copperNugget * 3, <ore:nuggetCopper>, "metallum 2, permutatio 1");
-NEI.hide(<Metallurgy:copper.ingot>);
-NEI.hide(<Metallurgy:base.nugget:0>);
-NEI.hide(<Metallurgy:base.dust:0>);
-NEI.hide(<TConstruct:materials:9>);
-NEI.hide(<TConstruct:materials:20>);
-NEI.hide(<Thaumcraft:ItemNugget:1>);
 
 // Replace smelting recipes
 furnace.remove(copperIngotDict);
@@ -76,12 +69,6 @@ recipes.remove(<TConstruct:materials:10>);
 recipes.remove(<Thaumcraft:ItemNugget:2> * 9);
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:2>);
 mods.thaumcraft.Crucible.addRecipe("TRANSTIN", tinNugget * 3, <ore:nuggetTin>, "metallum 2, vitreus 1");
-NEI.hide(<Metallurgy:tin.ingot>);
-NEI.hide(<Metallurgy:base.nugget:1>);
-NEI.hide(<Metallurgy:base.dust:1>);
-NEI.hide(<TConstruct:materials:10>);
-NEI.hide(<TConstruct:materials:21>);
-NEI.hide(<Thaumcraft:ItemNugget:2>);
 
 // Replace smelting recipes
 furnace.remove(tinIngotDict);
@@ -132,11 +119,6 @@ recipes.remove(<Metallurgy:base.nugget:3> * 9);
 recipes.removeShaped(bronzeIngot);
 recipes.remove(<Metallurgy:bronze.ingot>);
 recipes.remove(<TConstruct:materials:13>);
-NEI.hide(<Metallurgy:bronze.ingot>);
-NEI.hide(<Metallurgy:base.dust:3>);
-NEI.hide(<Metallurgy:base.nugget:3>);
-NEI.hide(<TConstruct:materials:13>);
-NEI.hide(<TConstruct:materials:31>);
 
 // Replace smelting recipes
 furnace.remove(bronzeIngotDict);
@@ -172,8 +154,6 @@ recipes.remove(<Metallurgy:base.nugget:7> * 9);
 recipes.remove(<Metallurgy:steel.ingot>);
 recipes.removeShaped(steelIngot);
 recipes.remove(<Metallurgy:steel.ingot>);
-NEI.hide(<Metallurgy:steel.ingot>);
-NEI.hide(<Metallurgy:base.nugget:4>);
 
 // Replace smelting recipes
 furnace.remove(steelIngotDict);
@@ -210,10 +190,6 @@ recipes.removeShaped(silverIngot);
 recipes.remove(<Thaumcraft:ItemNugget:3> * 9);
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:3>);
 mods.thaumcraft.Crucible.addRecipe("TRANSSILVER", silverNugget * 3, <ore:nuggetSilver>, "metallum 2, lucrum 1");
-NEI.hide(<Metallurgy:silver.ingot>);
-NEI.hide(<Metallurgy:precious.nugget:1>);
-NEI.hide(<Metallurgy:precious.dust:1>);
-NEI.hide(<Thaumcraft:ItemNugget:3>);
 
 // Replace smelting recipes
 furnace.remove(silverIngotDict);
@@ -247,9 +223,7 @@ val mithrilNugget= <ThermalFoundation:material:101>;
 // Remove extra types
 recipes.remove(<Metallurgy:fantasy.nugget:7> * 9);
 recipes.remove(<Metallurgy:mithril.ingot>);
-NEI.hide(<Metallurgy:mithril.ingot>);
-NEI.hide(<Metallurgy:fantasy.nugget:7>);
-NEI.hide(<Metallurgy:fantasy.dust:7>);
+<ore:ingotMithril>.remove(<customnpcs:npcMithrilIngot>);
 
 // Replace smelting recipes
 furnace.remove(mithrilIngotDict);
@@ -299,9 +273,6 @@ val platinumNugget = <ThermalFoundation:material:98>;
 // Remove extra types
 recipes.remove(<Metallurgy:precious.nugget:2> * 9);
 recipes.removeShaped(platinumIngot);
-NEI.hide(<Metallurgy:platinum.ingot>);
-NEI.hide(<Metallurgy:precious.nugget:2>);
-NEI.hide(<Metallurgy:precious.dust:2>);
 
 // Replace smelting recipes
 furnace.remove(platinumIngotDict);
@@ -389,9 +360,6 @@ val electrumNuggetDict = <ore:nuggetElectrum>;
 // Remove extra types
 recipes.remove(<Metallurgy:precious.nugget:4> * 9);
 recipes.removeShaped(electrumIngot);
-NEI.hide(<Metallurgy:electrum.ingot>);
-NEI.hide(<Metallurgy:precious.nugget:4>);
-NEI.hide(<Metallurgy:precious.dust:4>);
 
 // Replace smelting recipes
 furnace.remove(electrumIngotDict);
