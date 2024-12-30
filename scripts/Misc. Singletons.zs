@@ -182,3 +182,11 @@ mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TEIRONGEARBOX");
 mods.thaumcraft.Research.removeResearch("thaumicenergistics.TEIRONGEARBOX");
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:thaumicenergistics.block.gear.box>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
+
+// Rename HQM Bags
+game.setLocalization("en_US", "hqm.bag.basic", "Seeds");
+game.setLocalization("en_US", "hqm.bag.good", "Saplings");
+game.setLocalization("en_US", "hqm.bag.greater", "Animals");
+game.setLocalization("en_US", "hqm.bag.epic", "Machines");
+game.setLocalization("en_US", "hqm.bag.legendary", "Nether Ores");
+game.setLocalization("en_US", "item.hqm:bags.name", "Supply Bag");
