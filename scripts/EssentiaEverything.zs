@@ -245,3 +245,10 @@ mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:17>, "vi
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:18>, "lucrum 2");
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:16>, "vitreus 5");
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:20>, "ignis 1, sensus 1, ordo 1");
+
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:3>, "aer 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:4>, "terra 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:5>, "ignis 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:6>, "aqua 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:7>, "ordo 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:8>, "perditio 5, praecantatio 2");

@@ -21,3 +21,6 @@ game.setLocalization("entity.etfuturum.new_boat_seat.name", "Boat");
 // Armor stand localization
 game.setLocalization("entity.etfuturum.wooden_armorstand.name", "Armor Stand");
 game.setLocalization("item.etfuturum.armor_stand.name", "Armor Stand");
+
+// "Apprentices" Ring fix
+game.setLocalization("item.ItemBaubleBlanks.3.name", "Apprentice's Ring of %TYPE");
