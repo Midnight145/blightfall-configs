@@ -180,8 +180,11 @@ mods.thaumcraft.Research.orphanResearch("thaumicenergistics.Pseudo.COREUSE");
 mods.thaumcraft.Research.removeResearch("thaumicenergistics.Pseudo.COREUSE");
 mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TEIRONGEARBOX");
 mods.thaumcraft.Research.removeResearch("thaumicenergistics.TEIRONGEARBOX");
+mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:material:2>);
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:thaumicenergistics.block.gear.box>);
 mods.thaumcraft.Crucible.removeRecipe(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
+mods.tconstruct.Casting.removeTableRecipe(<thaumicenergistics:material:2>);
+mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:material:12>, <liquid:iron.molten> * 576, <TConstruct:gearCast>, false, 20);
 
 // Rename HQM Bags
 game.setLocalization("en_US", "hqm.bag.basic", "Seeds");
