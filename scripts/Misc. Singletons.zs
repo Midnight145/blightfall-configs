@@ -27,7 +27,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(3000, <Thaumcraft:blockCustomOre:5>, 
 mods.thermalexpansion.Pulverizer.addRecipe(3000, <Thaumcraft:blockCustomOre:6>, <Thaumcraft:ItemShard:5> * 1, <Thaumcraft:ItemResource:14>, 2);
 
 //Nether Shard Shards
-mods.thermalexpansion.Smelter.addRecipe(50000, <Thaumcraft:ItemShard:1> * 4, <ForbiddenMagic:NetherShard>, <ThaumicTinkerer:kamiResource:6>, <AWWayofTime:incendium>, 10);
+mods.thermalexpansion.Smelter.addRecipe(48000, <Thaumcraft:ItemShard:1> * 4, <ForbiddenMagic:NetherShard>, <ThaumicTinkerer:kamiResource:6>, <AWWayofTime:incendium>, 10);
 
 //Making Covers less expensive.
 recipes.remove(<ThermalDynamics:ThermalDynamics_48>);
