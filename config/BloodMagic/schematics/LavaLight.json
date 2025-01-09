@@ -200,6 +200,11 @@
           "xCoord": 2,
           "yCoord": 0,
           "zCoord": 1
+        },
+        {
+          "xCoord": 0,
+          "yCoord": 0,
+          "zCoord": 1
         }
       ]
     },
@@ -352,11 +357,6 @@
           "xCoord": -1,
           "yCoord": 2,
           "zCoord": 0
-        },
-        {
-          "xCoord": 0,
-          "yCoord": 0,
-          "zCoord": 1
         },
         {
           "xCoord": 0,
