@@ -1,5 +1,5 @@
 # Vanilla tools only have 1 durability from B:"Remove Vanilla Tool Effectiveness"=true in TinkersConstruct.cfg
-# Mining levels are all set to 0 in 
+# Mining levels are all set to 0 in IguanaTinkerTweaks/ToolOverride.cfg
 import minetweaker.item.IItemStack;
 
 print("SCRIPT: Executive Mandate");
