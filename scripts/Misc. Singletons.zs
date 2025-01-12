@@ -1,4 +1,5 @@
 import minetweaker.item.IItemStack;
+import mods.nei.NEI;
 
 print("SCRIPT: Miscellanous Singletons");
 
@@ -193,3 +194,8 @@ game.setLocalization("en_US", "hqm.bag.greater", "Animals");
 game.setLocalization("en_US", "hqm.bag.epic", "Machines");
 game.setLocalization("en_US", "hqm.bag.legendary", "Nether Ores");
 game.setLocalization("en_US", "item.hqm:bags.name", "Supply Bag");
+
+// Readd Trash Cans
+recipes.remove(<ExtraUtilities:trashcan:0>);
+recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <minecraft:lava_bucket>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <IguanaTweaksTConstruct:clayBucketLava>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
