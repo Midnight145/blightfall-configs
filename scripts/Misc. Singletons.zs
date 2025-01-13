@@ -199,3 +199,7 @@ game.setLocalization("en_US", "item.hqm:bags.name", "Supply Bag");
 recipes.remove(<ExtraUtilities:trashcan:0>);
 recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <minecraft:lava_bucket>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
 recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <IguanaTweaksTConstruct:clayBucketLava>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+
+// EFR Beetroot
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <etfuturum:beetroot_seeds>, <minecraft:wheat_seeds>, "sensus 5, messis 2");
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <etfuturum:beetroot_seeds>);
