@@ -203,3 +203,6 @@ recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:st
 // EFR Beetroot
 mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <etfuturum:beetroot_seeds>, <minecraft:wheat_seeds>, "sensus 5, messis 2");
 mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <etfuturum:beetroot_seeds>);
+
+// Remove Useless Skystone Dust
+mods.thermalexpansion.Pulverizer.removeRecipe(<appliedenergistics2:tile.BlockSkyStone>);
