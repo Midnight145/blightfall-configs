@@ -1,8 +1,5 @@
-import mods.nei.NEI;
-
 print("SCRIPT: Blockheads");
 
-NEI.hide(<cookingforblockheads:recipebook:3>);
 recipes.remove(<cookingforblockheads:recipebook:3>);
 
 recipes.remove(<cookingforblockheads:recipebook:1>);

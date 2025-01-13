@@ -1,10 +1,35 @@
 print("SCRIPT: Essentia Everything");
 
+// Blood Magic
 mods.thaumcraft.Aspects.set(<AWWayofTime:blankSlate>,                   "terra 2, victus 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:reinforcedSlate>,              "terra 2, victus 2, tutamen 1");
 mods.thaumcraft.Aspects.set(<AWWayofTime:imbuedSlate>,                  "terra 2, victus 4, praecantatio 4");
 mods.thaumcraft.Aspects.set(<AWWayofTime:demonicSlate>,                 "terra 2, victus 8, praecantatio 4, infernus 4, ignis 4");
 mods.thaumcraft.Aspects.set(<AWWayofTime:bloodMagicBaseItems:27>,       "terra 3, victus 15, praecantatio 10, alienis 8, aer 8, spiritus 8");
+
+mods.thaumcraft.Aspects.set(<AWWayofTime:waterSigil>, "aqua 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:lavaSigil>, "ignis 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:voidSigil>, "vacuos 8, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:airSigil>, "volatus 8, aer 4, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfTheFastMiner>, "perfodio 8, terra 4, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfElementalAffinity>, "tutamen 8, ignis 4, aqua 4, aer 4, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfHaste>, "motus 8, praecantatio 3");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfHolding>, "vacuos 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:divinationSigil>, "sensus 8, praecantatio 2");
+mods.thaumcraft.Aspects.set(<AWWayofTime:growthSigil>, "herba 8, victus 4, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfWind>, "tempestas 8, tutamen 4, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfTheBridge>, "iter 8, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfMagnetism>, "metallum 8, lucrum 4, iter 4, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemBloodLightSigil>, "lux 8, praecantatio 6");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfSupression>, "vacuos 12, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:sigilOfEnderSeverance>, "alienis 8, vinculum 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<AWWayofTime:seerSigil>, "sensus 12, praecantatio 4");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemHarvestSigil>, "meto 10, praecantatio 10");
+mods.thaumcraft.Aspects.set(<AWWayofTime:itemCompressionSigil>, "fabrico 8, praecantatio 8");
+mods.thaumcraft.Aspects.set(<blighttweaks:soulSigil>, "tutamen 16, praecantatio 12");
+
+mods.thaumcraft.Aspects.set(<AWWayofTime:weakBloodShard>, "spiritus 2, praecantatio 1, vitreus 1");
+mods.thaumcraft.Aspects.set(<ForbiddenMagic:FMResource:3>, "spiritus 1, vitium 2, praecantatio 1");
 
 mods.thaumcraft.Aspects.set(<AWWayofTime:simpleCatalyst>,               "potentia 3");
 mods.thaumcraft.Aspects.set(<AWWayofTime:bloodMagicBaseAlchemyItems:3>, "potentia 6");
@@ -132,7 +157,71 @@ mods.thaumcraft.Aspects.set(<ThermalFoundation:material:72>, "metallum 3, machin
 mods.thaumcraft.Aspects.set(<ThermalFoundation:material:68>, "metallum 1, machina 1, ordo 2"); //Nickel
 mods.thaumcraft.Aspects.set(<BigReactors:BRIngot:3>, "metallum 1, potentia 2, venenum 1, permutatio 2"); //Blutonium
 
+// Give all metal nuggets 1 metallum
 mods.thaumcraft.Aspects.set(<Thaumcraft:ItemNugget>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemNugget:7>, "metallum 1");
+mods.thaumcraft.Aspects.set(<ThermalFoundation:material:96>, "metallum 1");
+mods.thaumcraft.Aspects.set(<ThermalFoundation:material:97>, "metallum 1");
+mods.thaumcraft.Aspects.set(<ThermalFoundation:material:99>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Botania:manaResource:17>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Botania:manaResource:18>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Botania:manaResource:19>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.nugget:*>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.nugget:1>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:ender.nugget:2>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:0>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:1>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:2>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:3>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:4>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:5>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:6>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:7>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:8>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:9>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:10>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:11>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:nether.nugget:12>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:precious.nugget:0>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:precious.nugget:1>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:precious.nugget:2>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:precious.nugget:3>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:precious.nugget:4>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:0>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:1>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:2>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:3>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:4>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:5>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:6>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:7>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:8>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:9>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:10>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:11>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:12>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:13>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:14>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:fantasy.nugget:15>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:2>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:3>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:4>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:5>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:6>, "metallum 1");
+mods.thaumcraft.Aspects.set(<Metallurgy:base.nugget:7>, "metallum 1");
+mods.thaumcraft.Aspects.set(<RedstoneArsenal:material:64>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:oreBerries:1>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:oreBerries:4>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:22>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:24>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:27>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:28>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:29>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:30>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:31>, "metallum 1");
+mods.thaumcraft.Aspects.set(<TConstruct:materials:32>, "metallum 1");
+
+mods.thaumcraft.Aspects.set(<TConstruct:materials:35>, "corpus 1"); // Pig Iron Platter
 
 mods.thaumcraft.Aspects.set(<TConstruct:materials:2>, "terra 2, ignis 1"); //Seared Brick
 mods.thaumcraft.Aspects.set(<TConstruct:materials:37>, "terra 1, ignis 2"); //Seared Nether brick
@@ -156,3 +245,10 @@ mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:17>, "vi
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:18>, "lucrum 2");
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:16>, "vitreus 5");
 mods.thaumcraft.Aspects.set(<appliedenergistics2:item.ItemMultiMaterial:20>, "ignis 1, sensus 1, ordo 1");
+
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:3>, "aer 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:4>, "terra 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:5>, "ignis 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:6>, "aqua 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:7>, "ordo 5, praecantatio 2");
+mods.thaumcraft.Aspects.set(<Thaumcraft:ItemBaubleBlanks:8>, "perditio 5, praecantatio 2");

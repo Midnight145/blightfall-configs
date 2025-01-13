@@ -1,5 +1,5 @@
-import mods.nei.NEI;
 import minetweaker.item.IItemStack;
+import mods.nei.NEI;
 
 print("SCRIPT: Miscellanous Singletons");
 
@@ -8,12 +8,7 @@ print("SCRIPT: Miscellanous Singletons");
 mods.tconstruct.Drying.addRecipe(<harvestcraft:ketchupItem>, <minecraft:slime_ball>, 2000);
 
 //Kill JABBA Diamond dolly.
-NEI.hide(<JABBA:moverDiamond>);
 recipes.remove(<JABBA:moverDiamond>);
-
-recipes.remove(<ThermalFoundation:Storage:6>);
-recipes.remove(<Metallurgy:fantasy.block:7>);
-recipes.addShaped(<ThermalFoundation:Storage:6>, [[<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>], [<ore:ingotMithril>, <ore:ingotMithril>, <ore:ingotMithril>]]);
 
 val woodPlank = <ore:plankWood>;
 val book = <minecraft:book:*>;
@@ -33,7 +28,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(3000, <Thaumcraft:blockCustomOre:5>, 
 mods.thermalexpansion.Pulverizer.addRecipe(3000, <Thaumcraft:blockCustomOre:6>, <Thaumcraft:ItemShard:5> * 1, <Thaumcraft:ItemResource:14>, 2);
 
 //Nether Shard Shards
-mods.thermalexpansion.Smelter.addRecipe(50000, <Thaumcraft:ItemShard:1> * 4, <ForbiddenMagic:NetherShard>, <ThaumicTinkerer:kamiResource:6>, <AWWayofTime:incendium>, 10);
+mods.thermalexpansion.Smelter.addRecipe(48000, <Thaumcraft:ItemShard:1> * 4, <ForbiddenMagic:NetherShard>, <ThaumicTinkerer:kamiResource:6>, <AWWayofTime:incendium>, 10);
 
 //Making Covers less expensive.
 recipes.remove(<ThermalDynamics:ThermalDynamics_48>);
@@ -52,12 +47,17 @@ mods.thermalexpansion.Smelter.addRecipe(800, <Metallurgy:angmallen.ingot> * 2, <
 recipes.remove(<Natura:barleyFood:4>);
 recipes.addShaped(<ThermalFoundation:material:16>, [[<Natura:Cloud:3>, <Natura:Cloud:3>], [<Natura:Cloud:3>, <Natura:Cloud:3>]]);
 
-// Conversion between sulfurs
+// Conversion between sulfurs and saltpeters
 recipes.addShapeless(<ThermalFoundation:material:16>, [<Metallurgy:utility.item:0>]);
 recipes.addShapeless(<Metallurgy:utility.item:0>, [<ThermalFoundation:material:16>]);
+recipes.addShapeless(<ThermalFoundation:material:17>, [<Metallurgy:utility.item:2>]);
+recipes.addShapeless(<Metallurgy:utility.item:2>, [<ThermalFoundation:material:17>]);
+recipes.remove(<Metallurgy:utility.block:0>);
+recipes.addShapeless(<Metallurgy:utility.block:0>, [<ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>, <ore:dustSulfur>]);
+recipes.remove(<Metallurgy:utility.block:2>);
+recipes.addShapeless(<Metallurgy:utility.block:2>, [<ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
 
 // Forge Lexicon crashes the game, no clue why
-NEI.hide(<ThermalFoundation:lexicon>);
 recipes.remove(<ThermalFoundation:lexicon>);
 
 val magicSapling = <ore:magicSapling>;
@@ -165,11 +165,44 @@ for stone in stones {
 // Pulverize Phosphorus
 mods.thermalexpansion.Pulverizer.addRecipe(4000, <Metallurgy:utility.ore:1>, <Metallurgy:utility.item:1> * 2);
 
-// Tainted Blood Shard Aspects
-mods.thaumcraft.Aspects.set(<ForbiddenMagic:FMResource:3>, "spiritus 1, vitium 2, praecantatio 1");
-
 // Cobalt and Ardite QED recipes
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:coal>, <ore:oreCobalt>]]);
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:3> * 3, [[<ore:oreCobalt>, <ore:coal>]]);
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:coal>, <ore:oreArdite>]]);
 mods.extraUtils.QED.addShapedRecipe(<TConstruct:materials:4> * 3, [[<ore:oreArdite>, <ore:coal>]]);
+
+// Remove useless ichorium nuggets
+recipes.remove(<ThaumicTinkerer:kamiResource:3>);
+
+// Remove useless Thaumic Energistics gearboxen
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TETHAUMGBOX");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.TETHAUMGBOX");
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.Pseudo.COREUSE");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.Pseudo.COREUSE");
+mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TEIRONGEARBOX");
+mods.thaumcraft.Research.removeResearch("thaumicenergistics.TEIRONGEARBOX");
+mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:material:2>);
+mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:thaumicenergistics.block.gear.box>);
+mods.thaumcraft.Crucible.removeRecipe(<thaumicenergistics:thaumicenergistics.block.golem.gear.box>);
+mods.tconstruct.Casting.removeTableRecipe(<thaumicenergistics:material:2>);
+mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:material:12>, <liquid:iron.molten> * 576, <TConstruct:gearCast>, false, 20);
+
+// Rename HQM Bags
+game.setLocalization("en_US", "hqm.bag.basic", "Seeds");
+game.setLocalization("en_US", "hqm.bag.good", "Saplings");
+game.setLocalization("en_US", "hqm.bag.greater", "Animals");
+game.setLocalization("en_US", "hqm.bag.epic", "Machines");
+game.setLocalization("en_US", "hqm.bag.legendary", "Nether Ores");
+game.setLocalization("en_US", "item.hqm:bags.name", "Supply Bag");
+
+// Readd Trash Cans
+recipes.remove(<ExtraUtilities:trashcan:0>);
+recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <minecraft:lava_bucket>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+recipes.addShaped(<ExtraUtilities:trashcan>, [[<ore:stone>, <ore:stone>, <ore:stone>], [<ore:cobblestone>, <IguanaTweaksTConstruct:clayBucketLava>, <ore:cobblestone>], [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]]);
+
+// EFR Beetroot
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <etfuturum:beetroot_seeds>, <minecraft:wheat_seeds>, "sensus 5, messis 2");
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <etfuturum:beetroot_seeds>);
+
+// Remove Useless Skystone Dust
+mods.thermalexpansion.Pulverizer.removeRecipe(<appliedenergistics2:tile.BlockSkyStone>);

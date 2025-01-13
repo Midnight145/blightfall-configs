@@ -11,25 +11,42 @@ val copperIngotDict = <ore:ingotCopper>;
 val copperDustDict = <ore:dustCopper>;
 val copperOreDict = <ore:oreCopper>;
 val copperBlock = <ThermalFoundation:Storage:0>;
+val copperNugget = <ThermalFoundation:material:96>;
 
-//with TiC removed, TiC copper ingots now automatically go to TC instead
+// Remove extra types
 recipes.remove(<TConstruct:materials:20> * 9);
+recipes.remove(<Metallurgy:base.nugget:0> * 9);
+recipes.removeShaped(copperIngot);
+recipes.remove(<Metallurgy:copper.ingot>);
+recipes.remove(<TConstruct:materials:9>);
+recipes.removeShaped(<Thaumcraft:ItemNugget:1> * 9);
+mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:1>);
+mods.thaumcraft.Crucible.addRecipe("TRANSCOPPER", copperNugget * 3, <ore:nuggetCopper>, "metallum 2, permutatio 1");
 
-//Replace a bunch of vanilla smelting recipes
+// Replace smelting recipes
 furnace.remove(copperIngotDict);
+furnace.remove(<TConstruct:materials:20>);
 furnace.addRecipe(copperIngot * 2, <Thaumcraft:ItemNugget:17>, 0.5); //Ore cluster
-furnace.addRecipe(copperIngot, copperDustDict);
-furnace.addRecipe(copperIngot, copperOreDict);
+furnace.addRecipe(copperIngot, copperDustDict, 0.5);
+furnace.addRecipe(copperIngot, copperOreDict, 0.5);
+furnace.addRecipe(copperNugget, <TConstruct:oreBerries:2>, 0.1);
 
-//Change metallurgy brick recipe:
-recipes.remove(<Metallurgy:base.brick>);
-recipes.addShaped(<Metallurgy:base.brick>, [[copperIngotDict, copperIngotDict], [copperIngotDict, copperIngotDict]]);
-
-// Change smeltery casting to Thermal copper
+// Change smeltery casting to Thermal
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:9>);
 mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
+mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:1>);
+mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:3>);
 mods.tconstruct.Casting.addBasinRecipe(copperBlock, <liquid:copper.molten> * 1296, null, false, 20);
+
+// Metallurgy and Tinkers' blocks to Thermal
+recipes.remove(<Metallurgy:base.block:0>);
+recipes.addShapeless(<Metallurgy:base.block:0>, [copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict]);
+recipes.remove(<Metallurgy:base.brick:0>);
+recipes.addShaped(<Metallurgy:base.brick:0>, [[copperIngotDict, copperIngotDict], [copperIngotDict, copperIngotDict]]);
+recipes.addShapeless(copperIngot * 4, [<Metallurgy:base.brick:0>]);
+recipes.remove(<TConstruct:MetalBlock:3>);
+recipes.addShapeless(<TConstruct:MetalBlock:3>, [copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict, copperIngotDict]);
 
 
                    ///////
@@ -41,28 +58,48 @@ val tinIngotDict = <ore:ingotTin>;
 val tinDustDict = <ore:dustTin>;
 val tinOreDict = <ore:oreTin>;
 val tinBlock = <ThermalFoundation:Storage:1>;
+val tinNugget = <ThermalFoundation:material:97>;
 
-//with TiC removed, TiC tin ingots now automatically go to TC instead
+// Remove extra types
 recipes.remove(<TConstruct:materials:21> * 9);
+recipes.remove(<Metallurgy:base.nugget:1> * 9);
+recipes.removeShaped(tinIngot);
+recipes.remove(<Metallurgy:tin.ingot>);
+recipes.remove(<TConstruct:materials:10>);
+recipes.remove(<Thaumcraft:ItemNugget:2> * 9);
+mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:2>);
+mods.thaumcraft.Crucible.addRecipe("TRANSTIN", tinNugget * 3, <ore:nuggetTin>, "metallum 2, vitreus 1");
 
-//Replace a bunch of vanilla smelting recipes
+// Replace smelting recipes
 furnace.remove(tinIngotDict);
+furnace.remove(<TConstruct:materials:21>);
 furnace.addRecipe(tinIngot * 2, <Thaumcraft:ItemNugget:18>, 0.5); //Ore cluster
-furnace.addRecipe(tinIngot, tinDustDict);
-furnace.addRecipe(tinIngot, tinOreDict);
+furnace.addRecipe(tinIngot, tinDustDict, 0.5);
+furnace.addRecipe(tinIngot, tinOreDict, 0.5);
+furnace.addRecipe(tinNugget, <TConstruct:oreBerries:3>, 0.1);
 
-// Change smeltery casting to Thermal tin
+// Change smeltery casting to Thermal
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:10>);
 mods.tconstruct.Casting.addTableRecipe(tinIngot, <liquid:tin.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
+mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:2>);
+mods.tconstruct.Casting.addTableRecipe(tinIngot, <liquid:tin.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:5>);
 mods.tconstruct.Casting.addBasinRecipe(tinBlock, <liquid:tin.molten> * 1296, null, false, 20);
+
+// Metallurgy and Tinkers' blocks to Thermal
+recipes.remove(<Metallurgy:base.block:1>);
+recipes.addShapeless(<Metallurgy:base.block:1>, [tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict]);
+recipes.remove(<Metallurgy:base.brick:1>);
+recipes.addShaped(<Metallurgy:base.brick:1>, [[tinIngotDict, tinIngotDict], [tinIngotDict, tinIngotDict]]);
+recipes.addShapeless(tinIngot * 4, [<Metallurgy:base.brick:1>]);
+recipes.remove(<TConstruct:MetalBlock:5>);
+recipes.addShapeless(<TConstruct:MetalBlock:5>, [tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict, tinIngotDict]);
 
 
                    ////////
                    //IRON//
                    ////////
 
-//with TiC removed, iron ingots now automatically go to TC instead
 recipes.remove(<TConstruct:materials:19> * 9);
 
 
@@ -70,53 +107,276 @@ recipes.remove(<TConstruct:materials:19> * 9);
                    //BRONZE//
                    //////////
 
-val bronzeIngot = <TConstruct:materials:13>;
+val bronzeIngot = <ThermalFoundation:material:73>;
+val bronzeIngotDict = <ore:ingotBronze>;
 val bronzeNuggetDict = <ore:nuggetBronze>;
+val bronzeDustDict = <ore:dustBronze>;
+val bronzeNugget = <ThermalFoundation:material:105>;
 
-//with TiC removed, TiC bronze ingots now automatically go to TF instead
+// Remove extra types
 recipes.remove(<TConstruct:materials:31> * 9);
+recipes.remove(<Metallurgy:base.nugget:3> * 9);
+recipes.removeShaped(bronzeIngot);
+recipes.remove(<Metallurgy:bronze.ingot>);
+recipes.remove(<TConstruct:materials:13>);
 
-recipes.remove(<ThermalFoundation:material:73>);
-recipes.addShaped(bronzeIngot, [[bronzeNuggetDict, bronzeNuggetDict, bronzeNuggetDict], 
-[bronzeNuggetDict, bronzeNuggetDict, bronzeNuggetDict], [bronzeNuggetDict, bronzeNuggetDict, bronzeNuggetDict]]);
+// Replace smelting recipes
+furnace.remove(bronzeIngotDict);
+furnace.addRecipe(bronzeIngot, bronzeDustDict);
 
-furnace.remove(<ore:ingotBronze>);
-furnace.addRecipe(bronzeIngot, <ThermalFoundation:material:41>, 0.5);
+// Change smeltery casting to Thermal
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:13>);
+mods.tconstruct.Casting.addTableRecipe(bronzeIngot, <liquid:bronze.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
+
+// Metallurgy and Tinkers' blocks to Thermal
+recipes.remove(<Metallurgy:base.block:3>);
+recipes.addShapeless(<Metallurgy:base.block:3>, [bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict]);
+recipes.remove(<Metallurgy:base.brick:3>);
+recipes.addShaped(<Metallurgy:base.brick:3>, [[bronzeIngotDict, bronzeIngotDict], [bronzeIngotDict, bronzeIngotDict]]);
+recipes.addShapeless(bronzeIngot * 4, [<Metallurgy:base.brick:3>]);
+recipes.remove(<TConstruct:MetalBlock:4>);
+recipes.addShapeless(<TConstruct:MetalBlock:4>, [bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict, bronzeIngotDict]);
 
 
-                   ////////////////
-                   //OTHER METALS//
-                   ////////////////
-// taken from hello (1).zs, because, you know, it's about metals
-// -------------------------------------------------------------
+                   /////////
+                   //STEEL//
+                   /////////
 
-//Fix platinum ore into shiny ingots
-furnace.remove(<Metallurgy:platinum.ingot>);
-furnace.addRecipe(<ThermalFoundation:material:69>, <Metallurgy:precious.ore:2>, 0.5);
+val steelIngot = <TConstruct:materials:16>;
+val steelIngotDict = <ore:ingotSteel>;
+val steelNuggetDict = <ore:nuggetSteel>;
+val steelDustDict = <ore:dustSteel>;
+val steelNugget = <TConstruct:materials:33>;
 
-//Fix silver ore into TF silver ingots
-furnace.remove(<Metallurgy:silver.ingot>);
-furnace.addRecipe(<ThermalFoundation:material:66>, <Metallurgy:precious.ore:1>, 0.5);
+// Remove extra types
+recipes.remove(<TConstruct:materials:33> * 9);
+recipes.remove(<Metallurgy:base.nugget:7> * 9);
+recipes.remove(<Metallurgy:steel.ingot>);
+recipes.removeShaped(steelIngot);
+recipes.remove(<Metallurgy:steel.ingot>);
 
-//For mithril (mana-infused) make mithril ore turn into mana-infused ingots
-furnace.remove(<Metallurgy:mithril.ingot>);
-furnace.addRecipe(<ThermalFoundation:material:70>, <Metallurgy:fantasy.ore:7>, 0.5);
+// Replace smelting recipes
+furnace.remove(steelIngotDict);
+furnace.addRecipe(steelIngot, steelDustDict, 0.3);
 
-//...and then rename mana-infused ingots, dust, nuggets, and blocks into mithril versions
+// Metallurgy blocks to Tinkers' steel
+recipes.remove(<Metallurgy:base.block:7>);
+recipes.addShapeless(<Metallurgy:base.block:7>, [steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict]);
+recipes.remove(<Metallurgy:base.brick:7>);
+recipes.addShaped(<Metallurgy:base.brick:7>, [[steelIngotDict, steelIngotDict], [steelIngotDict, steelIngotDict]]);
+recipes.addShapeless(steelIngot * 4, [<Metallurgy:base.brick:7>]);
+recipes.remove(<TConstruct:MetalBlock:9>);
+recipes.addShapeless(<TConstruct:MetalBlock:9>, [steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict, steelIngotDict]);
+recipes.addShapeless(steelIngot * 9, [<ore:blockSteel>]);
+recipes.addShapeless(steelIngot, [steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict, steelNuggetDict]);
+recipes.addShapeless(steelNugget, [steelIngot]);
+
+
+                   //////////
+                   //Silver//
+                   //////////
+
+val silverIngot = <ThermalFoundation:material:66>;
+val silverIngotDict = <ore:ingotSilver>;
+val silverDustDict = <ore:dustSilver>;
+val silverOreDict = <ore:oreSilver>;
+val silverBlock = <ThermalFoundation:Storage:2>;
+val silverNugget = <ThermalFoundation:material:98>;
+
+// Remove extra types
+recipes.remove(<Metallurgy:precious.nugget:1> * 9);
+recipes.remove(<Metallurgy:silver.ingot>);
+recipes.removeShaped(silverIngot);
+recipes.remove(<Thaumcraft:ItemNugget:3> * 9);
+mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemNugget:3>);
+mods.thaumcraft.Crucible.addRecipe("TRANSSILVER", silverNugget * 3, <ore:nuggetSilver>, "metallum 2, lucrum 1");
+
+// Replace smelting recipes
+furnace.remove(silverIngotDict);
+furnace.addRecipe(silverIngot * 2, <Thaumcraft:ItemNugget:19>, 1); //Ore cluster
+furnace.addRecipe(silverIngot, silverDustDict, 1);
+furnace.addRecipe(silverIngot, silverOreDict, 1);
+
+// Change smeltery casting to Thermal
+mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:3>);
+mods.tconstruct.Casting.addTableRecipe(silverIngot, <liquid:silver.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
+
+// Metallurgy blocks to Thermal
+recipes.remove(<Metallurgy:precious.block:1>);
+recipes.addShapeless(<Metallurgy:precious.block:1>, [silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict, silverIngotDict]);
+recipes.remove(<Metallurgy:precious.brick:1>);
+recipes.addShaped(<Metallurgy:precious.brick:1>, [[silverIngotDict, silverIngotDict], [silverIngotDict, silverIngotDict]]);
+recipes.addShapeless(silverIngot * 4, [<Metallurgy:precious.brick:1>]);
+
+
+                   ///////////
+                   //Mithril//
+                   ///////////
+
+val mithrilIngot = <ThermalFoundation:material:70>;
+val mithrilIngotDict = <ore:ingotMithril>;
+val mithrilDustDict = <ore:dustMithril>;
+val mithrilOreDict = <ore:oreMithril>;
+val mithrilNugget= <ThermalFoundation:material:101>;
+
+
+// Remove extra types
+recipes.remove(<Metallurgy:fantasy.nugget:7> * 9);
+recipes.remove(<Metallurgy:mithril.ingot>);
+<ore:ingotMithril>.remove(<customnpcs:npcMithrilIngot>);
+
+// Replace smelting recipes
+furnace.remove(mithrilIngotDict);
+furnace.addRecipe(mithrilIngot, mithrilDustDict, 1);
+furnace.addRecipe(mithrilIngot, mithrilOreDict, 1);
+
+// Turn Metallurgy mithril into Thermal mithril
+recipes.remove(<Metallurgy:fantasy.block:7>);
+recipes.addShaped(<Metallurgy:fantasy.block:7>, [[mithrilIngotDict, mithrilIngotDict, mithrilIngotDict], [mithrilIngotDict, mithrilIngotDict, mithrilIngotDict], [mithrilIngotDict, mithrilIngotDict, mithrilIngotDict]]);
+recipes.remove(<Metallurgy:fantasy.brick:7>);
+recipes.addShaped(<Metallurgy:fantasy.brick:7>, [[mithrilIngotDict, mithrilIngotDict], [mithrilIngotDict, mithrilIngotDict]]);
+recipes.addShapeless(mithrilIngot * 4, [<Metallurgy:fantasy.brick:7>]);
+
+// Rename mana-infused ingots, dust, nuggets, and blocks into mithril versions
 game.setLocalization("en_US", "tile.thermalfoundation.ore.mithril.name", "Mithril Ore");
 game.setLocalization("en_US", "item.thermalfoundation.material.ingotMithril.name", "Mithril Ingot");
 game.setLocalization("en_US", "item.thermalfoundation.material.dustMithril.name", "Pulverized Mithril");
 game.setLocalization("en_US", "item.thermalfoundation.material.nuggetMithril.name", "Mithril Nugget");
 game.setLocalization("en_US", "tile.thermalfoundation.storage.mithril.name", "Mithril Block");
 game.setLocalization("en_US", "item.thermalfoundation.material.gearMithril.name", "Mithril Gear");
+game.setLocalization("en_US", "ore.manainfused.name", "Mithril Ore");
+game.setLocalization("en_US", "item.tconstruct.bucket.Mithril.name", "Molten Mithril Bucket");
+game.setLocalization("en_US", "item.iguana.tcon.clayBucket.Mithril.name", "Molten Mithril Clay Bucket");
+game.setLocalization("en_US", "tile.fluid.molten.mithril.name", "Molten Mithril");
+game.setLocalization("en_US", "LiquidMetal.Mithril.name", "Molten Mithril");
+game.setLocalization("en_US", "fluid.mithril.molten", "Molten Mithril");
 
-//do German cause I'm editing so I can do what I want lol
+// German Translation
 game.setLocalization("de_DE", "tile.thermalfoundation.ore.mithril.name", "Mithrilerz");
 game.setLocalization("de_DE", "item.thermalfoundation.material.ingotMithril.name", "Mithrilbarren");
 game.setLocalization("de_DE", "item.thermalfoundation.material.dustMithril.name", "Mithrilpulver");
 game.setLocalization("de_DE", "item.thermalfoundation.material.nuggetMithril.name", "Mithrilklumpen");
 game.setLocalization("de_DE", "tile.thermalfoundation.storage.mithril.name", "Mithrilblock");
 game.setLocalization("de_DE", "item.thermalfoundation.material.gearMithril.name", "Mithrilzahnrad");
+
+
+                   ////////////
+                   //Platinum//
+                   ////////////
+
+val platinumIngot = <ThermalFoundation:material:69>;
+val platinumIngotDict = <ore:ingotPlatinum>;
+val platinumDustDict = <ore:dustPlatinum>;
+val platinumOreDict = <ore:orePlatinum>;
+val platinumNugget = <ThermalFoundation:material:98>;
+
+// Remove extra types
+recipes.remove(<Metallurgy:precious.nugget:2> * 9);
+recipes.removeShaped(platinumIngot);
+
+// Replace smelting recipes
+furnace.remove(platinumIngotDict);
+furnace.addRecipe(platinumIngot, platinumDustDict, 1);
+furnace.addRecipe(platinumIngot, platinumOreDict, 1);
+
+// Metallurgy blocks to Thermal
+recipes.removeShaped(<Metallurgy:platinum.ingot>);
+recipes.removeShapeless(<Metallurgy:platinum.ingot>);
+recipes.remove(<Metallurgy:precious.block:2>);
+recipes.addShapeless(<Metallurgy:precious.block:2>, [platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict, platinumIngotDict]);
+recipes.remove(<Metallurgy:precious.brick:2>);
+recipes.addShaped(<Metallurgy:precious.brick:2>, [[platinumIngotDict, platinumIngotDict], [platinumIngotDict, platinumIngotDict]]);
+recipes.addShapeless(platinumIngot * 4, [<Metallurgy:precious.brick:2>]);
+
+//...and then rename shiny ingots, dust, nuggets, and blocks into platinum versions
+game.setLocalization("en_US", "tile.thermalfoundation.ore.platinum.name", "Platinum Ore");
+game.setLocalization("en_US", "item.thermalfoundation.material.ingotPlatinum.name", "Platinum Ingot");
+game.setLocalization("en_US", "item.thermalfoundation.material.dustPlatinum.name", "Pulverized Platinum");
+game.setLocalization("en_US", "item.thermalfoundation.material.nuggetPlatinum.name", "Platinum Nugget");
+game.setLocalization("en_US", "tile.thermalfoundation.storage.platinum.name", "Platinum Block");
+game.setLocalization("en_US", "item.thermalfoundation.material.gearPlatinum.name", "Platinum Gear");
+//game.setLocalization("en_US", "item.thermalfoundation.armor.platinumHelmet.name", "Platinum Helmet"); // Unused. Hidden in favor of the metallurgy version.
+//game.setLocalization("en_US", "item.thermalfoundation.armor.platinumPlate.name", "Platinum Chestplate");
+//game.setLocalization("en_US", "item.thermalfoundation.armor.platinumLegs.name", "Platinum Leggings");
+//game.setLocalization("en_US", "item.thermalfoundation.armor.platinumBoots.name", "Platinum Boots");
+//game.setLocalization("en_US", "item.thermalfoundation.tool.platinumSword.name", "Platinum Sword");
+//game.setLocalization("en_US", "item.thermalfoundation.tool.platinumShovel.name", "Platinum Shovel");
+//game.setLocalization("en_US", "item.thermalfoundation.tool.platinumPickaxe.name", "Platinum Pickaxe");
+//game.setLocalization("en_US", "item.thermalfoundation.tool.platinumAxe.name", "Platinum Axe");
+//game.setLocalization("en_US", "item.thermalfoundation.tool.platinumHoe.name", "Platinum Hoe");
+game.setLocalization("en_US", "item.thermalfoundation.tool.platinumShears.name", "Platinum Shears");
+game.setLocalization("en_US", "item.thermalfoundation.tool.platinumFishingRod.name", "Platinum Fishing Rod");
+game.setLocalization("en_US", "item.thermalfoundation.tool.platinumSickle.name", "Platinum Sickle");
+game.setLocalization("en_US", "item.thermalfoundation.tool.platinumBow.name", "Platinum Reinforced Bow");
+game.setLocalization("en_US", "ore.shiny.name", "Platinum Ore");
+game.setLocalization("en_US", "item.tconstruct.bucket.Shiny.name", "Molten Platinum Bucket");
+game.setLocalization("en_US", "item.iguana.tcon.clayBucket.Shiny.name", "Molten Platinum Clay Bucket");
+game.setLocalization("en_US", "tile.fluid.molten.shiny.name", "Molten Platinum");
+game.setLocalization("en_US", "LiquidMetal.Shiny.name", "Molten Platinum");
+game.setLocalization("en_US", "fluid.platinum.molten", "Molten Platinum");
+game.setLocalization("en_US", "toolpart.material.platinum", "Platinum");
+game.setLocalization("en_US", "material.thermalfoundation.platinum", "Platinum");
+
+
+                   //////////
+                   //Nickel//
+                   //////////
+
+//...and then rename ferrous ingots, dust, nuggets, and blocks into nickel versions
+game.setLocalization("en_US", "tile.thermalfoundation.ore.nickel.name", "Nickel Ore");
+game.setLocalization("en_US", "item.thermalfoundation.material.ingotNickel.name", "Nickel Ingot");
+game.setLocalization("en_US", "item.thermalfoundation.material.dustNickel.name", "Pulverized Nickel");
+game.setLocalization("en_US", "item.thermalfoundation.material.nuggetNickel.name", "Nickel Nugget");
+game.setLocalization("en_US", "tile.thermalfoundation.storage.nickel.name", "Nickel Block");
+game.setLocalization("en_US", "item.thermalfoundation.material.gearNickel.name", "Nickel Gear");
+game.setLocalization("en_US", "item.thermalfoundation.armor.nickelHelmet.name", "Nickel Helmet");
+game.setLocalization("en_US", "item.thermalfoundation.armor.nickelPlate.name", "Nickel Chestplate");
+game.setLocalization("en_US", "item.thermalfoundation.armor.nickelLegs.name", "Nickel Leggings");
+game.setLocalization("en_US", "item.thermalfoundation.armor.nickelBoots.name", "Nickel Boots");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelSword.name", "Nickel Sword");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelShovel.name", "Nickel Shovel");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelPickaxe.name", "Nickel Pickaxe");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelAxe.name", "Nickel Axe");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelHoe.name", "Nickel Hoe");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelShears.name", "Nickel Shears");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelFishingRod.name", "Nickel Fishing Rod");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelSickle.name", "Nickel Sickle");
+game.setLocalization("en_US", "item.thermalfoundation.tool.nickelBow.name", "Nickel Reinforced Bow");
+game.setLocalization("en_US", "ore.ferrous.name", "Nickel Ore");
+game.setLocalization("en_US", "tile.netherores.ore.nickel.name", "Nether Nickel Ore");
+game.setLocalization("en_US", "material.thermalfoundation.nickel", "Nickel");
+
+
+                   ////////////
+                   //Electrum//
+                   ////////////
+
+val electrumIngot = <ThermalFoundation:material:71>;
+val electrumIngotDict = <ore:ingotElectrum>;
+val electrumDustDict = <ore:dustElectrum>;
+val electrumNugget = <ThermalFoundation:material:98>;
+val electrumNuggetDict = <ore:nuggetElectrum>;
+
+// Remove extra types
+recipes.remove(<Metallurgy:precious.nugget:4> * 9);
+recipes.removeShaped(electrumIngot);
+
+// Replace smelting recipes
+furnace.remove(electrumIngotDict);
+furnace.addRecipe(electrumIngot, electrumDustDict, 1);
+
+// Metallurgy blocks to Thermal
+recipes.removeShaped(<Metallurgy:electrum.ingot>);
+recipes.removeShapeless(<Metallurgy:electrum.ingot>);
+recipes.removeShapeless(electrumIngot);
+recipes.addShapeless(electrumIngot, [electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict, electrumNuggetDict]);
+recipes.remove(<Metallurgy:precious.block:4>);
+recipes.addShapeless(<Metallurgy:precious.block:4>, [electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict, electrumIngotDict]);
+recipes.addShapeless(electrumIngot * 9, [<ore:blockElectrum>]);
+recipes.remove(<Metallurgy:precious.brick:4>);
+recipes.addShaped(<Metallurgy:precious.brick:4>, [[electrumIngotDict, electrumIngotDict], [electrumIngotDict, electrumIngotDict]]);
+recipes.addShapeless(electrumIngot * 4, [<Metallurgy:precious.brick:4>]);
+
 
 /*  Thaumcraft nugget duplication  */
 

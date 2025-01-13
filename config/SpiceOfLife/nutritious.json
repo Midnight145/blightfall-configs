@@ -3,7 +3,8 @@
 		"items": [
 			"harvestcraft:snickersbarItem",
 			"Botania:manaCookie",
-			"minecraft:rotten_flesh"
+			"minecraft:rotten_flesh",
+			"ForbiddenMagic:ArcaneCake"
 		]
 	},
 

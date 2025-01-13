@@ -1,5 +1,3 @@
-import mods.nei.NEI;
-
 print("SCRIPT: TiC and ExtraTiC");
 
 mods.tconstruct.ToolStats.setBowDrawspeed("Prometheum", 40);
@@ -34,7 +32,6 @@ mods.tconstruct.ToolStats.setBowDrawspeed("Oureclase", 43);
 mods.tconstruct.ToolStats.setBowFlightSpeed("Oureclase",5);
 mods.tconstruct.ToolStats.setArrowMass("Oureclase", 4.2);
 mods.tconstruct.ToolStats.setArrowBreakChance("Oureclase", 1.07);
-
 
 mods.tconstruct.ToolStats.setBowDrawspeed("Mithril", 43);
 mods.tconstruct.ToolStats.setBowFlightSpeed("Mithril",5.2);
@@ -315,34 +312,6 @@ mods.tconstruct.Casting.removeTableRecipe(<TConstruct:ShurikenPart:1024>);
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:CrossbowLimbPart:1024>);
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:BowLimbPart:1024>);
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:CrossbowBodyPart:1024>);
-
-NEI.hide(<TConstruct:toolRod:1024>);
-NEI.hide(<TConstruct:pickaxeHead:1024>);
-NEI.hide(<TConstruct:shovelHead:1024>);
-NEI.hide(<TConstruct:hatchetHead:1024>);
-NEI.hide(<TConstruct:binding:1024>);
-NEI.hide(<TConstruct:toughBinding:1024>);
-NEI.hide(<TConstruct:toughRod:1024>);
-NEI.hide(<TConstruct:heavyPlate:1024>);
-NEI.hide(<TConstruct:swordBlade:1024>);
-NEI.hide(<TConstruct:wideGuard:1024>);
-NEI.hide(<TConstruct:handGuard:1024>);
-NEI.hide(<TConstruct:crossbar:1024>);
-NEI.hide(<TConstruct:knifeBlade:1024>);
-NEI.hide(<TConstruct:fullGuard:1024>);
-NEI.hide(<TConstruct:frypanHead:1024>);
-NEI.hide(<TConstruct:signHead:1024>);
-NEI.hide(<TConstruct:chiselHead:1024>);
-NEI.hide(<TConstruct:scytheBlade:1024>);
-NEI.hide(<TConstruct:broadAxeHead:1024>);
-NEI.hide(<TConstruct:excavatorHead:1024>);
-NEI.hide(<TConstruct:largeSwordBlade:1024>);
-NEI.hide(<TConstruct:hammerHead:1024>);
-NEI.hide(<TConstruct:arrowhead:1024>);
-NEI.hide(<TConstruct:ShurikenPart:1024>);
-NEI.hide(<TConstruct:CrossbowLimbPart:1024>);
-NEI.hide(<TConstruct:BowLimbPart:1024>);
-NEI.hide(<TConstruct:CrossbowBodyPart:1024>);
 
 mods.tconstruct.Casting.addTableRecipe(<ExtraTiC:shuriken:105>, <liquid:platinum.molten>*72, <TConstruct:Cast:0> * 1, false, 20);
 mods.tconstruct.Casting.addTableRecipe(<ExtraTiC:CrossbowBody:105>, <liquid:platinum.molten>*720, <TConstruct:Cast:2> * 1, false, 20);
