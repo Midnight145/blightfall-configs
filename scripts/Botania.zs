@@ -163,10 +163,14 @@ mods.botania.Lexicon.addInfusionPage("botania.page.pool7", "botania.entry.pool",
 // Kekimurus thaumic cake
 game.setLocalization("en_US", "botania.page.kekimurus0", "&1Cake&0 is delicious, everyone loves it, flowers included.<br>The &1Kekimurus&0 is one of these &1Cake&0 aficionados, and will eat any it spots nearby, using its enriching nutrients to create &4Mana&0.<br>The magical nature of Thaumic Cakes sadly makes them indigestible by the &1Kekimurus&0.");
 
-// Rafflowsia
+// Rafflowsia lore about passive decay
 mods.botania.Lexicon.removePage("botania.entry.rafflowsia", 0);
 mods.botania.Lexicon.removePage("botania.entry.rafflowsia", 0);
 mods.botania.Lexicon.removePage("botania.entry.rafflowsia", 0);
+
+// Remove mentions of passive decay in Overgrowth Seed entry
+game.setLocalization("en_US", "botania.tagline.overgrowthSeed", "An elusive object that powers up flowers");
+game.setLocalization("en_US", "botania.page.overgrowthSeed0", "An &1Overgrowth Seed&0 is an elusive item, which can be used to enchant a piece of &1Grass&0, via right clicking on it in the world, creating &1Enchanted Soil&0. Flowers that are rooted on this &1Enchanted Soil&0 will function at double the normal speed.<br>&4Passive flowers&0 planted on this soil won't get the speed boost. These rare items are better used on more powerful flowers anyways.");
 
 // Ender Air
 game.setLocalization("en_US", "botania.page.enderAir0", "The air present in the void of the &1End&0 seems to have some mutating properties. Smelting some &1End Stone&0 in an induction smelter will capture some of that air in a glass bottle, which can then later be tossed similarly to a splash potion, turning nearby &1Stone&0 on the landing point into more &1End Stone&0.");
