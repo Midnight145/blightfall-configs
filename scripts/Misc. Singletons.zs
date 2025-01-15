@@ -206,3 +206,8 @@ mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <etfuturum:beetroot
 
 // Remove Useless Skystone Dust
 mods.thermalexpansion.Pulverizer.removeRecipe(<appliedenergistics2:tile.BlockSkyStone>);
+
+// Ungreg the Cell Microscope recipe
+mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:cell.microscope>);
+mods.thaumcraft.Arcane.addShaped("thaumicenergistics.TECELLMICROSCOPE", <thaumicenergistics:cell.microscope>, "aer 15, terra 15, ordo 15", [[null, <Thaumcraft:ItemThaumometer>, null], [<appliedenergistics2:item.ItemMultiMaterial:22>, <appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiMaterial:22>], [null, <Thaumcraft:ItemThaumometer>, null]]);
+mods.thaumcraft.Research.refreshResearchRecipe("thaumicenergistics.TECELLMICROSCOPE");
