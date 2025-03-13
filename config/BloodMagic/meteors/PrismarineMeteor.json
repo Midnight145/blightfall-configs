@@ -7,7 +7,5 @@
     ],
     "radius": 6,
     "cost": 500000,
-    "focusModId": "minecraft",
-    "focusName": "stained_glass",
-    "focusMeta": 3
+    "focusItem": "minecraft:stained_glass:3"
 }
