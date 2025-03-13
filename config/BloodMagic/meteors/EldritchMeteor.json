@@ -9,7 +9,5 @@
     ],
     "radius": 5,
     "cost": 10000000,
-    "focusModId": "Thaumcraft",
-    "focusName": "ItemEldritchObject",
-    "focusMeta": 0
+    "focusItem": "Thaumcraft:ItemEldritchObject"
 }

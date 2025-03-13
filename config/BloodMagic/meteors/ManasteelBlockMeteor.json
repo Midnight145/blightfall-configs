@@ -5,7 +5,5 @@
     ],
     "radius": 5,
     "cost": 7500000,
-    "focusModId": "Botania",
-    "focusName": "storage",
-    "focusMeta": 0
+    "focusItem": "Botania:storage"
 }

@@ -8,8 +8,6 @@
     ],
     "radius": 16,
     "cost": 500000,
-    "focusModId": "minecraft",
-    "focusName": "stone",
-    "focusMeta": 32767,
+    "focusItem": "minecraft:stone:32767",
     "fillerChance": 80
 }

@@ -7,7 +7,5 @@
     ],
     "radius": 16,
     "cost": 500000,
-    "focusModId": "chisel",
-    "focusName": "chisel.cloudinabottle",
-    "focusMeta": 0
+    "focusItem": "chisel:chisel.cloudinabottle"
 }

@@ -14,8 +14,6 @@
     ],
     "radius": 8,
     "cost": 1000000,
-    "focusModId": "ThermalFoundation",
-    "focusName": "Storage",
-    "focusMeta": 6,
+    "focusItem": "ThermalFoundation:Storage:6",
     "fillerChance": 70
 }

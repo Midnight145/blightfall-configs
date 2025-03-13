@@ -4,7 +4,5 @@
     ],
     "radius": 16,
     "cost": 500000,
-    "focusModId": "Botania",
-    "focusName": "manaResource",
-    "focusMeta": 5
+    "focusItem": "Botania:manaResource:5"
 }
