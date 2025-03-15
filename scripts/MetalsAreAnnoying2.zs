@@ -35,7 +35,7 @@ furnace.addRecipe(copperNugget, <TConstruct:oreBerries:2>, 0.1);
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:9>);
 mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
 mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:1>);
-mods.tconstruct.Casting.addTableRecipe(copperIngot, <liquid:copper.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
+mods.tconstruct.Casting.addTableRecipe(copperNugget, <liquid:copper.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:3>);
 mods.tconstruct.Casting.addBasinRecipe(copperBlock, <liquid:copper.molten> * 1296, null, false, 20);
 
@@ -82,7 +82,7 @@ furnace.addRecipe(tinNugget, <TConstruct:oreBerries:3>, 0.1);
 mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:10>);
 mods.tconstruct.Casting.addTableRecipe(tinIngot, <liquid:tin.molten> * 144, <TConstruct:metalPattern> * 1, false, 20);
 mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:2>);
-mods.tconstruct.Casting.addTableRecipe(tinIngot, <liquid:tin.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
+mods.tconstruct.Casting.addTableRecipe(tinNugget, <liquid:tin.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
 mods.tconstruct.Casting.removeBasinRecipe(<TConstruct:MetalBlock:5>);
 mods.tconstruct.Casting.addBasinRecipe(tinBlock, <liquid:tin.molten> * 1296, null, false, 20);
 
@@ -199,7 +199,7 @@ furnace.addRecipe(silverIngot, silverOreDict, 1);
 
 // Change smeltery casting to Thermal
 mods.tconstruct.Casting.removeTableRecipe(<Thaumcraft:ItemNugget:3>);
-mods.tconstruct.Casting.addTableRecipe(silverIngot, <liquid:silver.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
+mods.tconstruct.Casting.addTableRecipe(silverNugget, <liquid:silver.molten> * 16, <TConstruct:metalPattern:27> * 1, false, 20);
 
 // Metallurgy blocks to Thermal
 recipes.remove(<Metallurgy:precious.block:1>);
@@ -380,7 +380,7 @@ recipes.addShapeless(electrumIngot * 4, [<Metallurgy:precious.brick:4>]);
 
 /*  Thaumcraft nugget duplication  */
 
-//Metallurgy Fantasy Metals
+// Metallurgy Fantasy Metals
 
 game.setLocalization("en_US", "tc.research_name.TRANSFANTASY", "Fantasy Metals");
 game.setLocalization("en_US", "tc.research_text.TRANSFANTASY", "Where magic meets metals");
@@ -412,7 +412,7 @@ mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nug
 mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:13>);
 mods.thaumcraft.Research.addCruciblePage("TRANSFANTASY", <Metallurgy:fantasy.nugget:14>);
 
-//Nether Metals
+// Nether Metals
 
 game.setLocalization("en_US", "tc.research_name.TRANSNETHER", "Nether Metals");
 game.setLocalization("en_US", "tc.research_text.TRANSNETHER", "Metals forged in the fires of hell");
@@ -447,7 +447,7 @@ mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <Metallurgy:nether.nugge
 mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <TConstruct:materials:28>);
 mods.thaumcraft.Research.addCruciblePage("TRANSNETHER", <TConstruct:materials:29>);
 
-//Ender metals
+// Ender metals
 
 game.setLocalization("en_US", "tc.research_name.TRANSENDER", "Ender Metals");
 game.setLocalization("en_US", "tc.research_text.TRANSENDER", "Not that kind of void metal");
@@ -462,7 +462,7 @@ mods.thaumcraft.Research.addPage("TRANSENDER", "tc.research_page.TRANSENDER.1");
 mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget>);
 mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget:1>);
 
-//Tech metals and manganese
+// Tech metals and manganese
 
 game.setLocalization("en_US", "tc.research_name.TRANSNICKEL", "Nickel Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSNICKEL", "Transformation of metals into nickel");
