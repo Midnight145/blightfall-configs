@@ -19,8 +19,6 @@
     ],
     "radius": 7,
     "cost": 1000000,
-    "focusModId": "minecraft",
-    "focusName": "iron_block",
-    "focusMeta": 32767,
+    "focusItem": "minecraft:iron_block:32767",
     "fillerChance": 70
 }

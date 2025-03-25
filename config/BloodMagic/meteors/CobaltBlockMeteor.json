@@ -20,8 +20,6 @@
     ],
     "radius": 8,
     "cost": 1000000,
-    "focusModId": "TConstruct",
-    "focusName": "MetalBlock",
-    "focusMeta": 0,
+    "focusItem": "TConstruct:MetalBlock",
     "fillerChance": 65
 }

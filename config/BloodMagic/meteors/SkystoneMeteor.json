@@ -8,7 +8,5 @@
     ],
     "radius": 5,
     "cost": 1250000,
-    "focusModId": "appliedenergistics2",
-    "focusName": "item.ItemMultiMaterial",
-    "focusMeta": 41
+    "focusItem": "appliedenergistics2:item.ItemMultiMaterial:41"
 }

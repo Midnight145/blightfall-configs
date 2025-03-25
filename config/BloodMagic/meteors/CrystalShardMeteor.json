@@ -9,8 +9,6 @@
     ],
     "radius": 6,
     "cost": 1000000,
-    "focusModId": "Thaumcraft",
-    "focusName": "blockCrystal",
-    "focusMeta": 6,
+    "focusItem": "Thaumcraft:blockCrystal:6",
     "fillerChance": 40
 }
