@@ -216,4 +216,4 @@ mods.thaumcraft.Research.refreshResearchRecipe("thaumicenergistics.TECELLMICROSC
 val plate = <ore:pressurePlateWood>;
 val ironNugget = <ore:nuggetIron>;
 recipes.remove(<cookingforblockheads:toolrack:0>);
-recipes.addShaped(<cookingforblockheads:toolrack:0>, [[plate, plate, plate], [ironNugget, null, ironNugget], [null, null, null]]);
+recipes.addShaped(<cookingforblockheads:toolrack:0>, [[plate, plate, plate], [ironNugget, null, ironNugget]]);
