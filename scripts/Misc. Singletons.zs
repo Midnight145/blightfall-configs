@@ -211,3 +211,9 @@ mods.thermalexpansion.Pulverizer.removeRecipe(<appliedenergistics2:tile.BlockSky
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:cell.microscope>);
 mods.thaumcraft.Arcane.addShaped("thaumicenergistics.TECELLMICROSCOPE", <thaumicenergistics:cell.microscope>, "aer 15, terra 15, ordo 15", [[null, <Thaumcraft:ItemThaumometer>, null], [<appliedenergistics2:item.ItemMultiMaterial:22>, <appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiMaterial:22>], [null, <Thaumcraft:ItemThaumometer>, null]]);
 mods.thaumcraft.Research.refreshResearchRecipe("thaumicenergistics.TECELLMICROSCOPE");
+
+// Makes CFB tool racks cheaper & can use any wood type
+val plate = <ore:pressurePlateWood>;
+val ironNugget = <ore:nuggetIron>;
+recipes.remove(<cookingforblockheads:toolrack:0>);
+recipes.addShaped(<cookingforblockheads:toolrack:0>, [[plate, plate, plate], [ironNugget, null, ironNugget]]);
