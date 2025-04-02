@@ -1,14 +1,18 @@
 {
+    "comment": "Ore order: Coal, Phosphorite, Sulfur, Saltpeter, Magnesium, Bitumen, Potash, Prometheum, DeepIron",
     "ores": [
-        "OREDICT:oreCoal:400",
-        "OREDICT:orePhosphorite:100",
-        "OREDICT:oreSulfur:100",
-        "OREDICT:oreSaltpeter:100",
-        "OREDICT:oreMagnesium:100",
-        "OREDICT:oreBitumen:50",
-        "OREDICT:orePotash:100",
-        "OREDICT:orePrometheum:200",
-        "OREDICT:oreDeepIron:50"
+        "UndergroundBiomes:igneous_oreCoal:5:400",
+        "UndergroundBiomes:igneous_metal.block.utility.ore.1:5:100",
+        "UndergroundBiomes:igneous_metal.block.utility.ore:5:100",
+        "UndergroundBiomes:igneous_metal.block.utility.ore.2:5:100",
+        "UndergroundBiomes:igneous_metal.block.utility.ore.3:5:100",
+        "UndergroundBiomes:igneous_metal.block.utility.ore.4:5:50",
+        "UndergroundBiomes:igneous_metal.block.utility.ore.5:5:100",
+        "UndergroundBiomes:igneous_metal.block.fantasy.ore:5:200",
+        "UndergroundBiomes:igneous_metal.block.fantasy.ore.1:5:50"
+    ],
+    "filler": [
+        "UndergroundBiomes:igneousStone:5:100"
     ],
     "radius": 10,
     "cost": 1000000,

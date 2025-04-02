@@ -1,16 +1,20 @@
 {
+    "comment": "Ore order: Mithril, Prometheum, Deep Iron, Infuscolium, Oureclase, Astral Silver, Carmot, Rubracium, Orichalcum, Adamantine, Atlarus.",
     "ores": [
-        "OREDICT:oreMithril:100",
-        "OREDICT:orePrometheum:200",
-        "OREDICT:oreDeepIron:150",
-        "OREDICT:oreInfuscolium:150",
-        "OREDICT:oreOureclase:200",
-        "OREDICT:oreAstralSilver:100",
-        "OREDICT:oreCarmot:100",
-        "OREDICT:oreRubracium:150",
-        "OREDICT:oreOrichalcum:75",
-        "OREDICT:oreAdamantine:50",
-        "OREDICT:oreAtlarus:50"
+        "ubcores:sedimentary_thermalfoundation.ore.6:2:100",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore:2:200",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.1:2:150",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.2:2:150",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.4:2:200",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.5:2:100",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.6:2:100",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.8:2:150",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.11:2:75",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.13:2:50",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.14:2:50"
+    ],
+    "filler": [
+    	"UndergroundBiomes:sedimentaryStone:2:1"
     ],
     "radius": 8,
     "cost": 1000000,
