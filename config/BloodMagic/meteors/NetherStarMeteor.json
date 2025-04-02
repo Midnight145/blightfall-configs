@@ -1,5 +1,5 @@
 {
-	"comment": "Ore order: Diamond, Emerald, Nether Quartz, Certus Quartz, Platinum, Yellorite, Adamantine, Atlarus, Eximite, Meutoite",
+    "comment": "Ore order: Diamond, Emerald, Nether Quartz, Certus Quartz, Platinum, Yellorite, Adamantine, Atlarus, Eximite, Meutoite",
     "ores": [
         "UndergroundBiomes:sedimentary_oreDiamond:0:150",
         "UndergroundBiomes:sedimentary_oreEmerald:0:100",

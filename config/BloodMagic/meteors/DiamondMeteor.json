@@ -1,5 +1,5 @@
 {
-	"comment": "Ore order: Diamond, Emerald, Cinnabar, Amber, Infuscolium, Rubracium, Platinum, Yellorite, Manganese, Zinc",
+    "comment": "Ore order: Diamond, Emerald, Cinnabar, Amber, Infuscolium, Rubracium, Platinum, Yellorite, Manganese, Zinc",
     "ores": [
         "UndergroundBiomes:metamorphic_oreDiamond:2:100",
         "UndergroundBiomes:metamorphic_oreEmerald:2:75",

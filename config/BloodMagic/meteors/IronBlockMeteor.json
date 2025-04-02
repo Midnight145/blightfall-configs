@@ -1,5 +1,5 @@
 {
-	"comment": "Ore order: Iron, Gold, Copper, Tin, Silver, Lead, Nickel, Lapis, Redstone, Aluminum, Thaumcraft Shards.",
+    "comment": "Ore order: Iron, Gold, Copper, Tin, Silver, Lead, Nickel, Lapis, Redstone, Aluminum, Thaumcraft Shards.",
     "ores": [
         "UndergroundBiomes:igneous_oreIron:7:400",
         "UndergroundBiomes:igneous_oreGold:7:30",

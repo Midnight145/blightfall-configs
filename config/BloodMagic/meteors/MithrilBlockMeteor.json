@@ -1,5 +1,5 @@
 {
-	"comment": "Ore order: Mithril, Prometheum, Deep Iron, Infuscolium, Oureclase, Astral Silver, Carmot, Rubracium, Orichalcum, Adamantine, Atlarus.",
+    "comment": "Ore order: Mithril, Prometheum, Deep Iron, Infuscolium, Oureclase, Astral Silver, Carmot, Rubracium, Orichalcum, Adamantine, Atlarus.",
     "ores": [
         "ubcores:sedimentary_thermalfoundation.ore.6:2:100",
         "UndergroundBiomes:sedimentary_metal.block.fantasy.ore:2:200",

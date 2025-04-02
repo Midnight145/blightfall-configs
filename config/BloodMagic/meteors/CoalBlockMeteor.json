@@ -1,5 +1,5 @@
 {
-	"comment": "Ore order: Coal, Phosphorite, Sulfur, Saltpeter, Magnesium, Bitumen, Potash, Prometheum, DeepIron",
+    "comment": "Ore order: Coal, Phosphorite, Sulfur, Saltpeter, Magnesium, Bitumen, Potash, Prometheum, DeepIron",
     "ores": [
         "UndergroundBiomes:igneous_oreCoal:5:400",
         "UndergroundBiomes:igneous_metal.block.utility.ore.1:5:100",

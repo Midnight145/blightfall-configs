@@ -1,5 +1,5 @@
 {
-	"comment": "Ores 3 and 4 are Prometheum and Deep Iron",
+    "comment": "Ores 3 and 4 are Prometheum and Deep Iron",
     "ores": [
         "UndergroundBiomes:igneous_oreCoal:3:150",
         "UndergroundBiomes:igneous_oreIron:3:50",
