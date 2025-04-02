@@ -1,14 +1,14 @@
 {
+	"comment": "Ore order: Diamond, Emerald, Nether Quartz, Certus Quartz, Platinum, Yellorite, Adamantine, Atlarus, Eximite, Meutoite",
     "ores": [
-        "OREDICT:oreDiamond:150",
-        "OREDICT:oreEmerald:100",
-        "OREDICT:oreQuartz:250",
-        "OREDICT:oreCertusQuartz:150",
-        "OREDICT:orePlatinum:150",
-        "OREDICT:oreYellorite:100",
-        "OREDICT:oreYellorium:100",
-        "OREDICT:oreAdamantine:50",
-        "OREDICT:oreAtlarus:50",
+        "UndergroundBiomes:sedimentary_oreDiamond:0:150",
+        "UndergroundBiomes:sedimentary_oreEmerald:0:100",
+        "UndergroundBiomes:sedimentary_netherquartz:0:250",
+        "ubcores:sedimentary_appliedenergistics2.OreQuartz:0:150",
+        "ubcores:sedimentary_thermalfoundation.ore.5:0:150",
+        "ubcores:sedimentary_brOre:0:200",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.13:0:50",
+        "UndergroundBiomes:sedimentary_metal.block.fantasy.ore.14:0:50",
         "OREDICT:oreEximite:50",
         "OREDICT:oreMeutoite:50"
     ],

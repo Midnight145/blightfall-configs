@@ -1,16 +1,19 @@
 {
+	"comment": "Ore order: Diamond, Emerald, Cinnabar, Amber, Infuscolium, Rubracium, Platinum, Yellorite, Manganese, Zinc",
     "ores": [
-        "OREDICT:oreDiamond:100",
-        "OREDICT:oreEmerald:75",
-        "OREDICT:oreCinnabar:200",
-        "OREDICT:oreAmber:200",
-        "OREDICT:oreInfuscolium:150",
-        "OREDICT:oreRubracium:150",
-        "OREDICT:orePlatinum:50",
-        "OREDICT:oreYellorite:25",
-        "OREDICT:oreYellorium:25",
-        "OREDICT:oreManganese:100",
-        "OREDICT:oreZinc:100"
+        "UndergroundBiomes:metamorphic_oreDiamond:2:100",
+        "UndergroundBiomes:metamorphic_oreEmerald:2:75",
+        "ubcores:metamorphic_blockCustomOre:2:200",
+        "ubcores:metamorphic_blockCustomOre.7:2:200",
+        "UndergroundBiomes:metamorphic_metal.block.fantasy.ore.2:2:150",
+        "UndergroundBiomes:metamorphic_metal.block.fantasy.ore.8:2:150",
+        "ubcores:metamorphic_thermalfoundation.ore.5:2:50",
+        "ubcores:metamorphic_brOre:2:50",
+        "UndergroundBiomes:metamorphic_metal.block.base.ore.2:2:100",
+        "UndergroundBiomes:metamorphic_metal.block.precious.ore:2:100"
+    ],
+    "filler": [
+    	"UndergroundBiomes:metamorphicStone:2:1"
     ],
     "radius": 5,
     "cost": 1000000,
