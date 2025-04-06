@@ -22,7 +22,6 @@ recipes.addShaped(<minecraft:diamond_boots>, [[null, null, null], [cobalt, null,
 <minecraft:diamond_leggings>.displayName = "Cobalt Leggings";
 <minecraft:diamond_boots>.displayName = "Cobalt Boots";
 
-
 // Add bitumen x8 to rubber recipe
 val bitumen = <Metallurgy:utility.item:4>;
 recipes.addShapeless(<MineFactoryReloaded:rubber.raw>, [bitumen, bitumen, bitumen, bitumen, bitumen, bitumen, bitumen, bitumen]);
