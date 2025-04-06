@@ -116,3 +116,7 @@ mods.thaumcraft.Arcane.removeRecipe(<Automagy:blockGreedyChest>);
 mods.thaumcraft.Arcane.addShaped("GREEDYCHEST", <Automagy:blockGreedyChest>, "aer 7, ordo 2, perditio 2", [[<Thaumcraft:blockWoodenDevice:6>, <ore:trapdoorWood>, <Thaumcraft:blockWoodenDevice:6>], [<Thaumcraft:blockWoodenDevice:6>, <Automagy:avaricePearl>, <Thaumcraft:blockWoodenDevice:6>], [<Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>, <Thaumcraft:blockWoodenDevice:6>]]);
 mods.thaumcraft.Arcane.removeRecipe(<Automagy:blockTenaciousChest>); 
 mods.thaumcraft.Arcane.addShaped("TENACIOUSCHEST", <Automagy:blockTenaciousChest>, "aer 5, terra 2, aqua 2", [[<ore:plankWood>, <ore:trapdoorWood>, <ore:plankWood>], [<ore:plankWood>, <ore:slimeball>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
+// Beetroot
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <etfuturum:beetroot_seeds>, <minecraft:wheat_seeds>, "sensus 5, messis 2");
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <etfuturum:beetroot_seeds>);
