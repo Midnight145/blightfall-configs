@@ -87,7 +87,8 @@ MiningLaser.removeOre(<ThermalFoundation:Ore:3>);
 MiningLaser.removeOre(<ThermalFoundation:Ore:4>);
 MiningLaser.removeOre(<ThermalFoundation:Ore:5>);
 
-MiningLaser.addOre(<appliedenergistics2:tile.OreQuartz>.weight(40));
+MiningLaser.addOre(<appliedenergistics2:tile.OreQuartz>.weight(36));
+MiningLaser.addOre(<appliedenergistics2:tile.OreQuartzCharged>.weight(4));
 MiningLaser.addOre(<BigReactors:YelloriteOre>.weight(5));
 MiningLaser.addOre(<Metallurgy:base.ore:2>.weight(20));
 MiningLaser.addOre(<Metallurgy:ender.ore:1>.weight(15));
@@ -341,6 +342,7 @@ MiningLaser.addPreferredOre(2, <Metallurgy:fantasy.ore:13>);
 MiningLaser.addPreferredOre(2, <Metallurgy:fantasy.ore:7>);
 MiningLaser.addPreferredOre(5, <minecraft:fish>);
 MiningLaser.addPreferredOre(9, <appliedenergistics2:tile.OreQuartz>);
+MiningLaser.addPreferredOre(9, <appliedenergistics2:tile.OreQuartzCharged>);
 
 <MineFactoryReloaded:laserfocus:0>.displayName = "Clear Focus";
 <MineFactoryReloaded:laserfocus:0>.addTooltip("Increases the chance of finding");
