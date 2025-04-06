@@ -24,7 +24,6 @@ mods.tconstruct.Casting.addTableRecipe(<ThermalFoundation:material:12>, <liquid:
 recipes.remove(<Natura:barleyFood:1>); // Natura flour
 recipes.remove(<Natura:barleyFood:2>); // Natura flour
 recipes.remove(<Natura:barleyFood:4>); // Natura sulfur
-recipes.remove(<Natura:natura.stewbowl>);
 recipes.remove(<MineFactoryReloaded:machine.0:7>); // Block Breaker
 recipes.remove(<ThermalExpansion:Device:3>); // Terrain Smasher
 recipes.remove(<JABBA:moverDiamond>);

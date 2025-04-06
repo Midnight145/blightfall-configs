@@ -22,7 +22,6 @@ recipes.addShaped(<minecraft:diamond_boots>, [[null, null, null], [cobalt, null,
 <minecraft:diamond_leggings>.displayName = "Cobalt Leggings";
 <minecraft:diamond_boots>.displayName = "Cobalt Boots";
 
-
 // Add bitumen x8 to rubber recipe
 val bitumen = <Metallurgy:utility.item:4>;
 recipes.addShapeless(<MineFactoryReloaded:rubber.raw>, [bitumen, bitumen, bitumen, bitumen, bitumen, bitumen, bitumen, bitumen]);
@@ -90,6 +89,28 @@ game.setLocalization("en_US", "cavestokingdoms.research_page.SILVERWOODINFUSION"
 mods.thaumcraft.Research.addInfusionPage("SILVERWOODINFUSION", <Thaumcraft:blockCustomPlant:1>);
 
 mods.thaumcraft.Infusion.addRecipe("SILVERWOODINFUSION", <minecraft:sapling>, [<ThermalFoundation:material:66>, <ThermalFoundation:material:66>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>, <Thaumcraft:ItemShard:6>], "arbor 128, auram 32, praecantatio 128, sano 48", <Thaumcraft:blockCustomPlant:1>, 6);
+
+// AS+ Helm Infusion
+recipes.remove(<ArchimedesShipsPlus:marker>);
+mods.thaumcraft.Research.addResearch("FLYINGSHIP", "ARTIFICE", "machina 6, potentia 6, iter 6, motus 6, volatus 6", -6, 2, 4, <ArchimedesShipsPlus:marker>);
+mods.thaumcraft.Research.addPrereq("FLYINGSHIP", "INFUSION", false);
+game.setLocalization("en_US", "tc.research_name.FLYINGSHIP", "Flying Ships");
+game.setLocalization("en_US", "tc.research_text.FLYINGSHIP", "Scouting in Style");
+game.setLocalization("en_US", "cavestokingdoms.research_page.FLYINGSHIP", "The Jaded expects you to scout, and yet they keep all the aircraft for themselves. Hardly seems fair. <BR>Whatever. You can just make your own aircraft. The Ship Helm allows you to create ships. It is the core of the 'Archimedes Ships' mod. Search the internet for more information on how to use that mod; only the recipe for the ship helm has changed.");
+game.setLocalization("en_US", "cavestokingdoms.research_page.FLYINGSHIP2", "Only certain blocks will work on a ship. Most vanilla or decorative blocks will work. Most mod-added blocks that have a function of some kind will not. These airships are suitable to be transportation, not mobiles bases.");
+mods.thaumcraft.Infusion.addRecipe("FLYINGSHIP", <Thaumcraft:blockMagicalLog>, [<minecraft:redstone_block>, <ThermalFoundation:material:134>, <ThermalFoundation:material:136>, <minecraft:redstone_block>, <ThermalFoundation:material:134>, <ThermalFoundation:material:136>],
+	"machina 24, potentia 32, iter 32, motus 32, volatus 16", <ArchimedesShipsPlus:marker>, 4);
+mods.thaumcraft.Research.addPage("FLYINGSHIP", "cavestokingdoms.research_page.FLYINGSHIP");
+mods.thaumcraft.Research.addInfusionPage("FLYINGSHIP", <ArchimedesShipsPlus:marker>);
+mods.thaumcraft.Research.addPage("FLYINGSHIP", "cavestokingdoms.research_page.FLYINGSHIP2");
+
+// Glowshroom alchemy
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <Natura:Glowshroom:0>, <Botania:mushroom:5>, "lux 5, spiritus 2, infernus 2");
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <Natura:Glowshroom:1>, <Botania:mushroom:10>, "lux 5, spiritus 2, infernus 2");
+mods.thaumcraft.Crucible.addRecipe("PLANTCONJURATION", <Natura:Glowshroom:2>, <Botania:mushroom:11>, "lux 5, spiritus 2, infernus 2");
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <Natura:Glowshroom:0>);
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <Natura:Glowshroom:1>);
+mods.thaumcraft.Research.addCruciblePage("PLANTCONJURATION", <Natura:Glowshroom:2>);
 
 // Remove metal from Milk
 mods.thaumcraft.Aspects.remove(<MineFactoryReloaded:milkbottle>, "metallum 6");
@@ -207,21 +228,6 @@ recipes.addShaped(<MineFactoryReloaded:machine.2:10>,
                 [[<MineFactoryReloaded:plastic.sheet>, <MineFactoryReloaded:plastic.sheet>, <MineFactoryReloaded:plastic.sheet>],
                  [<MineFactoryReloaded:machine.1:3>, <ore:gemCrystalFlux>, <MineFactoryReloaded:machine.1:3>],
                  [<minecraft:redstone_block>, <MineFactoryReloaded:machineblock>, <minecraft:redstone_block>]]);
-
-// AS+ Helm
-recipes.remove(<ArchimedesShipsPlus:marker>);
-mods.thaumcraft.Research.addResearch("FLYINGSHIP", "ARTIFICE", "machina 6, potentia 6, iter 6, motus 6, volatus 6", -6, 2, 4, <ArchimedesShipsPlus:marker>);
-mods.thaumcraft.Research.addPrereq("FLYINGSHIP", "INFUSION", false);
-game.setLocalization("en_US", "tc.research_name.FLYINGSHIP", "Flying Ships");
-game.setLocalization("en_US", "tc.research_text.FLYINGSHIP", "Scouting in Style");
-game.setLocalization("en_US", "cavestokingdoms.research_page.FLYINGSHIP", "The Jaded expects you to scout, and yet they keep all the aircraft for themselves. Hardly seems fair. <BR>Whatever. You can just make your own aircraft. The Ship Helm allows you to create ships. It is the core of the 'Archimedes Ships' mod. Search the internet for more information on how to use that mod; only the recipe for the ship helm has changed.");
-game.setLocalization("en_US", "cavestokingdoms.research_page.FLYINGSHIP2", "Only certain blocks will work on a ship. Most vanilla or decorative blocks will work. Most mod-added blocks that have a function of some kind will not. These airships are suitable to be transportation, not mobiles bases.");
-mods.thaumcraft.Infusion.addRecipe("FLYINGSHIP", <Thaumcraft:blockMagicalLog>, [<minecraft:redstone_block>, <ThermalFoundation:material:134>, <ThermalFoundation:material:136>, <minecraft:redstone_block>, <ThermalFoundation:material:134>, <ThermalFoundation:material:136>], 
-	"machina 24, potentia 32, iter 32, motus 32, volatus 16", <ArchimedesShipsPlus:marker>, 4);
-mods.thaumcraft.Research.addPage("FLYINGSHIP", "cavestokingdoms.research_page.FLYINGSHIP");
-mods.thaumcraft.Research.addInfusionPage("FLYINGSHIP", <ArchimedesShipsPlus:marker>);
-mods.thaumcraft.Research.addPage("FLYINGSHIP", "cavestokingdoms.research_page.FLYINGSHIP2");
-
 
 // Remove ugly stuff from NEI:
 recipes.remove(<ExtraUtilities:decorativeBlock1:14>);
