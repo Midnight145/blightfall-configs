@@ -988,16 +988,7 @@ recipes.addShaped(<minecraft:cake>,
  [[<ore:listAllmilk>, <ore:listAllmilk>, <ore:listAllmilk>],
   [<ore:listAllsugar>, <ore:foodBatter>, <ore:listAllsugar>]]);
 
-//Remove natura flour, etc.
-recipes.remove(<Natura:barleyFood:1>);
-recipes.remove(<Natura:barleyFood:2>);
-
-furnace.remove(<minecraft:bread>);
-
-furnace.addRecipe(<minecraft:bread>, <ore:foodFlour>);
-
-recipes.addShapeless(<Natura:barley.seed>, [<Natura:barleyFood:0>]);
-
+// Sunflower seeds
 <harvestcraft:sunflowerseedsItem>.addTooltip("Cannot be planted.");
 <harvestcraft:sunflowerseedsItem>.addTooltip("At least Driskel gave");
 <harvestcraft:sunflowerseedsItem>.addTooltip("us a bunch of them...");
@@ -1009,3 +1000,21 @@ recipes.addShapeless(<harvestcraft:freshwaterItem> * 1, [<ore:listAllwater>]);
 
 recipes.remove(<harvestcraft:vegemiteItem>);
 recipes.addShapeless(<harvestcraft:vegemiteItem> * 1, [<harvestcraft:potItem>, <ore:listAllsugar>, <ore:listAllwater>, <harvestcraft:spiceleafItem>, <Natura:barleyFood>]);
+
+// Fix some harvestcraft recipes
+mods.tconstruct.Drying.addRecipe(<harvestcraft:muttonrawItem>, <TConstruct:jerky:3>, 6000);
+mods.tconstruct.Drying.addRecipe(<minecraft:fish:1>, <TConstruct:jerky:4>, 6000);
+recipes.remove(<harvestcraft:hotdogItem>);
+recipes.addShapeless(<harvestcraft:hotdogItem>,
+                    [<MineFactoryReloaded:meat.nugget.cooked>, <MineFactoryReloaded:meat.nugget.cooked>,
+                     <MineFactoryReloaded:meat.nugget.cooked>, <minecraft:bread>]);
+recipes.remove(<harvestcraft:loadedbakedpotatoItem>);
+recipes.addShapeless(<harvestcraft:loadedbakedpotatoItem>,
+                    [<TConstruct:strangeFood:2>, <ore:foodCheese> , <ore:foodButteredpotato>]);
+recipes.remove(<harvestcraft:baconcheeseburgerItem>);
+recipes.addShapeless(<harvestcraft:baconcheeseburgerItem>,
+                    [<TConstruct:strangeFood:2>, <harvestcraft:cheeseburgerItem>]);
+recipes.remove(<harvestcraft:epicbaconItem>);
+recipes.addShapeless(<harvestcraft:epicbaconItem>,
+                    [<TConstruct:strangeFood:2>, <ore:dyeRed>, <ore:dyePurple>, <ore:dyeOrange>, <ore:dyeYellow>,
+                     <ore:dyeMagenta>, <ore:dyeGreen>, <ore:dyeBlue>]);

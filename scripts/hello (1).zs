@@ -1,31 +1,11 @@
 // Minetweaker recipes and changes
 
-import mods.nei.NEI;
-
 print("SCRIPT: Hello World");
 
 // Add recipe for the Quest book
 recipes.addShapeless(<HardcoreQuesting:quest_book>, [<minecraft:coal:*>, <TConstruct:blankPattern>]);
 
-// Disable recipes for...
-// portal to the deep dark
-recipes.remove(<ExtraUtilities:dark_portal>);
-
-// bioreactor and biofuel generator from MFR
-recipes.remove(<MineFactoryReloaded:machine.1:10>);
-recipes.remove(<MineFactoryReloaded:machine.1:11>);
-
-// all dynamos
-recipes.remove(<ThermalExpansion:Dynamo:*>);
-
-// Remove Steam boiler
-recipes.remove(<MineFactoryReloaded:machine.1:6>);
-
-// Remove Block Breaker & Terrain Smasher
-recipes.remove(<MineFactoryReloaded:machine.0:7>);
-recipes.remove(<ThermalExpansion:Device:3>);
-
-//  Change the diamond armor to be made from cobalt and rename it
+// Change the diamond armor to be made from cobalt and rename it
 recipes.remove(<minecraft:diamond_helmet>);
 recipes.remove(<minecraft:diamond_chestplate>);
 recipes.remove(<minecraft:diamond_leggings>);
@@ -113,13 +93,6 @@ mods.thaumcraft.Infusion.addRecipe("SILVERWOODINFUSION", <minecraft:sapling>, [<
 
 // Remove metal from Milk
 mods.thaumcraft.Aspects.remove(<MineFactoryReloaded:milkbottle>, "metallum 6");
-
-// Remove wands. Both of them, because I don't know which is which.
-recipes.remove(<customnpcs:npcMagicWand>);
-recipes.remove(<customnpcs:npcWand>);
-
-// Remove AE2 Compass
-recipes.remove(<appliedenergistics2:tile.BlockSkyCompass>);
 
 // Language Samples
 recipes.addShapeless(<TabulaRasa:RasaItem0:16> * 1, [<TabulaRasa:RasaItem0:1>]);
@@ -212,14 +185,11 @@ recipes.addShapeless(<cavestokingdoms:basicManual:7>, [<TabulaRasa:RasaItem0:24>
 recipes.addShapeless(<cavestokingdoms:basicManual:8>, [<TabulaRasa:RasaItem0:25>, <TabulaRasa:RasaItem0:18>]);
 recipes.addShapeless(<cavestokingdoms:basicManual:9>, [<TabulaRasa:RasaItem0:26>, <TabulaRasa:RasaItem0:18>]);
 
-
 <TabulaRasa:RasaItem0:20>.addTooltip("Craft together with a dye and a");
 <TabulaRasa:RasaItem0:20>.addTooltip("flower to make the flower mystical.");
 
 <TabulaRasa:RasaItem0:21>.addTooltip("Crafting item. Used in");
 <TabulaRasa:RasaItem0:21>.addTooltip("infusion to make wings.");
-
-recipes.remove(<Natura:natura.stewbowl>);
 
 // Notes to help players decipher Natura nether trees.
 <Natura:florasapling:4>.addTooltip("Ghostwood can mine anything flint can.");
@@ -237,26 +207,6 @@ recipes.addShaped(<MineFactoryReloaded:machine.2:10>,
                 [[<MineFactoryReloaded:plastic.sheet>, <MineFactoryReloaded:plastic.sheet>, <MineFactoryReloaded:plastic.sheet>],
                  [<MineFactoryReloaded:machine.1:3>, <ore:gemCrystalFlux>, <MineFactoryReloaded:machine.1:3>],
                  [<minecraft:redstone_block>, <MineFactoryReloaded:machineblock>, <minecraft:redstone_block>]]);
-
-// Labels use oredict
-recipes.addShapeless(<Thaumcraft:ItemResource:13> * 4, [<ore:dyeBlack>, <ore:slimeball>, <minecraft:paper>,
-<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]);
-
-// Fix some harvestcraft recipes
-mods.tconstruct.Drying.addRecipe(<harvestcraft:muttonrawItem>, <TConstruct:jerky:3>, 6000);
-mods.tconstruct.Drying.addRecipe(<minecraft:fish:1>, <TConstruct:jerky:4>, 6000);
-recipes.remove(<harvestcraft:hotdogItem>);
-recipes.addShapeless(<harvestcraft:hotdogItem>, 
-                    [<MineFactoryReloaded:meat.nugget.cooked>, <MineFactoryReloaded:meat.nugget.cooked>, <MineFactoryReloaded:meat.nugget.cooked>, <minecraft:bread>]);
-recipes.remove(<harvestcraft:loadedbakedpotatoItem>);
-recipes.addShapeless(<harvestcraft:loadedbakedpotatoItem>, 
-                    [<TConstruct:strangeFood:2>, <ore:foodCheese> , <ore:foodButteredpotato>]);
-recipes.remove(<harvestcraft:baconcheeseburgerItem>);
-recipes.addShapeless(<harvestcraft:baconcheeseburgerItem>, 
-                    [<TConstruct:strangeFood:2>, <harvestcraft:cheeseburgerItem>]);
-recipes.remove(<harvestcraft:epicbaconItem>);
-recipes.addShapeless(<harvestcraft:epicbaconItem>, 
-                    [<TConstruct:strangeFood:2>, <ore:dyeRed>, <ore:dyePurple>, <ore:dyeOrange>, <ore:dyeYellow>, <ore:dyeMagenta>, <ore:dyeGreen>, <ore:dyeBlue>]);
 
 // AS+ Helm
 recipes.remove(<ArchimedesShipsPlus:marker>);
@@ -282,8 +232,6 @@ recipes.addShapeless(<ExtraUtilities:decorativeBlock1:14>, [<ore:stone>, <ore:st
 val qSilver = <ore:nuggetQuicksilver>;
 
 qSilver.remove(<Thaumcraft:ItemResource:3>);
-
-recipes.addShapeless(<Natura:barley.seed:1>, [<Natura:barleyFood:3>]);
 
 val blueGem = <ore:gemSapphire>;
 blueGem.add(<customnpcs:npcSaphire>);

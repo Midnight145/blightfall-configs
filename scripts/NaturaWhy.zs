@@ -14,3 +14,10 @@ val sticks = <Natura:natura.stick:*>;
 recipes.removeShaped(<minecraft:string>);
 recipes.removeShapeless(<minecraft:string>, [<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]); // remove string * 2
 recipes.addShapeless(<minecraft:string>, [<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]); // add string * 1 as shapeless recipe instead of shaped
+
+recipes.addShapeless(<Natura:barley.seed:1>, [<Natura:barleyFood:3>]);
+recipes.addShapeless(<Natura:barley.seed>, [<Natura:barleyFood:0>]);
+
+// Replace bread smelting with pam's flour
+furnace.remove(<minecraft:bread>);
+furnace.addRecipe(<minecraft:bread>, <ore:foodFlour>);
