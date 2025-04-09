@@ -4,6 +4,7 @@ recipes.remove(<ChickenChunks:chickenChunkLoader>);
 recipes.remove(<ChickenChunks:chickenChunkLoader:1>);
 
 mods.thaumcraft.Research.addResearch("CHICKENCHUNKS", "ARTIFICE", "ordo 5, perditio 5, alienis 5, vacuos 5, desidia 5", -4, 9, 4, <ChickenChunks:chickenChunkLoader>);
+mods.thaumcraft.Research.setConcealed("CHICKENCHUNKS", true);
 
 game.setLocalization("en_US", "tc.research_name.CHICKENCHUNKS", "Chunk Loader");
 game.setLocalization("en_US", "tc.research_text.CHICKENCHUNKS", "It's hard not to break the fourth wall here...");

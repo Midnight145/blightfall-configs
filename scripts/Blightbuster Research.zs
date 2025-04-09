@@ -63,6 +63,7 @@ mods.thaumcraft.Infusion.addRecipe("DAWNOFFERING", <minecraft:obsidian>, [<Trans
 mods.thaumcraft.Research.addPage("DAWNOFFERING", "tc.research_page.DAWNOFFERING.1");
 mods.thaumcraft.Research.addInfusionPage("DAWNOFFERING", <blightbuster:tile.blightbuster_offering>);
 mods.thaumcraft.Research.addPrereq("DAWNOFFERING", "DAWNMACHINE", false);
+mods.thaumcraft.Research.setConcealed("DAWNOFFERING", true);
 
 // Dawn Machine Research
 

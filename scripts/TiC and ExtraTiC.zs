@@ -275,6 +275,8 @@ recipes.remove(<TConstruct:materials:6>);
 
 mods.thaumcraft.Research.addResearch("LIVINGMOSS", "ARTIFICE", "instrumentum 4, fabrico 4, limus 4, herba 4, sano 4, victus 4", -8, 5, 4, <TConstruct:materials:6>);
 mods.thaumcraft.Research.addPrereq("LIVINGMOSS", "INFUSION", false);
+mods.thaumcraft.Research.setConcealed("LIVINGMOSS", true);
+
 game.setLocalization("en_US", "tc.research_name.LIVINGMOSS", "Livingmoss");
 game.setLocalization("en_US", "tc.research_text.LIVINGMOSS", "Self-repairing tools");
 game.setLocalization("en_US", "cavestokingdoms.research_page.LIVINGMOSS", "This planet seems different. The moss balls you were trained to craft on homeworld don't work, probably due to changes in the atmosphere. You'll need to find another way.<BR>This plant, called 'Livingmoss', is a magical attempt to recreate the balls of moss that homeworld used. Like classic balls of moss, applying these to modular tools will cause them to self-repair. The rate of repair increases if the moss is exposed to sunlight. This costs no mana, nor essentia, nor life essence, nor RF, nor will it drive you insane. It is, however, slower than many other methods of repairing tools.");
