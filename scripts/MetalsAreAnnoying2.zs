@@ -546,6 +546,7 @@ game.setLocalization("en_US", "tc.research_text.TRANSDIAMOND", "Transformation o
 game.setLocalization("en_US", "tc.research_page.TRANSDIAMOND.1", "You have discovered a way to multiply diamonds by steeping diamond nuggets in lucrum harvested from other substances.");
 mods.thaumcraft.Research.addResearch("TRANSDIAMOND", "FORBIDDEN", "vitreus 4, lucrum 4", 2, -6, 0, <Translocator:diamondNugget>);
 mods.thaumcraft.Research.setSecondary("TRANSDIAMOND", true);
+mods.thaumcraft.Research.setConcealed("TRANSDIAMOND", true);
 mods.thaumcraft.Research.addPrereq("TRANSDIAMOND", "TRANSEMERALD", false);
 mods.thaumcraft.Crucible.addRecipe("TRANSDIAMOND", <Translocator:diamondNugget> * 4, <ore:nuggetDiamond>, "vitreus 2, lucrum 2");
 mods.thaumcraft.Research.addPage("TRANSDIAMOND", "tc.research_page.TRANSDIAMOND.1");

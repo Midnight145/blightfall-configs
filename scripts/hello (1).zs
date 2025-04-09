@@ -93,7 +93,10 @@ mods.thaumcraft.Infusion.addRecipe("SILVERWOODINFUSION", <minecraft:sapling>, [<
 // AS+ Helm Infusion
 recipes.remove(<ArchimedesShipsPlus:marker>);
 mods.thaumcraft.Research.addResearch("FLYINGSHIP", "ARTIFICE", "machina 6, potentia 6, iter 6, motus 6, volatus 6", -6, 2, 4, <ArchimedesShipsPlus:marker>);
+
 mods.thaumcraft.Research.addPrereq("FLYINGSHIP", "INFUSION", false);
+mods.thaumcraft.Research.setConcealed("FLYINGSHIP", true);
+
 game.setLocalization("en_US", "tc.research_name.FLYINGSHIP", "Flying Ships");
 game.setLocalization("en_US", "tc.research_text.FLYINGSHIP", "Scouting in Style");
 game.setLocalization("en_US", "cavestokingdoms.research_page.FLYINGSHIP", "The Jaded expects you to scout, and yet they keep all the aircraft for themselves. Hardly seems fair. <BR>Whatever. You can just make your own aircraft. The Ship Helm allows you to create ships. It is the core of the 'Archimedes Ships' mod. Search the internet for more information on how to use that mod; only the recipe for the ship helm has changed.");

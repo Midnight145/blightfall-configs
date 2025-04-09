@@ -9,6 +9,9 @@ recipes.remove(<ExtraUtilities:angelRing:3>);
 recipes.remove(<ExtraUtilities:angelRing:4>);
 
 mods.thaumcraft.Research.addResearch("ANGELRING", "ARTIFICE", "volatus 8, aer 8, ordo 8, fabrico 8", -6, 8, 4, <TabulaRasa:RasaItem0:21>);
+mods.thaumcraft.Research.addPrereq("ANGELRING", "INFUSION", false);
+mods.thaumcraft.Research.setConcealed("ANGELRING", true);
+
 game.setLocalization("en_US", "tc.research_name.ANGELRING", "Angel Rings");
 game.setLocalization("en_US", "tc.research_text.ANGELRING", "More simple than jetpacks");
 game.setLocalization("en_US", "cavestokingdoms.research_page.ANGELRING", "Flight is important, and a thaumostatic harness is great, but there comes a time where you want to jettison the bulky thaumic apparatus and fly in a more natural way.<BR>You decided to create a ring with flight capabilties. Simply having this ring in your inventory will grant you the ability to fly, as if you were in creative mode.<BR>This ring comes in five varieties. They differ only cosmetically.");
@@ -24,5 +27,3 @@ mods.thaumcraft.Research.addInfusionPage("ANGELRING", <ExtraUtilities:angelRing:
 mods.thaumcraft.Research.addInfusionPage("ANGELRING", <ExtraUtilities:angelRing:3>);
 mods.thaumcraft.Research.addInfusionPage("ANGELRING", <ExtraUtilities:angelRing:4>);
 mods.thaumcraft.Research.addInfusionPage("ANGELRING", <ExtraUtilities:angelRing:0>);
-
-mods.thaumcraft.Research.addPrereq("ANGELRING", "INFUSION", false);
