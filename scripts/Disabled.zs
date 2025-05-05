@@ -6,6 +6,14 @@ recipes.remove(<MineFactoryReloaded:machine.1:6>); // Steam Boiler
 recipes.remove(<MineFactoryReloaded:machine.1:10>); // BioReactor
 recipes.remove(<MineFactoryReloaded:machine.1:11>); // BioFuel Generator
 recipes.remove(<ThermalExpansion:Dynamo:*>); // All dynamos
+recipes.remove(<ThermalExpansion:augment:48>); // Dynamo augments
+recipes.remove(<ThermalExpansion:augment:49>);
+recipes.remove(<ThermalExpansion:augment:64>);
+recipes.remove(<ThermalExpansion:augment:65>);
+recipes.remove(<ThermalExpansion:augment:66>);
+recipes.remove(<ThermalExpansion:augment:80>);
+recipes.remove(<ThermalExpansion:augment:81>);
+recipes.remove(<ThermalExpansion:augment:82>);
 
 // Remove useless Thaumic Energistics gearboxen
 mods.thaumcraft.Research.orphanResearch("thaumicenergistics.TETHAUMGBOX");
