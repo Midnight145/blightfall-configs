@@ -177,6 +177,11 @@ mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:cell.microscope>);
 mods.thaumcraft.Arcane.addShaped("thaumicenergistics.TECELLMICROSCOPE", <thaumicenergistics:cell.microscope>, "aer 15, terra 15, ordo 15", [[null, <Thaumcraft:ItemThaumometer>, null], [<appliedenergistics2:item.ItemMultiMaterial:22>, <appliedenergistics2:tile.BlockQuartzGlass>, <appliedenergistics2:item.ItemMultiMaterial:22>], [null, <Thaumcraft:ItemThaumometer>, null]]);
 mods.thaumcraft.Research.refreshResearchRecipe("thaumicenergistics.TECELLMICROSCOPE");
 
+// Ungreg Crystal Scribing Tools
+mods.thaumcraft.Arcane.removeRecipe(<ForbiddenMagic:Crystalwell>);
+mods.thaumcraft.Arcane.addShapeless("CRYSTALWELL" , <ForbiddenMagic:Crystalwell>, "ordo 1, aqua 1", [<Thaumcraft:ItemInkwell:*>, <ore:dyeBlack>, <Thaumcraft:ItemShard:*>, <Thaumcraft:ItemShard:*>]);
+mods.thaumcraft.Research.refreshResearchRecipe("CRYSTALWELL");
+
 // Make labels use oredict
 recipes.addShapeless(<Thaumcraft:ItemResource:13> * 4, [<ore:dyeBlack>, <ore:slimeball>, <minecraft:paper>,
 <minecraft:paper>, <minecraft:paper>, <minecraft:paper>]);
