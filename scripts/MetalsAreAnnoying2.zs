@@ -462,11 +462,10 @@ mods.thaumcraft.Research.addPage("TRANSENDER", "tc.research_page.TRANSENDER.1");
 mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget>);
 mods.thaumcraft.Research.addCruciblePage("TRANSENDER", <Metallurgy:ender.nugget:1>);
 
-// Tech metals and manganese
+// Tech metals and manganese. Some translation strings were moved to BlightTweaks because the formatting symbol caused problems for some users.
 
 game.setLocalization("en_US", "tc.research_name.TRANSNICKEL", "Nickel Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSNICKEL", "Transformation of metals into nickel");
-game.setLocalization("en_US", "tc.research_page.TRANSNICKEL.1", "You have discovered a way to multiply nickel by steeping nickel nuggets in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSNICKEL", "ALCHEMY", "metallum 2, machina 1", 2, 6, 0, <ThermalFoundation:material:100>);
 mods.thaumcraft.Research.setSecondary("TRANSNICKEL", true);
 mods.thaumcraft.Research.setConcealed("TRANSNICKEL", true);
@@ -477,7 +476,6 @@ mods.thaumcraft.Research.addCruciblePage("TRANSNICKEL", <ThermalFoundation:mater
 
 game.setLocalization("en_US", "tc.research_name.TRANSPLATINUM", "Platinum Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSPLATINUM", "Transformation of metals into platinum");
-game.setLocalization("en_US", "tc.research_page.TRANSPLATINUM.1", "You have discovered a way to multiply platinum by steeping platinum nuggets in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSPLATINUM", "ALCHEMY", "metallum 2, lucrum 1, permutatio 1", 2, 4, 0, <ThermalFoundation:material:101>);
 mods.thaumcraft.Research.setSecondary("TRANSPLATINUM", true);
 mods.thaumcraft.Research.setConcealed("TRANSPLATINUM", true);
@@ -488,7 +486,6 @@ mods.thaumcraft.Research.addCruciblePage("TRANSPLATINUM", <ThermalFoundation:mat
 
 game.setLocalization("en_US", "tc.research_name.TRANSALUMINUM", "Aluminum Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSALUMINUM", "Transformation of metals into aluminum");
-game.setLocalization("en_US", "tc.research_page.TRANSALUMINUM.1", "You have discovered a way to multiply aluminum by steeping aluminum nuggets in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSALUMINUM", "ALCHEMY", "metallum 2, machina 1", 3, 6, 0, <TConstruct:materials:22>);
 mods.thaumcraft.Research.setSecondary("TRANSALUMINUM", true);
 mods.thaumcraft.Research.setConcealed("TRANSALUMINUM", true);
@@ -499,7 +496,6 @@ mods.thaumcraft.Research.addCruciblePage("TRANSALUMINUM", <TConstruct:materials:
 
 game.setLocalization("en_US", "tc.research_name.TRANSMANGANESE", "Manganese Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSMANGANESE", "Transformation of metals into manganese");
-game.setLocalization("en_US", "tc.research_page.TRANSMANGANESE.1", "You have discovered a way to multiply manganese by steeping manganese nuggets in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSMANGANESE", "ALCHEMY", "metallum 2, terra 1", 3, 4, 0, <Metallurgy:base.nugget:2>);
 mods.thaumcraft.Research.setSecondary("TRANSMANGANESE", true);
 mods.thaumcraft.Research.setConcealed("TRANSMANGANESE", true);
@@ -510,7 +506,6 @@ mods.thaumcraft.Research.addCruciblePage("TRANSMANGANESE", <Metallurgy:base.nugg
 
 game.setLocalization("en_US", "tc.research_name.TRANSZINC", "Zinc Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSZINC", "Transformation of metals into zinc");
-game.setLocalization("en_US", "tc.research_page.TRANSZINC.1", "You have discovered a way to multiply zinc by steeping zinc nuggets in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSZINC", "ALCHEMY", "metallum 2, perditio 1", 3, 3, 0, <Metallurgy:precious.nugget>);
 mods.thaumcraft.Research.setSecondary("TRANSZINC", true);
 mods.thaumcraft.Research.setConcealed("TRANSZINC", true);
@@ -521,7 +516,6 @@ mods.thaumcraft.Research.addCruciblePage("TRANSZINC", <Metallurgy:precious.nugge
 
 game.setLocalization("en_US", "tc.research_name.TRANSQUICKSILVER", "Quicksilver Transmutation");
 game.setLocalization("en_US", "tc.research_text.TRANSQUICKSILVER", "Transformation of metals into quicksilver");
-game.setLocalization("en_US", "tc.research_page.TRANSQUICKSILVER.1", "You have discovered a way to multiply quicksilver by steeping quicksilver drops in §5metallum§0 harvested from other metals.");
 mods.thaumcraft.Research.addResearch("TRANSQUICKSILVER", "ALCHEMY", "metallum 2, permutatio 1", 3, 7, 0, <Thaumcraft:ItemNugget:5>);
 mods.thaumcraft.Research.setSecondary("TRANSQUICKSILVER", true);
 mods.thaumcraft.Research.setConcealed("TRANSQUICKSILVER", true);
